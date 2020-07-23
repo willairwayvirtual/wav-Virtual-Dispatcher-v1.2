@@ -73,11 +73,23 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include=".vb">
+    <Compile Include="Form3.Designer.vb">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Form3.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="wav Dispatch Center login.Designer.vb">
+      <DependentUpon>wav Dispatch Center login.vb</DependentUpon>
+    </Compile>
+    <Compile Include="wav Dispatch Center login.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash .vb">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include=".Designer.vb">
-      <DependentUpon>.vb</DependentUpon>
+      <DependentUpon>Splash .vb</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
@@ -97,11 +109,20 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Form3.resx">
+      <DependentUpon>Form3.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="wav Dispatch Center login.resx">
+      <DependentUpon>wav Dispatch Center login.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash .resx">
+      <DependentUpon>Splash .vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
