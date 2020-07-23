@@ -60,7 +60,7 @@ Partial Class Form2
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(19, 60)
+        Me.Label4.Location = New System.Drawing.Point(1, 51)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(602, 25)
@@ -95,7 +95,7 @@ Partial Class Form2
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(18, 197)
+        Me.Label3.Location = New System.Drawing.Point(12, 193)
         Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label3.Name = "Label3"
         Me.Label3.Size = New System.Drawing.Size(190, 36)
@@ -119,7 +119,7 @@ Partial Class Form2
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.White
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(15, -5)
+        Me.Label1.Location = New System.Drawing.Point(-3, -3)
         Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label1.Name = "Label1"
         Me.Label1.Size = New System.Drawing.Size(790, 54)
