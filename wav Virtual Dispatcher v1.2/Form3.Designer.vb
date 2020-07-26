@@ -37,7 +37,7 @@ Partial Class Form3mll
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1194, 1)
+        Me.Button1.Location = New System.Drawing.Point(1489, 0)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(156, 27)
         Me.Button1.TabIndex = 1
@@ -46,7 +46,7 @@ Partial Class Form3mll
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(1008, 1)
+        Me.Button2.Location = New System.Drawing.Point(1303, 0)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(189, 27)
         Me.Button2.TabIndex = 2
@@ -59,7 +59,7 @@ Partial Class Form3mll
         Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
-        Me.wavMenu.Size = New System.Drawing.Size(1350, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1591, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -74,35 +74,35 @@ Partial Class Form3mll
         '
         Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
         Me.NewToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
         Me.NewToolStripMenuItem.Text = "new"
         '
         'OpenToolStripMenuItem
         '
         Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
         Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
         Me.OpenToolStripMenuItem.Text = "open"
         '
         'SaveToolStripMenuItem
         '
         Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
         Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
         Me.SaveToolStripMenuItem.Text = "save"
         '
         'PrintToolStripMenuItem
         '
         Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
         Me.PrintToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
         Me.PrintToolStripMenuItem.Text = "print"
         '
         'ExitToolStripMenuItem
         '
         Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
         Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
         Me.ExitToolStripMenuItem.Text = "exit"
         '
         'Form3mll
@@ -110,11 +110,11 @@ Partial Class Form3mll
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.ClientSize = New System.Drawing.Size(1350, 467)
+        Me.ClientSize = New System.Drawing.Size(1591, 725)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.wavMenu)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.wavMenu
         Me.Name = "Form3mll"

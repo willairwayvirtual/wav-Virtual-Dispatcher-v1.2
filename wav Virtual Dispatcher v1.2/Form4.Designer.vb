@@ -24,18 +24,18 @@ Partial Class Form4
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form4))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
-        Me.TabPage1 = New System.Windows.Forms.TabPage()
         Me.TabPage2 = New System.Windows.Forms.TabPage()
-        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.WebBrowser2 = New System.Windows.Forms.WebBrowser()
         Me.TabPage3 = New System.Windows.Forms.TabPage()
         Me.WebBrowser3 = New System.Windows.Forms.WebBrowser()
+        Me.TabPage1 = New System.Windows.Forms.TabPage()
+        Me.WebBrowser1 = New System.Windows.Forms.WebBrowser()
         Me.TabPage4 = New System.Windows.Forms.TabPage()
         Me.WebBrowser4 = New System.Windows.Forms.WebBrowser()
         Me.TabControl1.SuspendLayout()
-        Me.TabPage1.SuspendLayout()
         Me.TabPage2.SuspendLayout()
         Me.TabPage3.SuspendLayout()
+        Me.TabPage1.SuspendLayout()
         Me.TabPage4.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -45,22 +45,11 @@ Partial Class Form4
         Me.TabControl1.Controls.Add(Me.TabPage3)
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage4)
-        Me.TabControl1.Location = New System.Drawing.Point(-3, -5)
+        Me.TabControl1.Location = New System.Drawing.Point(-3, -8)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1350, 586)
+        Me.TabControl1.Size = New System.Drawing.Size(1769, 813)
         Me.TabControl1.TabIndex = 0
-        '
-        'TabPage1
-        '
-        Me.TabPage1.Controls.Add(Me.WebBrowser1)
-        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
-        Me.TabPage1.Name = "TabPage1"
-        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage1.Size = New System.Drawing.Size(1326, 539)
-        Me.TabPage1.TabIndex = 0
-        Me.TabPage1.Text = "weather1"
-        Me.TabPage1.UseVisualStyleBackColor = True
         '
         'TabPage2
         '
@@ -68,20 +57,10 @@ Partial Class Form4
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1342, 557)
+        Me.TabPage2.Size = New System.Drawing.Size(1761, 784)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "rfinder"
         Me.TabPage2.UseVisualStyleBackColor = True
-        '
-        'WebBrowser1
-        '
-        Me.WebBrowser1.Dock = System.Windows.Forms.DockStyle.Fill
-        Me.WebBrowser1.Location = New System.Drawing.Point(3, 3)
-        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
-        Me.WebBrowser1.Name = "WebBrowser1"
-        Me.WebBrowser1.Size = New System.Drawing.Size(1320, 533)
-        Me.WebBrowser1.TabIndex = 0
-        Me.WebBrowser1.Url = New System.Uri("https://aviationweather.gov/data/iffdp/2106.gif", System.UriKind.Absolute)
         '
         'WebBrowser2
         '
@@ -89,7 +68,7 @@ Partial Class Form4
         Me.WebBrowser2.Location = New System.Drawing.Point(3, 3)
         Me.WebBrowser2.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser2.Name = "WebBrowser2"
-        Me.WebBrowser2.Size = New System.Drawing.Size(1336, 551)
+        Me.WebBrowser2.Size = New System.Drawing.Size(1755, 778)
         Me.WebBrowser2.TabIndex = 0
         Me.WebBrowser2.Url = New System.Uri("http://rfinder.asalink.net/free/", System.UriKind.Absolute)
         '
@@ -99,7 +78,7 @@ Partial Class Form4
         Me.TabPage3.Location = New System.Drawing.Point(4, 25)
         Me.TabPage3.Name = "TabPage3"
         Me.TabPage3.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage3.Size = New System.Drawing.Size(1326, 539)
+        Me.TabPage3.Size = New System.Drawing.Size(1342, 557)
         Me.TabPage3.TabIndex = 2
         Me.TabPage3.Text = "flightradar24."
         Me.TabPage3.UseVisualStyleBackColor = True
@@ -110,9 +89,30 @@ Partial Class Form4
         Me.WebBrowser3.Location = New System.Drawing.Point(3, 3)
         Me.WebBrowser3.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser3.Name = "WebBrowser3"
-        Me.WebBrowser3.Size = New System.Drawing.Size(1320, 533)
+        Me.WebBrowser3.Size = New System.Drawing.Size(1336, 551)
         Me.WebBrowser3.TabIndex = 0
         Me.WebBrowser3.Url = New System.Uri("https://www.flightradar24.com/-30.52,-88.01/2", System.UriKind.Absolute)
+        '
+        'TabPage1
+        '
+        Me.TabPage1.Controls.Add(Me.WebBrowser1)
+        Me.TabPage1.Location = New System.Drawing.Point(4, 25)
+        Me.TabPage1.Name = "TabPage1"
+        Me.TabPage1.Padding = New System.Windows.Forms.Padding(3)
+        Me.TabPage1.Size = New System.Drawing.Size(1342, 557)
+        Me.TabPage1.TabIndex = 0
+        Me.TabPage1.Text = "weather1"
+        Me.TabPage1.UseVisualStyleBackColor = True
+        '
+        'WebBrowser1
+        '
+        Me.WebBrowser1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.WebBrowser1.Location = New System.Drawing.Point(3, 3)
+        Me.WebBrowser1.MinimumSize = New System.Drawing.Size(20, 20)
+        Me.WebBrowser1.Name = "WebBrowser1"
+        Me.WebBrowser1.Size = New System.Drawing.Size(1336, 551)
+        Me.WebBrowser1.TabIndex = 0
+        Me.WebBrowser1.Url = New System.Uri("https://aviationweather.gov/data/iffdp/2106.gif", System.UriKind.Absolute)
         '
         'TabPage4
         '
@@ -120,7 +120,7 @@ Partial Class Form4
         Me.TabPage4.Location = New System.Drawing.Point(4, 25)
         Me.TabPage4.Name = "TabPage4"
         Me.TabPage4.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage4.Size = New System.Drawing.Size(1326, 539)
+        Me.TabPage4.Size = New System.Drawing.Size(1342, 557)
         Me.TabPage4.TabIndex = 3
         Me.TabPage4.Text = "weather2"
         Me.TabPage4.UseVisualStyleBackColor = True
@@ -131,7 +131,7 @@ Partial Class Form4
         Me.WebBrowser4.Location = New System.Drawing.Point(3, 3)
         Me.WebBrowser4.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser4.Name = "WebBrowser4"
-        Me.WebBrowser4.Size = New System.Drawing.Size(1320, 533)
+        Me.WebBrowser4.Size = New System.Drawing.Size(1336, 551)
         Me.WebBrowser4.TabIndex = 0
         Me.WebBrowser4.Url = New System.Uri("http://aviationweather.gov/data/iffdp/2105.gif", System.UriKind.Absolute)
         '
@@ -140,16 +140,16 @@ Partial Class Form4
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.ClientSize = New System.Drawing.Size(1347, 593)
+        Me.ClientSize = New System.Drawing.Size(1846, 855)
         Me.Controls.Add(Me.TabControl1)
-        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
+        Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Name = "Form4"
         Me.Text = "browser"
         Me.TabControl1.ResumeLayout(False)
-        Me.TabPage1.ResumeLayout(False)
         Me.TabPage2.ResumeLayout(False)
         Me.TabPage3.ResumeLayout(False)
+        Me.TabPage1.ResumeLayout(False)
         Me.TabPage4.ResumeLayout(False)
         Me.ResumeLayout(False)
 
