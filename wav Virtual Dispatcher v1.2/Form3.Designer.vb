@@ -59,7 +59,7 @@ Partial Class Form3mll
         Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
-        Me.wavMenu.Size = New System.Drawing.Size(1591, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1591, 30)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -67,7 +67,7 @@ Partial Class Form3mll
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.PrintToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 26)
         Me.FileToolStripMenuItem.Text = "file"
         '
         'NewToolStripMenuItem
@@ -118,7 +118,6 @@ Partial Class Form3mll
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.wavMenu
         Me.Name = "Form3mll"
-        Me.Text = "wav-Dispatch-Center"
         Me.wavMenu.ResumeLayout(False)
         Me.wavMenu.PerformLayout()
         Me.ResumeLayout(False)

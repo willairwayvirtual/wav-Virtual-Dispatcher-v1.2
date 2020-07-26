@@ -29,6 +29,8 @@ Partial Class Form5
         Me.TextBoxkeyword = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
+        Me.CrystalReport11 = New wav_Virtual_Dispatcher_v1._2.CrystalReport1()
+        Me.CrystalReport12 = New wav_Virtual_Dispatcher_v1._2.CrystalReport1()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -89,7 +91,7 @@ Partial Class Form5
         '
         'CrystalReportViewer1
         '
-        Me.CrystalReportViewer1.ActiveViewIndex = -1
+        Me.CrystalReportViewer1.ActiveViewIndex = 0
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -121,4 +123,6 @@ Partial Class Form5
     Friend WithEvents TextBoxkeyword As TextBox
     Friend WithEvents Label1 As Label
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
+    Friend WithEvents CrystalReport11 As CrystalReport1
+    Friend CrystalReport12 As wav_Virtual_Dispatcher_v1._2.CrystalReport1
 End Class
