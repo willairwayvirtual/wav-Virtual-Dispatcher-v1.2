@@ -24,14 +24,13 @@ Partial Class Form5
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form5))
         Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Label2 = New System.Windows.Forms.Label()
         Me.Search = New System.Windows.Forms.Button()
         Me.TextBoxkeyword = New System.Windows.Forms.TextBox()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.CrystalReport11 = New wav_Virtual_Dispatcher_v1._2.CrystalReport1()
-        Me.CrystalReport12 = New wav_Virtual_Dispatcher_v1._2.CrystalReport1()
-        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -49,6 +48,15 @@ Partial Class Form5
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1531, 71)
         Me.Panel1.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(1357, 8)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(174, 72)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "back"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Label2
         '
@@ -74,7 +82,7 @@ Partial Class Form5
         'TextBoxkeyword
         '
         Me.TextBoxkeyword.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.TextBoxkeyword.Location = New System.Drawing.Point(722, 28)
+        Me.TextBoxkeyword.Location = New System.Drawing.Point(750, 38)
         Me.TextBoxkeyword.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxkeyword.Name = "TextBoxkeyword"
         Me.TextBoxkeyword.Size = New System.Drawing.Size(265, 34)
@@ -103,15 +111,6 @@ Partial Class Form5
         Me.CrystalReportViewer1.TabIndex = 2
         Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(1357, 8)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(174, 72)
-        Me.Button1.TabIndex = 5
-        Me.Button1.Text = "back"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Form5
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -135,6 +134,5 @@ Partial Class Form5
     Friend WithEvents Label1 As Label
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents CrystalReport11 As CrystalReport1
-    Friend CrystalReport12 As wav_Virtual_Dispatcher_v1._2.CrystalReport1
     Friend WithEvents Button1 As Button
 End Class

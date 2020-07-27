@@ -4,4 +4,12 @@
         Me.Close()
 
     End Sub
+
+    Private Sub Search_Click(sender As Object, e As EventArgs) Handles Search.Click
+        CrystalReportViewer1.ReportSource = Application.StartupPath + "/CrystalReport1.rpt"
+        CrystalReportViewer1.SelectionFormula = "{WavVirtDispatch.flight}= '" & TextBoxkeyword.Text.ToString() & "'"
+        CrystalReportViewer1.Refresh()
+        CrystalReportViewer1.RefreshReport()
+
+    End Sub
 End Class
