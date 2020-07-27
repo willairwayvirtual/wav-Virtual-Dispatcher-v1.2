@@ -31,12 +31,14 @@ Partial Class Form5
         Me.CrystalReportViewer1 = New CrystalDecisions.Windows.Forms.CrystalReportViewer()
         Me.CrystalReport11 = New wav_Virtual_Dispatcher_v1._2.CrystalReport1()
         Me.CrystalReport12 = New wav_Virtual_Dispatcher_v1._2.CrystalReport1()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Panel1
         '
         Me.Panel1.BackColor = System.Drawing.Color.DimGray
+        Me.Panel1.Controls.Add(Me.Button1)
         Me.Panel1.Controls.Add(Me.Label2)
         Me.Panel1.Controls.Add(Me.Search)
         Me.Panel1.Controls.Add(Me.TextBoxkeyword)
@@ -61,7 +63,7 @@ Partial Class Form5
         '
         'Search
         '
-        Me.Search.Location = New System.Drawing.Point(1276, 8)
+        Me.Search.Location = New System.Drawing.Point(1118, 8)
         Me.Search.Margin = New System.Windows.Forms.Padding(4)
         Me.Search.Name = "Search"
         Me.Search.Size = New System.Drawing.Size(201, 59)
@@ -91,7 +93,7 @@ Partial Class Form5
         '
         'CrystalReportViewer1
         '
-        Me.CrystalReportViewer1.ActiveViewIndex = 0
+        Me.CrystalReportViewer1.ActiveViewIndex = -1
         Me.CrystalReportViewer1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.CrystalReportViewer1.Cursor = System.Windows.Forms.Cursors.Default
         Me.CrystalReportViewer1.Dock = System.Windows.Forms.DockStyle.Fill
@@ -100,6 +102,15 @@ Partial Class Form5
         Me.CrystalReportViewer1.Size = New System.Drawing.Size(1531, 696)
         Me.CrystalReportViewer1.TabIndex = 2
         Me.CrystalReportViewer1.ToolPanelView = CrystalDecisions.Windows.Forms.ToolPanelViewType.None
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(1357, 8)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(174, 72)
+        Me.Button1.TabIndex = 5
+        Me.Button1.Text = "back"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'Form5
         '
@@ -125,4 +136,5 @@ Partial Class Form5
     Friend WithEvents CrystalReportViewer1 As CrystalDecisions.Windows.Forms.CrystalReportViewer
     Friend WithEvents CrystalReport11 As CrystalReport1
     Friend CrystalReport12 As wav_Virtual_Dispatcher_v1._2.CrystalReport1
+    Friend WithEvents Button1 As Button
 End Class

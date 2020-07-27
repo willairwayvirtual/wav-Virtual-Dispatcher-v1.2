@@ -37,7 +37,7 @@ Partial Class Form3mll
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1489, 0)
+        Me.Button1.Location = New System.Drawing.Point(1412, 1)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(156, 27)
         Me.Button1.TabIndex = 1
@@ -46,7 +46,7 @@ Partial Class Form3mll
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(1303, 0)
+        Me.Button2.Location = New System.Drawing.Point(1217, 1)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(189, 27)
         Me.Button2.TabIndex = 2
@@ -59,7 +59,7 @@ Partial Class Form3mll
         Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
-        Me.wavMenu.Size = New System.Drawing.Size(1591, 30)
+        Me.wavMenu.Size = New System.Drawing.Size(1660, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -67,7 +67,7 @@ Partial Class Form3mll
         '
         Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.PrintToolStripMenuItem, Me.ExitToolStripMenuItem})
         Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 26)
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
         Me.FileToolStripMenuItem.Text = "file"
         '
         'NewToolStripMenuItem
@@ -110,7 +110,7 @@ Partial Class Form3mll
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.ClientSize = New System.Drawing.Size(1591, 725)
+        Me.ClientSize = New System.Drawing.Size(1660, 725)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.wavMenu)
@@ -118,6 +118,7 @@ Partial Class Form3mll
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.MainMenuStrip = Me.wavMenu
         Me.Name = "Form3mll"
+        Me.Text = "wav Dispatch Center"
         Me.wavMenu.ResumeLayout(False)
         Me.wavMenu.PerformLayout()
         Me.ResumeLayout(False)
