@@ -1024,7 +1024,7 @@ Partial Class Form3mll
         '
         Me.Button7.Location = New System.Drawing.Point(1625, 0)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(176, 73)
+        Me.Button7.Size = New System.Drawing.Size(176, 59)
         Me.Button7.TabIndex = 4
         Me.Button7.Text = "save to mfs20020"
         Me.Button7.UseVisualStyleBackColor = True
