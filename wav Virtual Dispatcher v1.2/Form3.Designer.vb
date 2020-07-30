@@ -39,6 +39,12 @@ Partial Class Form3mll
         Me.alternates = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.save1 = New System.Windows.Forms.Button()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.wavMenu.SuspendLayout()
         Me.SuspendLayout()
         '
@@ -66,7 +72,7 @@ Partial Class Form3mll
         Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
-        Me.wavMenu.Size = New System.Drawing.Size(1723, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1739, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -204,12 +210,60 @@ Partial Class Form3mll
         Me.save1.Text = "save"
         Me.save1.UseVisualStyleBackColor = True
         '
+        'Panel1
+        '
+        Me.Panel1.Location = New System.Drawing.Point(0, 75)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(1723, 100)
+        Me.Panel1.TabIndex = 48
+        '
+        'Panel2
+        '
+        Me.Panel2.Location = New System.Drawing.Point(0, 217)
+        Me.Panel2.Name = "Panel2"
+        Me.Panel2.Size = New System.Drawing.Size(1736, 79)
+        Me.Panel2.TabIndex = 49
+        '
+        'Panel3
+        '
+        Me.Panel3.Location = New System.Drawing.Point(0, 348)
+        Me.Panel3.Name = "Panel3"
+        Me.Panel3.Size = New System.Drawing.Size(1772, 58)
+        Me.Panel3.TabIndex = 50
+        '
+        'Panel4
+        '
+        Me.Panel4.Location = New System.Drawing.Point(0, 447)
+        Me.Panel4.Name = "Panel4"
+        Me.Panel4.Size = New System.Drawing.Size(1736, 105)
+        Me.Panel4.TabIndex = 51
+        '
+        'Panel5
+        '
+        Me.Panel5.Location = New System.Drawing.Point(0, 582)
+        Me.Panel5.Name = "Panel5"
+        Me.Panel5.Size = New System.Drawing.Size(1723, 85)
+        Me.Panel5.TabIndex = 52
+        '
+        'Panel6
+        '
+        Me.Panel6.Location = New System.Drawing.Point(0, 823)
+        Me.Panel6.Name = "Panel6"
+        Me.Panel6.Size = New System.Drawing.Size(1739, 55)
+        Me.Panel6.TabIndex = 53
+        '
         'Form3mll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.ClientSize = New System.Drawing.Size(1723, 873)
+        Me.ClientSize = New System.Drawing.Size(1739, 890)
+        Me.Controls.Add(Me.Panel6)
+        Me.Controls.Add(Me.Panel5)
+        Me.Controls.Add(Me.Panel4)
+        Me.Controls.Add(Me.Panel3)
+        Me.Controls.Add(Me.Panel2)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.save1)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.alternates)
@@ -248,4 +302,10 @@ Partial Class Form3mll
     Friend WithEvents alternates As Button
     Friend WithEvents Button12 As Button
     Friend WithEvents save1 As Button
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents Panel2 As Panel
+    Friend WithEvents Panel3 As Panel
+    Friend WithEvents Panel4 As Panel
+    Friend WithEvents Panel5 As Panel
+    Friend WithEvents Panel6 As Panel
 End Class
