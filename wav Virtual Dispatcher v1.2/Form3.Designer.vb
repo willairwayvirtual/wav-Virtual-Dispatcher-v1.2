@@ -106,12 +106,21 @@ Partial Class Form3mll
         Me.Label43 = New System.Windows.Forms.Label()
         Me.RouteTextBox2 = New System.Windows.Forms.TextBox()
         Me.AIRTPORTextBox3 = New System.Windows.Forms.TextBox()
+        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
         Me.Panel3.SuspendLayout()
         Me.Panel4.SuspendLayout()
         Me.Panel5.SuspendLayout()
+        Me.Panel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -138,7 +147,7 @@ Partial Class Form3mll
         Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
-        Me.wavMenu.Size = New System.Drawing.Size(1739, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1840, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -374,9 +383,17 @@ Partial Class Form3mll
         '
         'Panel6
         '
+        Me.Panel6.Controls.Add(Me.Button10)
+        Me.Panel6.Controls.Add(Me.Button9)
+        Me.Panel6.Controls.Add(Me.Button8)
+        Me.Panel6.Controls.Add(Me.Button7)
+        Me.Panel6.Controls.Add(Me.Button6)
+        Me.Panel6.Controls.Add(Me.Button5)
+        Me.Panel6.Controls.Add(Me.Button4)
+        Me.Panel6.Controls.Add(Me.Button3)
         Me.Panel6.Location = New System.Drawing.Point(0, 823)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1739, 55)
+        Me.Panel6.Size = New System.Drawing.Size(1840, 84)
         Me.Panel6.TabIndex = 53
         '
         'Label18
@@ -967,12 +984,84 @@ Partial Class Form3mll
         Me.AIRTPORTextBox3.Size = New System.Drawing.Size(161, 80)
         Me.AIRTPORTextBox3.TabIndex = 46
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(3, 3)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(266, 52)
+        Me.Button3.TabIndex = 0
+        Me.Button3.Text = "save to pmdg"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(557, 3)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(215, 52)
+        Me.Button4.TabIndex = 1
+        Me.Button4.Text = "save to qualitywingssim 787"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(990, 3)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(249, 52)
+        Me.Button5.TabIndex = 2
+        Me.Button5.Text = "save to aerosoft Airbus family"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(1448, 0)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(200, 49)
+        Me.Button6.TabIndex = 3
+        Me.Button6.Text = "save to fs labs"
+        Me.Button6.UseVisualStyleBackColor = True
+        '
+        'Button7
+        '
+        Me.Button7.Location = New System.Drawing.Point(1644, 0)
+        Me.Button7.Name = "Button7"
+        Me.Button7.Size = New System.Drawing.Size(157, 48)
+        Me.Button7.TabIndex = 4
+        Me.Button7.Text = "save to mfs20020"
+        Me.Button7.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(275, 3)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(266, 52)
+        Me.Button8.TabIndex = 5
+        Me.Button8.Text = "save to pmdg p3d"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(778, 3)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(215, 52)
+        Me.Button9.TabIndex = 6
+        Me.Button9.Text = "save to qualitywingssim 787 p3d"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(1235, 3)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(207, 52)
+        Me.Button10.TabIndex = 7
+        Me.Button10.Text = "save to aerosoft Airbus family p3d"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
         'Form3mll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.ClientSize = New System.Drawing.Size(1739, 890)
+        Me.ClientSize = New System.Drawing.Size(1840, 911)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
@@ -1006,6 +1095,7 @@ Partial Class Form3mll
         Me.Panel4.PerformLayout()
         Me.Panel5.ResumeLayout(False)
         Me.Panel5.PerformLayout()
+        Me.Panel6.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1094,4 +1184,12 @@ Partial Class Form3mll
     Friend WithEvents Label43 As Label
     Friend WithEvents RouteTextBox2 As TextBox
     Friend WithEvents AIRTPORTextBox3 As TextBox
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button8 As Button
+    Friend WithEvents Button7 As Button
+    Friend WithEvents Button6 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button3 As Button
 End Class
