@@ -393,7 +393,7 @@ Partial Class Form3mll
         Me.Panel6.Controls.Add(Me.Button3)
         Me.Panel6.Location = New System.Drawing.Point(0, 823)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1840, 84)
+        Me.Panel6.Size = New System.Drawing.Size(1840, 76)
         Me.Panel6.TabIndex = 53
         '
         'Label18
@@ -1013,18 +1013,18 @@ Partial Class Form3mll
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(1448, 0)
+        Me.Button6.Location = New System.Drawing.Point(1448, 3)
         Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(200, 49)
+        Me.Button6.Size = New System.Drawing.Size(171, 56)
         Me.Button6.TabIndex = 3
         Me.Button6.Text = "save to fs labs"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(1644, 0)
+        Me.Button7.Location = New System.Drawing.Point(1625, 0)
         Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(157, 48)
+        Me.Button7.Size = New System.Drawing.Size(176, 73)
         Me.Button7.TabIndex = 4
         Me.Button7.Text = "save to mfs20020"
         Me.Button7.UseVisualStyleBackColor = True
@@ -1184,12 +1184,12 @@ Partial Class Form3mll
     Friend WithEvents Label43 As Label
     Friend WithEvents RouteTextBox2 As TextBox
     Friend WithEvents AIRTPORTextBox3 As TextBox
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
     Friend WithEvents Button7 As Button
     Friend WithEvents Button6 As Button
     Friend WithEvents Button5 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button8 As Button
 End Class
