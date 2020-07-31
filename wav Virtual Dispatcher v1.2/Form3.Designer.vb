@@ -41,7 +41,7 @@ Partial Class Form3mll
         Me.save1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.regisComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.opeTextBox3 = New System.Windows.Forms.TextBox()
@@ -69,7 +69,7 @@ Partial Class Form3mll
         Me.Label5 = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
+        Me.airtComboBox1 = New System.Windows.Forms.ComboBox()
         Me.lanTextBox17 = New System.Windows.Forms.TextBox()
         Me.takeTextBox16 = New System.Windows.Forms.TextBox()
         Me.cruiseTextBox15 = New System.Windows.Forms.TextBox()
@@ -292,7 +292,7 @@ Partial Class Form3mll
         'Panel1
         '
         Me.Panel1.Controls.Add(Me.Label1)
-        Me.Panel1.Controls.Add(Me.ComboBox3)
+        Me.Panel1.Controls.Add(Me.regisComboBox3)
         Me.Panel1.Controls.Add(Me.Label18)
         Me.Panel1.Controls.Add(Me.Label17)
         Me.Panel1.Controls.Add(Me.opeTextBox3)
@@ -335,15 +335,15 @@ Partial Class Form3mll
         Me.Label1.TabIndex = 94
         Me.Label1.Text = "registration"
         '
-        'ComboBox3
+        'regisComboBox3
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"registration", "appev1", "appev2", "df01", "df02", "df03", "df04", "df05", "df06", "df07", "df08", "df09", "df10", "df11", "df12", "df13", "df14", "df15", "df16", "df17", "df18", "df18", "df18", "df19", "df08", "df20", "df21", "df22", "df11", "df21", "fs expo1", "fs expo2", "fs expo3", "fs expo3", "wa86", "wac12", "wac13", "wac5", "wav ein1", "wav ein10", "wav ein10", "wav ein11", "wav ein11", "wav ein12", "wav ein13", "wav ein14", "wav ein15", "wav ein16", "wav ein17", "wav ein18", "wav ein19", "wav ein2", "wav ein20", "wav ein21", "wav ein22", "wav ein3", "wav ein4", "wav ein5", "wav ein6", "wav ein7", "wav ein8", "wav ein9", "wav01", "wav02", "wav03", "wav04", "wav05", "wav06", "wav07", "wav08", "wav09", "wav10", "wav11", "wav12", "wav13", "wav14", "wav15", "wav16", "wav17", "wav18", "wav19", "wav20", "wav21", "wav22", "wav25", "wav26", "wav27", "wav28", "wav29", "wav30", "wav31", "wav32", "wav33", "wav34", "wav35", "wav36", "wav37", "wav38", "wav39", "wav40", "wav41", "wav42", "wav43", "wav44", "wav45", "wav46", "wav47", "wav49", "wav50", "wav51", "wav52", "wav53", "wav54", "wav55", "wav57", "wav58", "wav59", "wav60", "wav61", "wav62", "wav63", "wav64", "wav65", "wav66", "wav70", "wav71", "wav72", "wav73", "wav74", "wav75", "wav76", "wav77", "wav80", "wav81", "wav82", "wav83", "wav84", "wav85", "wav87", "wav991", "wav991", "wav991", "wav991", "wav999", "wav999", "wav999", "wav999", "wavbus1", "wavbus10", "wavbus2", "wavbus3", "wavbus4", "wavbus5", "wavbus6", "wavbus7", "wavbus8", "wavbus9", "wavc0", "wavc1", "wavc10", "wavc11", "wavc11", "wavc14", "wavc15", "wavc15", "wavc16", "wav16", "wav53", "wavc2", "wavc3", "wavc4", "wavc6", "wavc7", "wavc8", "wavc9", "wavctp1", "wavctp2", "wavctp3", "wavctp4", "wavctp5", "wavctp6", "wavdow1", "wavdow1", "wavdow2", "wavdow2", "wavdow3", "wavdow3", "wavdow4", "wavdow4", "wavdow5", "wavdow6", "wavh1", "wavh10", "wavh2", "wavh3", "wavh4", "wavh5", "wavh6", "wavh7", "wavh8", "wavh9", "wavhaw1", "wavhaw1", "wavhaw2", "wavhaw2", "wavL1", "wavL1", "wavL2", "wavL3", "wavL4", "wavL5", "wavL5", "wavl7", "wavl8", "wavl9", "wavnz1", "wavnz1", "wavnz2", "wavnz2", "g-bsyy", "G-mfp", "g-bsyy", "g-bmfp", "g-bsyy", "wavus1", "wavus10", "wavus11", "wavus12", "wavus13", "wavus14", "wavus15", "wavus16", "wavus17", "wavus18", "wavus19", "wavus2", "wavus3", "wavus4", "wavus5", "wavus6", "wavus7", "wavus8", "wavus9", "wwdc1", "wwdc2", "wwdc3", "wwdc4", "", "", "", "", "", "", "", "", "", "", ""})
-        Me.ComboBox3.Location = New System.Drawing.Point(1477, 48)
-        Me.ComboBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(155, 24)
-        Me.ComboBox3.TabIndex = 93
+        Me.regisComboBox3.FormattingEnabled = True
+        Me.regisComboBox3.Items.AddRange(New Object() {"registration", "appev1", "appev2", "df01", "df02", "df03", "df04", "df05", "df06", "df07", "df08", "df09", "df10", "df11", "df12", "df13", "df14", "df15", "df16", "df17", "df18", "df18", "df18", "df19", "df08", "df20", "df21", "df22", "df11", "df21", "fs expo1", "fs expo2", "fs expo3", "fs expo3", "wa86", "wac12", "wac13", "wac5", "wav ein1", "wav ein10", "wav ein10", "wav ein11", "wav ein11", "wav ein12", "wav ein13", "wav ein14", "wav ein15", "wav ein16", "wav ein17", "wav ein18", "wav ein19", "wav ein2", "wav ein20", "wav ein21", "wav ein22", "wav ein3", "wav ein4", "wav ein5", "wav ein6", "wav ein7", "wav ein8", "wav ein9", "wav01", "wav02", "wav03", "wav04", "wav05", "wav06", "wav07", "wav08", "wav09", "wav10", "wav11", "wav12", "wav13", "wav14", "wav15", "wav16", "wav17", "wav18", "wav19", "wav20", "wav21", "wav22", "wav25", "wav26", "wav27", "wav28", "wav29", "wav30", "wav31", "wav32", "wav33", "wav34", "wav35", "wav36", "wav37", "wav38", "wav39", "wav40", "wav41", "wav42", "wav43", "wav44", "wav45", "wav46", "wav47", "wav49", "wav50", "wav51", "wav52", "wav53", "wav54", "wav55", "wav57", "wav58", "wav59", "wav60", "wav61", "wav62", "wav63", "wav64", "wav65", "wav66", "wav70", "wav71", "wav72", "wav73", "wav74", "wav75", "wav76", "wav77", "wav80", "wav81", "wav82", "wav83", "wav84", "wav85", "wav87", "wav991", "wav991", "wav991", "wav991", "wav999", "wav999", "wav999", "wav999", "wavbus1", "wavbus10", "wavbus2", "wavbus3", "wavbus4", "wavbus5", "wavbus6", "wavbus7", "wavbus8", "wavbus9", "wavc0", "wavc1", "wavc10", "wavc11", "wavc11", "wavc14", "wavc15", "wavc15", "wavc16", "wav16", "wav53", "wavc2", "wavc3", "wavc4", "wavc6", "wavc7", "wavc8", "wavc9", "wavctp1", "wavctp2", "wavctp3", "wavctp4", "wavctp5", "wavctp6", "wavdow1", "wavdow1", "wavdow2", "wavdow2", "wavdow3", "wavdow3", "wavdow4", "wavdow4", "wavdow5", "wavdow6", "wavh1", "wavh10", "wavh2", "wavh3", "wavh4", "wavh5", "wavh6", "wavh7", "wavh8", "wavh9", "wavhaw1", "wavhaw1", "wavhaw2", "wavhaw2", "wavL1", "wavL1", "wavL2", "wavL3", "wavL4", "wavL5", "wavL5", "wavl7", "wavl8", "wavl9", "wavnz1", "wavnz1", "wavnz2", "wavnz2", "g-bsyy", "G-mfp", "g-bsyy", "g-bmfp", "g-bsyy", "wavus1", "wavus10", "wavus11", "wavus12", "wavus13", "wavus14", "wavus15", "wavus16", "wavus17", "wavus18", "wavus19", "wavus2", "wavus3", "wavus4", "wavus5", "wavus6", "wavus7", "wavus8", "wavus9", "wwdc1", "wwdc2", "wwdc3", "wwdc4", "", "", "", "", "", "", "", "", "", "", ""})
+        Me.regisComboBox3.Location = New System.Drawing.Point(1477, 48)
+        Me.regisComboBox3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.regisComboBox3.Name = "regisComboBox3"
+        Me.regisComboBox3.Size = New System.Drawing.Size(155, 24)
+        Me.regisComboBox3.TabIndex = 93
         '
         'Label18
         '
@@ -601,7 +601,7 @@ Partial Class Form3mll
         '
         'Panel2
         '
-        Me.Panel2.Controls.Add(Me.ComboBox1)
+        Me.Panel2.Controls.Add(Me.airtComboBox1)
         Me.Panel2.Controls.Add(Me.lanTextBox17)
         Me.Panel2.Controls.Add(Me.takeTextBox16)
         Me.Panel2.Controls.Add(Me.cruiseTextBox15)
@@ -619,15 +619,15 @@ Partial Class Form3mll
         Me.Panel2.Size = New System.Drawing.Size(1632, 71)
         Me.Panel2.TabIndex = 49
         '
-        'ComboBox1
+        'airtComboBox1
         '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"AircraftType", "747-400", "747-400", "777-er", "787-9", "747-400", "747-400", "a18", "777-er", "777-er", "777-f", "787-9", "747-f", "a19", "787-9", "787-9", "a320", "a321", "a321", "777-er", "a321", "a321", "a19", "747-400", "777-f", "747-400", "a18", "747-400", "a19", "a18", "747-400", "747-400", "747-400", "747-400", "a321", "777-f", "777-f", "777-f", "777-er", "747-f", "747-f", "777-er", "a19", "777er", "787-9", "a320", "777-er", "787-9", "a320", "a321", "a321", "777f", "a321", "a321", "a321", "777f", "a18", "777er", "a18", "747-400", "747-400", "747-f", "777-er", "777-er", "747-400", "747-400", "737-300", "737-300", "747-400", "747-400", "787-9", "787-9", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "747-400", "747-400", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "747-400", "747-400", "747-400", "747-400", "777-er", "777-er", "777-er", "777-er", "787-9", "787-9", "787-9", "787-9", "787-9", "787-9", "787-9", "787-9", "a19", "a19", "a19", "a19", "787-9", "787-9", "a320", "a320", "a320", "a320", "777-er", "777-er", "777-er", "777-er", "747-400", "747-400", "a321", "a321", "a321", "a321", "787-9", "787-9", "787-9", "787-9", "777-er", "777-er", "787-9", "787-9", "a321", "747-400", "747-400", "a19", "a19", "747-400", "747-400", "a19", "a19", "777-er", "747-400", "777-er", "747-400", "747-400", "a321", "a321", "a321", "777-er", "747-400", "777-f", "777-f", "747-f", "747-f", "747-f", "77-f", "77-f", "77-f", "777f", "77f", "777f", "777-f", "777-f", "777-f", "77-f", "777-f", "747-f", "747-f", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "787-9", "787-9", "787-9", "787-9", "777-er", "777-er", "777-er", "777-er", "787-9", "787-9", "747-400", "787-9", "747-400", "747-400", "747-400", "747-400", "747-400", "747-400", "747-400", "787-9", "747-400", "747-400", "747-400", "747-400", "a18", "a18", "a18", "a18", "a18", "a18", "a18", "a18", "a18", "a18", "777-er", "777-er", "777-er", "777-er", "PA-28 ", "PA-28 ", "PA-28 ", "PA-28 ", "PA-28 ", "777-er", "a321", "747-400", "747-400", "777-er", "777-er", "747-400", "a321", "a321", "a321", "a321", "777-er", "a321", "a321", "a321", "a321", "777-er", "777-er", "a321", "747-400", "747-400", "747-400", "747-400", "", "", "", "", "", "", "", "", "", "", ""})
-        Me.ComboBox1.Location = New System.Drawing.Point(0, 38)
-        Me.ComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(155, 24)
-        Me.ComboBox1.TabIndex = 75
+        Me.airtComboBox1.FormattingEnabled = True
+        Me.airtComboBox1.Items.AddRange(New Object() {"AircraftType", "747-400", "747-400", "777-er", "787-9", "747-400", "747-400", "a18", "777-er", "777-er", "777-f", "787-9", "747-f", "a19", "787-9", "787-9", "a320", "a321", "a321", "777-er", "a321", "a321", "a19", "747-400", "777-f", "747-400", "a18", "747-400", "a19", "a18", "747-400", "747-400", "747-400", "747-400", "a321", "777-f", "777-f", "777-f", "777-er", "747-f", "747-f", "777-er", "a19", "777er", "787-9", "a320", "777-er", "787-9", "a320", "a321", "a321", "777f", "a321", "a321", "a321", "777f", "a18", "777er", "a18", "747-400", "747-400", "747-f", "777-er", "777-er", "747-400", "747-400", "737-300", "737-300", "747-400", "747-400", "787-9", "787-9", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "747-400", "747-400", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "747-400", "747-400", "747-400", "747-400", "777-er", "777-er", "777-er", "777-er", "787-9", "787-9", "787-9", "787-9", "787-9", "787-9", "787-9", "787-9", "a19", "a19", "a19", "a19", "787-9", "787-9", "a320", "a320", "a320", "a320", "777-er", "777-er", "777-er", "777-er", "747-400", "747-400", "a321", "a321", "a321", "a321", "787-9", "787-9", "787-9", "787-9", "777-er", "777-er", "787-9", "787-9", "a321", "747-400", "747-400", "a19", "a19", "747-400", "747-400", "a19", "a19", "777-er", "747-400", "777-er", "747-400", "747-400", "a321", "a321", "a321", "777-er", "747-400", "777-f", "777-f", "747-f", "747-f", "747-f", "77-f", "77-f", "77-f", "777f", "77f", "777f", "777-f", "777-f", "777-f", "77-f", "777-f", "747-f", "747-f", "777-er", "777-er", "777-er", "777-er", "777-er", "777-er", "787-9", "787-9", "787-9", "787-9", "777-er", "777-er", "777-er", "777-er", "787-9", "787-9", "747-400", "787-9", "747-400", "747-400", "747-400", "747-400", "747-400", "747-400", "747-400", "787-9", "747-400", "747-400", "747-400", "747-400", "a18", "a18", "a18", "a18", "a18", "a18", "a18", "a18", "a18", "a18", "777-er", "777-er", "777-er", "777-er", "PA-28 ", "PA-28 ", "PA-28 ", "PA-28 ", "PA-28 ", "777-er", "a321", "747-400", "747-400", "777-er", "777-er", "747-400", "a321", "a321", "a321", "a321", "777-er", "a321", "a321", "a321", "a321", "777-er", "777-er", "a321", "747-400", "747-400", "747-400", "747-400", "", "", "", "", "", "", "", "", "", "", ""})
+        Me.airtComboBox1.Location = New System.Drawing.Point(0, 38)
+        Me.airtComboBox1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.airtComboBox1.Name = "airtComboBox1"
+        Me.airtComboBox1.Size = New System.Drawing.Size(155, 24)
+        Me.airtComboBox1.TabIndex = 75
         '
         'lanTextBox17
         '
@@ -1158,7 +1158,7 @@ Partial Class Form3mll
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel6 As Panel
     Friend WithEvents Label1 As Label
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents regisComboBox3 As ComboBox
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents opeTextBox3 As TextBox
@@ -1185,7 +1185,7 @@ Partial Class Form3mll
     Friend WithEvents Label6 As Label
     Friend WithEvents Label5 As Label
     Friend WithEvents Label4 As Label
-    Friend WithEvents ComboBox1 As ComboBox
+    Friend WithEvents airtComboBox1 As ComboBox
     Friend WithEvents lanTextBox17 As TextBox
     Friend WithEvents takeTextBox16 As TextBox
     Friend WithEvents cruiseTextBox15 As TextBox
