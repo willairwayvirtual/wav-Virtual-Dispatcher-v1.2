@@ -126,7 +126,7 @@ Partial Class Form3mll
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1369, 0)
+        Me.Button1.Location = New System.Drawing.Point(1519, 0)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(156, 27)
@@ -136,7 +136,7 @@ Partial Class Form3mll
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(1172, 0)
+        Me.Button2.Location = New System.Drawing.Point(1336, 0)
         Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(189, 27)
@@ -965,11 +965,11 @@ Partial Class Form3mll
         'RouteTextBox2
         '
         Me.RouteTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RouteTextBox2.Location = New System.Drawing.Point(164, 27)
+        Me.RouteTextBox2.Location = New System.Drawing.Point(164, 4)
         Me.RouteTextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
         Me.RouteTextBox2.Multiline = True
         Me.RouteTextBox2.Name = "RouteTextBox2"
-        Me.RouteTextBox2.Size = New System.Drawing.Size(1555, 83)
+        Me.RouteTextBox2.Size = New System.Drawing.Size(1555, 106)
         Me.RouteTextBox2.TabIndex = 47
         '
         'AIRTPORTextBox3
