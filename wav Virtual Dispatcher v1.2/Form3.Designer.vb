@@ -112,6 +112,9 @@ Partial Class Form3mll
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button10 = New System.Windows.Forms.Button()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -148,7 +151,7 @@ Partial Class Form3mll
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1536, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -981,21 +984,24 @@ Partial Class Form3mll
         '
         'Panel6
         '
+        Me.Panel6.Controls.Add(Me.Button10)
+        Me.Panel6.Controls.Add(Me.Button9)
+        Me.Panel6.Controls.Add(Me.Button8)
         Me.Panel6.Controls.Add(Me.Button11)
         Me.Panel6.Controls.Add(Me.Button7)
         Me.Panel6.Controls.Add(Me.Button6)
         Me.Panel6.Controls.Add(Me.Button5)
         Me.Panel6.Controls.Add(Me.Button4)
         Me.Panel6.Controls.Add(Me.Button3)
-        Me.Panel6.Location = New System.Drawing.Point(155, 778)
+        Me.Panel6.Location = New System.Drawing.Point(0, 778)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1292, 62)
+        Me.Panel6.Size = New System.Drawing.Size(1695, 111)
         Me.Panel6.TabIndex = 53
         '
         'Button11
         '
-        Me.Button11.Location = New System.Drawing.Point(1167, 1)
+        Me.Button11.Location = New System.Drawing.Point(0, 58)
         Me.Button11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(115, 57)
@@ -1005,7 +1011,7 @@ Partial Class Form3mll
         '
         'Button7
         '
-        Me.Button7.Location = New System.Drawing.Point(985, 2)
+        Me.Button7.Location = New System.Drawing.Point(1490, 0)
         Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(176, 59)
@@ -1015,7 +1021,7 @@ Partial Class Form3mll
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(804, 5)
+        Me.Button6.Location = New System.Drawing.Point(1326, -2)
         Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(171, 57)
@@ -1025,7 +1031,7 @@ Partial Class Form3mll
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(520, 2)
+        Me.Button5.Location = New System.Drawing.Point(834, 0)
         Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(249, 52)
@@ -1035,7 +1041,7 @@ Partial Class Form3mll
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(284, 5)
+        Me.Button4.Location = New System.Drawing.Point(424, -2)
         Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(215, 52)
@@ -1048,17 +1054,47 @@ Partial Class Form3mll
         Me.Button3.Location = New System.Drawing.Point(3, 2)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(267, 52)
+        Me.Button3.Size = New System.Drawing.Size(222, 50)
         Me.Button3.TabIndex = 0
         Me.Button3.Text = "save to pmdg"
         Me.Button3.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(1071, -1)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(249, 52)
+        Me.Button8.TabIndex = 9
+        Me.Button8.Text = "save to aerosoft Airbus family p3d"
+        Me.Button8.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(638, 0)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(215, 52)
+        Me.Button9.TabIndex = 10
+        Me.Button9.Text = "save to qualitywingssim 787 p3d"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(219, -2)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(210, 54)
+        Me.Button10.TabIndex = 11
+        Me.Button10.Text = "save to pmdg p3d"
+        Me.Button10.UseVisualStyleBackColor = True
         '
         'Form3mll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.ClientSize = New System.Drawing.Size(1536, 846)
+        Me.ClientSize = New System.Drawing.Size(1659, 891)
         Me.Controls.Add(Me.Panel6)
         Me.Controls.Add(Me.Panel5)
         Me.Controls.Add(Me.Panel4)
@@ -1188,4 +1224,7 @@ Partial Class Form3mll
     Friend WithEvents Button4 As Button
     Friend WithEvents Button3 As Button
     Friend WithEvents Button11 As Button
+    Friend WithEvents Button10 As Button
+    Friend WithEvents Button9 As Button
+    Friend WithEvents Button8 As Button
 End Class
