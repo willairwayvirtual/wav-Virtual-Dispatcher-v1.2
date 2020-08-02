@@ -1033,7 +1033,7 @@ Partial Class Form3mll
         '
         'mfs20020
         '
-        Me.mfs20020.Location = New System.Drawing.Point(1490, 0)
+        Me.mfs20020.Location = New System.Drawing.Point(1499, -3)
         Me.mfs20020.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.mfs20020.Name = "mfs20020"
         Me.mfs20020.Size = New System.Drawing.Size(176, 59)
