@@ -964,7 +964,7 @@ Partial Class Form3mll
         Me.Button10.Name = "Button10"
         Me.Button10.Size = New System.Drawing.Size(210, 54)
         Me.Button10.TabIndex = 11
-        Me.Button10.Text = "save to pmdg p3d"
+        Me.Button10.Text = "expot  to pmdg p3d"
         Me.Button10.UseVisualStyleBackColor = True
         '
         'Button9
@@ -974,7 +974,7 @@ Partial Class Form3mll
         Me.Button9.Name = "Button9"
         Me.Button9.Size = New System.Drawing.Size(215, 52)
         Me.Button9.TabIndex = 10
-        Me.Button9.Text = "save to qualitywingssim 787 p3d"
+        Me.Button9.Text = "expot  to qualitywingssim 787 p3d"
         Me.Button9.UseVisualStyleBackColor = True
         '
         'Button8
@@ -984,7 +984,7 @@ Partial Class Form3mll
         Me.Button8.Name = "Button8"
         Me.Button8.Size = New System.Drawing.Size(249, 52)
         Me.Button8.TabIndex = 9
-        Me.Button8.Text = "save to aerosoft Airbus family p3d"
+        Me.Button8.Text = "expot  to aerosoft Airbus family p3d"
         Me.Button8.UseVisualStyleBackColor = True
         '
         'Button11
@@ -994,7 +994,7 @@ Partial Class Form3mll
         Me.Button11.Name = "Button11"
         Me.Button11.Size = New System.Drawing.Size(180, 57)
         Me.Button11.TabIndex = 8
-        Me.Button11.Text = "save to vatsim"
+        Me.Button11.Text = "expot  to vatsim"
         Me.Button11.UseVisualStyleBackColor = True
         '
         'Button7
@@ -1004,7 +1004,7 @@ Partial Class Form3mll
         Me.Button7.Name = "Button7"
         Me.Button7.Size = New System.Drawing.Size(176, 59)
         Me.Button7.TabIndex = 4
-        Me.Button7.Text = "save to mfs20020"
+        Me.Button7.Text = "expot  to mfs20020"
         Me.Button7.UseVisualStyleBackColor = True
         '
         'Button6
@@ -1014,7 +1014,7 @@ Partial Class Form3mll
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(171, 57)
         Me.Button6.TabIndex = 3
-        Me.Button6.Text = "save to fs labs"
+        Me.Button6.Text = "expot  to fs labs"
         Me.Button6.UseVisualStyleBackColor = True
         '
         'Button5
@@ -1024,7 +1024,7 @@ Partial Class Form3mll
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(249, 52)
         Me.Button5.TabIndex = 2
-        Me.Button5.Text = "save to aerosoft Airbus family"
+        Me.Button5.Text = "expot  to aerosoft Airbus family"
         Me.Button5.UseVisualStyleBackColor = True
         '
         'Button4
@@ -1034,17 +1034,17 @@ Partial Class Form3mll
         Me.Button4.Name = "Button4"
         Me.Button4.Size = New System.Drawing.Size(215, 52)
         Me.Button4.TabIndex = 1
-        Me.Button4.Text = "save to qualitywingssim 787"
+        Me.Button4.Text = "expot to qualitywingssim 787"
         Me.Button4.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(3, 2)
+        Me.Button3.Location = New System.Drawing.Point(0, 9)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(222, 50)
         Me.Button3.TabIndex = 0
-        Me.Button3.Text = "save to pmdg"
+        Me.Button3.Text = "expot to pmdg"
         Me.Button3.UseVisualStyleBackColor = True
         '
         'New2
