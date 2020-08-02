@@ -110,7 +110,7 @@ Partial Class Form3mll
         Me.Button8airbus = New System.Windows.Forms.Button()
         Me.Button11vatsim = New System.Windows.Forms.Button()
         Me.mfs20020 = New System.Windows.Forms.Button()
-        Me.Button6 = New System.Windows.Forms.Button()
+        Me.Button6fslabs = New System.Windows.Forms.Button()
         Me.Buttonairbus = New System.Windows.Forms.Button()
         Me.Button787 = New System.Windows.Forms.Button()
         Me.pmdg = New System.Windows.Forms.Button()
@@ -981,7 +981,7 @@ Partial Class Form3mll
         Me.Panel6.Controls.Add(Me.Button8airbus)
         Me.Panel6.Controls.Add(Me.Button11vatsim)
         Me.Panel6.Controls.Add(Me.mfs20020)
-        Me.Panel6.Controls.Add(Me.Button6)
+        Me.Panel6.Controls.Add(Me.Button6fslabs)
         Me.Panel6.Controls.Add(Me.Buttonairbus)
         Me.Panel6.Controls.Add(Me.Button787)
         Me.Panel6.Controls.Add(Me.pmdg)
@@ -1041,15 +1041,15 @@ Partial Class Form3mll
         Me.mfs20020.Text = "expot  to mfs20020"
         Me.mfs20020.UseVisualStyleBackColor = True
         '
-        'Button6
+        'Button6fslabs
         '
-        Me.Button6.Location = New System.Drawing.Point(1326, -2)
-        Me.Button6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button6.Name = "Button6"
-        Me.Button6.Size = New System.Drawing.Size(171, 57)
-        Me.Button6.TabIndex = 3
-        Me.Button6.Text = "expot  to fs labs"
-        Me.Button6.UseVisualStyleBackColor = True
+        Me.Button6fslabs.Location = New System.Drawing.Point(1326, -2)
+        Me.Button6fslabs.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button6fslabs.Name = "Button6fslabs"
+        Me.Button6fslabs.Size = New System.Drawing.Size(171, 57)
+        Me.Button6fslabs.TabIndex = 3
+        Me.Button6fslabs.Text = "expot  to fs labs"
+        Me.Button6fslabs.UseVisualStyleBackColor = True
         '
         'Buttonairbus
         '
@@ -1205,7 +1205,7 @@ Partial Class Form3mll
     Friend WithEvents RouteTextBox2 As TextBox
     Friend WithEvents AIRTPORTextBox3 As TextBox
     Friend WithEvents mfs20020 As Button
-    Friend WithEvents Button6 As Button
+    Friend WithEvents Button6fslabs As Button
     Friend WithEvents Buttonairbus As Button
     Friend WithEvents Button787 As Button
     Friend WithEvents pmdg As Button
