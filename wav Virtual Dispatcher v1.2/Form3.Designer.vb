@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form3mll
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,19 +20,24 @@ Partial Class Form3mll
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3mll))
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.wavMenu = New System.Windows.Forms.MenuStrip()
+        Me.File1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.New2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Open3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Save4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Print5 = New System.Windows.Forms.ToolStripMenuItem()
         Me.flightinfo = New System.Windows.Forms.Button()
         Me.AircraftType = New System.Windows.Forms.Button()
         Me.PAYLOAD = New System.Windows.Forms.Button()
         Me.Route = New System.Windows.Forms.Button()
         Me.alternates = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
-        Me.save1 = New System.Windows.Forms.Button()
+        Me.export = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
         Me.registration = New System.Windows.Forms.Label()
         Me.regisComboBox3 = New System.Windows.Forms.ComboBox()
@@ -109,12 +114,6 @@ Partial Class Form3mll
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.New2 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Open3 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Save4 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.Print5 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.File1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -154,6 +153,41 @@ Partial Class Form3mll
         Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
+        '
+        'File1
+        '
+        Me.File1.Name = "File1"
+        Me.File1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
+        Me.File1.Size = New System.Drawing.Size(47, 24)
+        Me.File1.Text = "exit"
+        '
+        'New2
+        '
+        Me.New2.Name = "New2"
+        Me.New2.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.New2.Size = New System.Drawing.Size(50, 24)
+        Me.New2.Text = "new"
+        '
+        'Open3
+        '
+        Me.Open3.Name = "Open3"
+        Me.Open3.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D0), System.Windows.Forms.Keys)
+        Me.Open3.Size = New System.Drawing.Size(57, 24)
+        Me.Open3.Text = "open"
+        '
+        'Save4
+        '
+        Me.Save4.Name = "Save4"
+        Me.Save4.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.Save4.Size = New System.Drawing.Size(52, 24)
+        Me.Save4.Text = "save"
+        '
+        'Print5
+        '
+        Me.Print5.Name = "Print5"
+        Me.Print5.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
+        Me.Print5.Size = New System.Drawing.Size(54, 24)
+        Me.Print5.Text = "print"
         '
         'flightinfo
         '
@@ -237,15 +271,15 @@ Partial Class Form3mll
         Me.Button12.Text = "complete flight"
         Me.Button12.UseVisualStyleBackColor = True
         '
-        'save1
+        'export
         '
-        Me.save1.Location = New System.Drawing.Point(3, 724)
-        Me.save1.Margin = New System.Windows.Forms.Padding(4)
-        Me.save1.Name = "save1"
-        Me.save1.Size = New System.Drawing.Size(1736, 48)
-        Me.save1.TabIndex = 47
-        Me.save1.Text = "export"
-        Me.save1.UseVisualStyleBackColor = True
+        Me.export.Location = New System.Drawing.Point(3, 724)
+        Me.export.Margin = New System.Windows.Forms.Padding(4)
+        Me.export.Name = "export"
+        Me.export.Size = New System.Drawing.Size(1736, 48)
+        Me.export.TabIndex = 47
+        Me.export.Text = "export  flight paln"
+        Me.export.UseVisualStyleBackColor = True
         '
         'Panel1
         '
@@ -1047,48 +1081,6 @@ Partial Class Form3mll
         Me.Button3.Text = "expot to pmdg"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'New2
-        '
-        Me.New2.Name = "New2"
-        Me.New2.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.New2.Size = New System.Drawing.Size(50, 24)
-        Me.New2.Text = "new"
-        '
-        'Open3
-        '
-        Me.Open3.Name = "Open3"
-        Me.Open3.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D0), System.Windows.Forms.Keys)
-        Me.Open3.Size = New System.Drawing.Size(57, 24)
-        Me.Open3.Text = "open"
-        '
-        'Save4
-        '
-        Me.Save4.Name = "Save4"
-        Me.Save4.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.Save4.Size = New System.Drawing.Size(52, 24)
-        Me.Save4.Text = "save"
-        '
-        'Print5
-        '
-        Me.Print5.Name = "Print5"
-        Me.Print5.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.Print5.Size = New System.Drawing.Size(54, 24)
-        Me.Print5.Text = "print"
-        '
-        'File1
-        '
-        Me.File1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
-        Me.File1.Name = "File1"
-        Me.File1.Size = New System.Drawing.Size(47, 24)
-        Me.File1.Text = "exit"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
-        Me.ExitToolStripMenuItem.Text = "exit"
-        '
         'Form3mll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1101,7 +1093,7 @@ Partial Class Form3mll
         Me.Controls.Add(Me.Panel3)
         Me.Controls.Add(Me.Panel2)
         Me.Controls.Add(Me.Panel1)
-        Me.Controls.Add(Me.save1)
+        Me.Controls.Add(Me.export)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.alternates)
         Me.Controls.Add(Me.Route)
@@ -1144,7 +1136,7 @@ Partial Class Form3mll
     Friend WithEvents Route As Button
     Friend WithEvents alternates As Button
     Friend WithEvents Button12 As Button
-    Friend WithEvents save1 As Button
+    Friend WithEvents export As Button
     Friend WithEvents Panel1 As Panel
     Friend WithEvents Panel2 As Panel
     Friend WithEvents Panel3 As Panel
@@ -1226,5 +1218,4 @@ Partial Class Form3mll
     Friend WithEvents Save4 As ToolStripMenuItem
     Friend WithEvents Print5 As ToolStripMenuItem
     Friend WithEvents File1 As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
 End Class
