@@ -1039,7 +1039,7 @@ Partial Class Form3mll
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(0, 9)
+        Me.Button3.Location = New System.Drawing.Point(4, -2)
         Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(222, 50)
