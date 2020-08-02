@@ -24,7 +24,7 @@ Partial Class Form3mll
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form3mll))
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.fbc = New System.Windows.Forms.Button()
         Me.wavMenu = New System.Windows.Forms.MenuStrip()
         Me.File1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.New2 = New System.Windows.Forms.ToolStripMenuItem()
@@ -105,15 +105,15 @@ Partial Class Form3mll
         Me.RouteTextBox2 = New System.Windows.Forms.TextBox()
         Me.AIRTPORTextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button10 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button11 = New System.Windows.Forms.Button()
-        Me.Button7 = New System.Windows.Forms.Button()
+        Me.Buttonp3d = New System.Windows.Forms.Button()
+        Me.Button9787 = New System.Windows.Forms.Button()
+        Me.Button8airbus = New System.Windows.Forms.Button()
+        Me.Button11vatsim = New System.Windows.Forms.Button()
+        Me.mfs20020 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
-        Me.Button5 = New System.Windows.Forms.Button()
-        Me.Button4 = New System.Windows.Forms.Button()
-        Me.Button3 = New System.Windows.Forms.Button()
+        Me.Buttonairbus = New System.Windows.Forms.Button()
+        Me.Button787 = New System.Windows.Forms.Button()
+        Me.pmdg = New System.Windows.Forms.Button()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -133,15 +133,15 @@ Partial Class Form3mll
         Me.Button1.Text = "browser"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
+        'fbc
         '
-        Me.Button2.Location = New System.Drawing.Point(1336, 0)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(189, 27)
-        Me.Button2.TabIndex = 2
-        Me.Button2.Text = "go to the Flight Briefing Center"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.fbc.Location = New System.Drawing.Point(1336, 0)
+        Me.fbc.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.fbc.Name = "fbc"
+        Me.fbc.Size = New System.Drawing.Size(189, 27)
+        Me.fbc.TabIndex = 2
+        Me.fbc.Text = "go to the Flight Briefing Center"
+        Me.fbc.UseVisualStyleBackColor = True
         '
         'wavMenu
         '
@@ -150,7 +150,7 @@ Partial Class Form3mll
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -158,35 +158,35 @@ Partial Class Form3mll
         '
         Me.File1.Name = "File1"
         Me.File1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.File1.Size = New System.Drawing.Size(47, 24)
+        Me.File1.Size = New System.Drawing.Size(47, 26)
         Me.File1.Text = "exit"
         '
         'New2
         '
         Me.New2.Name = "New2"
         Me.New2.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.New2.Size = New System.Drawing.Size(50, 24)
+        Me.New2.Size = New System.Drawing.Size(50, 26)
         Me.New2.Text = "new"
         '
         'Open3
         '
         Me.Open3.Name = "Open3"
         Me.Open3.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D0), System.Windows.Forms.Keys)
-        Me.Open3.Size = New System.Drawing.Size(57, 24)
+        Me.Open3.Size = New System.Drawing.Size(57, 26)
         Me.Open3.Text = "open"
         '
         'Save4
         '
         Me.Save4.Name = "Save4"
         Me.Save4.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.Save4.Size = New System.Drawing.Size(52, 24)
+        Me.Save4.Size = New System.Drawing.Size(52, 26)
         Me.Save4.Text = "save"
         '
         'Print5
         '
         Me.Print5.Name = "Print5"
         Me.Print5.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.Print5.Size = New System.Drawing.Size(54, 24)
+        Me.Print5.Size = New System.Drawing.Size(54, 26)
         Me.Print5.Text = "print"
         '
         'flightinfo
@@ -976,70 +976,70 @@ Partial Class Form3mll
         '
         'Panel6
         '
-        Me.Panel6.Controls.Add(Me.Button10)
-        Me.Panel6.Controls.Add(Me.Button9)
-        Me.Panel6.Controls.Add(Me.Button8)
-        Me.Panel6.Controls.Add(Me.Button11)
-        Me.Panel6.Controls.Add(Me.Button7)
+        Me.Panel6.Controls.Add(Me.Buttonp3d)
+        Me.Panel6.Controls.Add(Me.Button9787)
+        Me.Panel6.Controls.Add(Me.Button8airbus)
+        Me.Panel6.Controls.Add(Me.Button11vatsim)
+        Me.Panel6.Controls.Add(Me.mfs20020)
         Me.Panel6.Controls.Add(Me.Button6)
-        Me.Panel6.Controls.Add(Me.Button5)
-        Me.Panel6.Controls.Add(Me.Button4)
-        Me.Panel6.Controls.Add(Me.Button3)
+        Me.Panel6.Controls.Add(Me.Buttonairbus)
+        Me.Panel6.Controls.Add(Me.Button787)
+        Me.Panel6.Controls.Add(Me.pmdg)
         Me.Panel6.Location = New System.Drawing.Point(0, 778)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(1695, 111)
         Me.Panel6.TabIndex = 53
         '
-        'Button10
+        'Buttonp3d
         '
-        Me.Button10.Location = New System.Drawing.Point(219, -2)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(210, 54)
-        Me.Button10.TabIndex = 11
-        Me.Button10.Text = "expot  to pmdg p3d"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.Buttonp3d.Location = New System.Drawing.Point(219, -2)
+        Me.Buttonp3d.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Buttonp3d.Name = "Buttonp3d"
+        Me.Buttonp3d.Size = New System.Drawing.Size(210, 54)
+        Me.Buttonp3d.TabIndex = 11
+        Me.Buttonp3d.Text = "expot  to pmdg p3d"
+        Me.Buttonp3d.UseVisualStyleBackColor = True
         '
-        'Button9
+        'Button9787
         '
-        Me.Button9.Location = New System.Drawing.Point(638, 0)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(215, 52)
-        Me.Button9.TabIndex = 10
-        Me.Button9.Text = "expot  to qualitywingssim 787 p3d"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.Button9787.Location = New System.Drawing.Point(638, 0)
+        Me.Button9787.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button9787.Name = "Button9787"
+        Me.Button9787.Size = New System.Drawing.Size(215, 52)
+        Me.Button9787.TabIndex = 10
+        Me.Button9787.Text = "expot  to qualitywingssim 787 p3d"
+        Me.Button9787.UseVisualStyleBackColor = True
         '
-        'Button8
+        'Button8airbus
         '
-        Me.Button8.Location = New System.Drawing.Point(1071, -1)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(249, 52)
-        Me.Button8.TabIndex = 9
-        Me.Button8.Text = "expot  to aerosoft Airbus family p3d"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.Button8airbus.Location = New System.Drawing.Point(1071, -1)
+        Me.Button8airbus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button8airbus.Name = "Button8airbus"
+        Me.Button8airbus.Size = New System.Drawing.Size(249, 52)
+        Me.Button8airbus.TabIndex = 9
+        Me.Button8airbus.Text = "expot  to aerosoft Airbus family p3d"
+        Me.Button8airbus.UseVisualStyleBackColor = True
         '
-        'Button11
+        'Button11vatsim
         '
-        Me.Button11.Location = New System.Drawing.Point(0, 58)
-        Me.Button11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(180, 57)
-        Me.Button11.TabIndex = 8
-        Me.Button11.Text = "expot  to vatsim"
-        Me.Button11.UseVisualStyleBackColor = True
+        Me.Button11vatsim.Location = New System.Drawing.Point(0, 58)
+        Me.Button11vatsim.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button11vatsim.Name = "Button11vatsim"
+        Me.Button11vatsim.Size = New System.Drawing.Size(180, 57)
+        Me.Button11vatsim.TabIndex = 8
+        Me.Button11vatsim.Text = "expot  to vatsim"
+        Me.Button11vatsim.UseVisualStyleBackColor = True
         '
-        'Button7
+        'mfs20020
         '
-        Me.Button7.Location = New System.Drawing.Point(1490, 0)
-        Me.Button7.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button7.Name = "Button7"
-        Me.Button7.Size = New System.Drawing.Size(176, 59)
-        Me.Button7.TabIndex = 4
-        Me.Button7.Text = "expot  to mfs20020"
-        Me.Button7.UseVisualStyleBackColor = True
+        Me.mfs20020.Location = New System.Drawing.Point(1490, 0)
+        Me.mfs20020.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.mfs20020.Name = "mfs20020"
+        Me.mfs20020.Size = New System.Drawing.Size(176, 59)
+        Me.mfs20020.TabIndex = 4
+        Me.mfs20020.Text = "expot  to mfs20020"
+        Me.mfs20020.UseVisualStyleBackColor = True
         '
         'Button6
         '
@@ -1051,35 +1051,35 @@ Partial Class Form3mll
         Me.Button6.Text = "expot  to fs labs"
         Me.Button6.UseVisualStyleBackColor = True
         '
-        'Button5
+        'Buttonairbus
         '
-        Me.Button5.Location = New System.Drawing.Point(834, 0)
-        Me.Button5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button5.Name = "Button5"
-        Me.Button5.Size = New System.Drawing.Size(249, 52)
-        Me.Button5.TabIndex = 2
-        Me.Button5.Text = "expot  to aerosoft Airbus family"
-        Me.Button5.UseVisualStyleBackColor = True
+        Me.Buttonairbus.Location = New System.Drawing.Point(834, 0)
+        Me.Buttonairbus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Buttonairbus.Name = "Buttonairbus"
+        Me.Buttonairbus.Size = New System.Drawing.Size(249, 52)
+        Me.Buttonairbus.TabIndex = 2
+        Me.Buttonairbus.Text = "expot  to aerosoft Airbus family"
+        Me.Buttonairbus.UseVisualStyleBackColor = True
         '
-        'Button4
+        'Button787
         '
-        Me.Button4.Location = New System.Drawing.Point(424, -2)
-        Me.Button4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(215, 52)
-        Me.Button4.TabIndex = 1
-        Me.Button4.Text = "expot to qualitywingssim 787"
-        Me.Button4.UseVisualStyleBackColor = True
+        Me.Button787.Location = New System.Drawing.Point(424, -2)
+        Me.Button787.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button787.Name = "Button787"
+        Me.Button787.Size = New System.Drawing.Size(215, 52)
+        Me.Button787.TabIndex = 1
+        Me.Button787.Text = "expot to qualitywingssim 787"
+        Me.Button787.UseVisualStyleBackColor = True
         '
-        'Button3
+        'pmdg
         '
-        Me.Button3.Location = New System.Drawing.Point(4, -2)
-        Me.Button3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button3.Name = "Button3"
-        Me.Button3.Size = New System.Drawing.Size(222, 50)
-        Me.Button3.TabIndex = 0
-        Me.Button3.Text = "expot to pmdg"
-        Me.Button3.UseVisualStyleBackColor = True
+        Me.pmdg.Location = New System.Drawing.Point(4, -2)
+        Me.pmdg.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pmdg.Name = "pmdg"
+        Me.pmdg.Size = New System.Drawing.Size(222, 50)
+        Me.pmdg.TabIndex = 0
+        Me.pmdg.Text = "expot to pmdg"
+        Me.pmdg.UseVisualStyleBackColor = True
         '
         'Form3mll
         '
@@ -1100,7 +1100,7 @@ Partial Class Form3mll
         Me.Controls.Add(Me.PAYLOAD)
         Me.Controls.Add(Me.AircraftType)
         Me.Controls.Add(Me.flightinfo)
-        Me.Controls.Add(Me.Button2)
+        Me.Controls.Add(Me.fbc)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.wavMenu)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog
@@ -1127,7 +1127,7 @@ Partial Class Form3mll
 
     End Sub
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents fbc As Button
     Friend WithEvents wavMenu As MenuStrip
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
     Friend WithEvents flightinfo As Button
@@ -1204,15 +1204,15 @@ Partial Class Form3mll
     Friend WithEvents Label43 As Label
     Friend WithEvents RouteTextBox2 As TextBox
     Friend WithEvents AIRTPORTextBox3 As TextBox
-    Friend WithEvents Button7 As Button
+    Friend WithEvents mfs20020 As Button
     Friend WithEvents Button6 As Button
-    Friend WithEvents Button5 As Button
-    Friend WithEvents Button4 As Button
-    Friend WithEvents Button3 As Button
-    Friend WithEvents Button11 As Button
-    Friend WithEvents Button10 As Button
-    Friend WithEvents Button9 As Button
-    Friend WithEvents Button8 As Button
+    Friend WithEvents Buttonairbus As Button
+    Friend WithEvents Button787 As Button
+    Friend WithEvents pmdg As Button
+    Friend WithEvents Button11vatsim As Button
+    Friend WithEvents Buttonp3d As Button
+    Friend WithEvents Button9787 As Button
+    Friend WithEvents Button8airbus As Button
     Friend WithEvents New2 As ToolStripMenuItem
     Friend WithEvents Open3 As ToolStripMenuItem
     Friend WithEvents Save4 As ToolStripMenuItem
