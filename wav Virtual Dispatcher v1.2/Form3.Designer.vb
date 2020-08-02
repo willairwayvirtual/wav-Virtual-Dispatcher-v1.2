@@ -506,7 +506,7 @@ Partial Class Form3mll
         '
         Me.arr.AutoSize = True
         Me.arr.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.arr.Location = New System.Drawing.Point(483, 10)
+        Me.arr.Location = New System.Drawing.Point(478, 18)
         Me.arr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.arr.Name = "arr"
         Me.arr.Size = New System.Drawing.Size(36, 24)
@@ -517,7 +517,7 @@ Partial Class Form3mll
         '
         Me.dep.AutoSize = True
         Me.dep.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.dep.Location = New System.Drawing.Point(319, 14)
+        Me.dep.Location = New System.Drawing.Point(310, 16)
         Me.dep.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.dep.Name = "dep"
         Me.dep.Size = New System.Drawing.Size(43, 24)
