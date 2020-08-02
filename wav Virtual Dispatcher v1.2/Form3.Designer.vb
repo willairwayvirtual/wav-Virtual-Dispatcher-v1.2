@@ -109,11 +109,11 @@ Partial Class Form3mll
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.NewToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PrintToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.New2 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Open3 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Save4 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.Print5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.File1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
@@ -147,7 +147,7 @@ Partial Class Form3mll
         'wavMenu
         '
         Me.wavMenu.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.NewToolStripMenuItem1, Me.OpenToolStripMenuItem1, Me.SaveToolStripMenuItem1, Me.PrintToolStripMenuItem1})
+        Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.File1, Me.New2, Me.Open3, Me.Save4, Me.Print5})
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
@@ -1047,40 +1047,40 @@ Partial Class Form3mll
         Me.Button3.Text = "save to pmdg"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'NewToolStripMenuItem1
+        'New2
         '
-        Me.NewToolStripMenuItem1.Name = "NewToolStripMenuItem1"
-        Me.NewToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.NewToolStripMenuItem1.Size = New System.Drawing.Size(50, 26)
-        Me.NewToolStripMenuItem1.Text = "new"
+        Me.New2.Name = "New2"
+        Me.New2.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.New2.Size = New System.Drawing.Size(50, 26)
+        Me.New2.Text = "new"
         '
-        'OpenToolStripMenuItem1
+        'Open3
         '
-        Me.OpenToolStripMenuItem1.Name = "OpenToolStripMenuItem1"
-        Me.OpenToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D0), System.Windows.Forms.Keys)
-        Me.OpenToolStripMenuItem1.Size = New System.Drawing.Size(57, 26)
-        Me.OpenToolStripMenuItem1.Text = "open"
+        Me.Open3.Name = "Open3"
+        Me.Open3.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D0), System.Windows.Forms.Keys)
+        Me.Open3.Size = New System.Drawing.Size(57, 26)
+        Me.Open3.Text = "open"
         '
-        'SaveToolStripMenuItem1
+        'Save4
         '
-        Me.SaveToolStripMenuItem1.Name = "SaveToolStripMenuItem1"
-        Me.SaveToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveToolStripMenuItem1.Size = New System.Drawing.Size(52, 26)
-        Me.SaveToolStripMenuItem1.Text = "save"
+        Me.Save4.Name = "Save4"
+        Me.Save4.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.Save4.Size = New System.Drawing.Size(52, 26)
+        Me.Save4.Text = "save"
         '
-        'PrintToolStripMenuItem1
+        'Print5
         '
-        Me.PrintToolStripMenuItem1.Name = "PrintToolStripMenuItem1"
-        Me.PrintToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.PrintToolStripMenuItem1.Size = New System.Drawing.Size(54, 26)
-        Me.PrintToolStripMenuItem1.Text = "print"
+        Me.Print5.Name = "Print5"
+        Me.Print5.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
+        Me.Print5.Size = New System.Drawing.Size(54, 26)
+        Me.Print5.Text = "print"
         '
-        'FileToolStripMenuItem
+        'File1
         '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(47, 26)
-        Me.FileToolStripMenuItem.Text = "exit"
+        Me.File1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
+        Me.File1.Name = "File1"
+        Me.File1.Size = New System.Drawing.Size(47, 26)
+        Me.File1.Text = "exit"
         '
         'ExitToolStripMenuItem
         '
@@ -1221,10 +1221,10 @@ Partial Class Form3mll
     Friend WithEvents Button10 As Button
     Friend WithEvents Button9 As Button
     Friend WithEvents Button8 As Button
-    Friend WithEvents NewToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents OpenToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents SaveToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents PrintToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents New2 As ToolStripMenuItem
+    Friend WithEvents Open3 As ToolStripMenuItem
+    Friend WithEvents Save4 As ToolStripMenuItem
+    Friend WithEvents Print5 As ToolStripMenuItem
+    Friend WithEvents File1 As ToolStripMenuItem
     Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
 End Class
