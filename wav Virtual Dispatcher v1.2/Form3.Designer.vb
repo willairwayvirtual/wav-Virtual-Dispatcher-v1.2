@@ -151,7 +151,7 @@ Partial Class Form3mll
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -229,7 +229,7 @@ Partial Class Form3mll
         '
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Image = CType(resources.GetObject("Button12.Image"), System.Drawing.Image)
-        Me.Button12.Location = New System.Drawing.Point(-13, 663)
+        Me.Button12.Location = New System.Drawing.Point(1, 663)
         Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(1736, 53)
@@ -244,7 +244,7 @@ Partial Class Form3mll
         Me.save1.Name = "save1"
         Me.save1.Size = New System.Drawing.Size(1736, 48)
         Me.save1.TabIndex = 47
-        Me.save1.Text = "save"
+        Me.save1.Text = "export"
         Me.save1.UseVisualStyleBackColor = True
         '
         'Panel1
@@ -903,7 +903,7 @@ Partial Class Form3mll
         'Label44
         '
         Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(148, 0)
+        Me.Label44.Location = New System.Drawing.Point(115, 0)
         Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(107, 17)
@@ -923,11 +923,11 @@ Partial Class Form3mll
         'RouteTextBox2
         '
         Me.RouteTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RouteTextBox2.Location = New System.Drawing.Point(164, 4)
+        Me.RouteTextBox2.Location = New System.Drawing.Point(161, 21)
         Me.RouteTextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.RouteTextBox2.Multiline = True
         Me.RouteTextBox2.Name = "RouteTextBox2"
-        Me.RouteTextBox2.Size = New System.Drawing.Size(1555, 106)
+        Me.RouteTextBox2.Size = New System.Drawing.Size(1495, 86)
         Me.RouteTextBox2.TabIndex = 47
         '
         'AIRTPORTextBox3
@@ -1051,35 +1051,35 @@ Partial Class Form3mll
         '
         Me.New2.Name = "New2"
         Me.New2.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.New2.Size = New System.Drawing.Size(50, 26)
+        Me.New2.Size = New System.Drawing.Size(50, 24)
         Me.New2.Text = "new"
         '
         'Open3
         '
         Me.Open3.Name = "Open3"
         Me.Open3.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D0), System.Windows.Forms.Keys)
-        Me.Open3.Size = New System.Drawing.Size(57, 26)
+        Me.Open3.Size = New System.Drawing.Size(57, 24)
         Me.Open3.Text = "open"
         '
         'Save4
         '
         Me.Save4.Name = "Save4"
         Me.Save4.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.Save4.Size = New System.Drawing.Size(52, 26)
+        Me.Save4.Size = New System.Drawing.Size(52, 24)
         Me.Save4.Text = "save"
         '
         'Print5
         '
         Me.Print5.Name = "Print5"
         Me.Print5.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.Print5.Size = New System.Drawing.Size(54, 26)
+        Me.Print5.Size = New System.Drawing.Size(54, 24)
         Me.Print5.Text = "print"
         '
         'File1
         '
         Me.File1.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
         Me.File1.Name = "File1"
-        Me.File1.Size = New System.Drawing.Size(47, 26)
+        Me.File1.Size = New System.Drawing.Size(47, 24)
         Me.File1.Text = "exit"
         '
         'ExitToolStripMenuItem
