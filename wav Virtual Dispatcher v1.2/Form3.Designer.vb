@@ -903,7 +903,7 @@ Partial Class Form3mll
         'Label44
         '
         Me.Label44.AutoSize = True
-        Me.Label44.Location = New System.Drawing.Point(115, 0)
+        Me.Label44.Location = New System.Drawing.Point(163, -2)
         Me.Label44.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label44.Name = "Label44"
         Me.Label44.Size = New System.Drawing.Size(107, 17)
@@ -923,11 +923,11 @@ Partial Class Form3mll
         'RouteTextBox2
         '
         Me.RouteTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RouteTextBox2.Location = New System.Drawing.Point(161, 21)
+        Me.RouteTextBox2.Location = New System.Drawing.Point(159, 27)
         Me.RouteTextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.RouteTextBox2.Multiline = True
         Me.RouteTextBox2.Name = "RouteTextBox2"
-        Me.RouteTextBox2.Size = New System.Drawing.Size(1495, 86)
+        Me.RouteTextBox2.Size = New System.Drawing.Size(1497, 80)
         Me.RouteTextBox2.TabIndex = 47
         '
         'AIRTPORTextBox3
@@ -992,7 +992,7 @@ Partial Class Form3mll
         Me.Button11.Location = New System.Drawing.Point(0, 58)
         Me.Button11.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button11.Name = "Button11"
-        Me.Button11.Size = New System.Drawing.Size(115, 57)
+        Me.Button11.Size = New System.Drawing.Size(180, 57)
         Me.Button11.TabIndex = 8
         Me.Button11.Text = "save to vatsim"
         Me.Button11.UseVisualStyleBackColor = True
