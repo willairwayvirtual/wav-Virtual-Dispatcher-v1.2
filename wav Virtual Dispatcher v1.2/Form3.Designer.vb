@@ -26,12 +26,6 @@ Partial Class Form3mll
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.wavMenu = New System.Windows.Forms.MenuStrip()
-        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.NewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.OpenToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.SaveToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.PrintToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.flightinfo = New System.Windows.Forms.Button()
         Me.AircraftType = New System.Windows.Forms.Button()
         Me.PAYLOAD = New System.Windows.Forms.Button()
@@ -40,7 +34,7 @@ Partial Class Form3mll
         Me.Button12 = New System.Windows.Forms.Button()
         Me.save1 = New System.Windows.Forms.Button()
         Me.Panel1 = New System.Windows.Forms.Panel()
-        Me.Label1 = New System.Windows.Forms.Label()
+        Me.registration = New System.Windows.Forms.Label()
         Me.regisComboBox3 = New System.Windows.Forms.ComboBox()
         Me.Label18 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
@@ -56,17 +50,17 @@ Partial Class Form3mll
         Me.CallsignTextBox6 = New System.Windows.Forms.TextBox()
         Me.FlightTextBox5 = New System.Windows.Forms.TextBox()
         Me.AirlinetextBox4 = New System.Windows.Forms.TextBox()
-        Me.Label16 = New System.Windows.Forms.Label()
+        Me.eta = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
-        Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label10 = New System.Windows.Forms.Label()
-        Me.Label9 = New System.Windows.Forms.Label()
-        Me.Label8 = New System.Windows.Forms.Label()
-        Me.Label7 = New System.Windows.Forms.Label()
-        Me.Label6 = New System.Windows.Forms.Label()
-        Me.Label5 = New System.Windows.Forms.Label()
+        Me.dte = New System.Windows.Forms.Label()
+        Me.taxiin = New System.Windows.Forms.Label()
+        Me.taxiout = New System.Windows.Forms.Label()
+        Me.Land = New System.Windows.Forms.Label()
+        Me.Takeoff = New System.Windows.Forms.Label()
+        Me.arr = New System.Windows.Forms.Label()
+        Me.dep = New System.Windows.Forms.Label()
+        Me.Callsign = New System.Windows.Forms.Label()
+        Me.flight = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
         Me.Panel2 = New System.Windows.Forms.Panel()
         Me.airtComboBox1 = New System.Windows.Forms.ComboBox()
@@ -75,12 +69,12 @@ Partial Class Form3mll
         Me.cruiseTextBox15 = New System.Windows.Forms.TextBox()
         Me.climbTextBox14 = New System.Windows.Forms.TextBox()
         Me.typeTextBox13 = New System.Windows.Forms.TextBox()
-        Me.Label24 = New System.Windows.Forms.Label()
-        Me.Label25 = New System.Windows.Forms.Label()
-        Me.Label26 = New System.Windows.Forms.Label()
-        Me.Label27 = New System.Windows.Forms.Label()
-        Me.Label28 = New System.Windows.Forms.Label()
-        Me.Label29 = New System.Windows.Forms.Label()
+        Me.maxlanding = New System.Windows.Forms.Label()
+        Me.maxtakeoff = New System.Windows.Forms.Label()
+        Me.cruise = New System.Windows.Forms.Label()
+        Me.climb = New System.Windows.Forms.Label()
+        Me.type = New System.Windows.Forms.Label()
+        Me.aicrt = New System.Windows.Forms.Label()
         Me.Panel3 = New System.Windows.Forms.Panel()
         Me.FuelTextBox25 = New System.Windows.Forms.TextBox()
         Me.maxTextBox24 = New System.Windows.Forms.TextBox()
@@ -95,7 +89,7 @@ Partial Class Form3mll
         Me.Label36 = New System.Windows.Forms.Label()
         Me.Label37 = New System.Windows.Forms.Label()
         Me.Label38 = New System.Windows.Forms.Label()
-        Me.Label40 = New System.Windows.Forms.Label()
+        Me.Airline = New System.Windows.Forms.Label()
         Me.Label41 = New System.Windows.Forms.Label()
         Me.Label42 = New System.Windows.Forms.Label()
         Me.Panel4 = New System.Windows.Forms.Panel()
@@ -106,15 +100,21 @@ Partial Class Form3mll
         Me.RouteTextBox2 = New System.Windows.Forms.TextBox()
         Me.AIRTPORTextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Button10 = New System.Windows.Forms.Button()
+        Me.Button9 = New System.Windows.Forms.Button()
+        Me.Button8 = New System.Windows.Forms.Button()
         Me.Button11 = New System.Windows.Forms.Button()
         Me.Button7 = New System.Windows.Forms.Button()
         Me.Button6 = New System.Windows.Forms.Button()
         Me.Button5 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
-        Me.Button8 = New System.Windows.Forms.Button()
-        Me.Button9 = New System.Windows.Forms.Button()
-        Me.Button10 = New System.Windows.Forms.Button()
+        Me.NewToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.OpenToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.SaveToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.FileToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
+        Me.ExitToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -147,55 +147,13 @@ Partial Class Form3mll
         'wavMenu
         '
         Me.wavMenu.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem})
+        Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.FileToolStripMenuItem, Me.NewToolStripMenuItem1, Me.OpenToolStripMenuItem1, Me.SaveToolStripMenuItem1, Me.PrintToolStripMenuItem1})
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
-        '
-        'FileToolStripMenuItem
-        '
-        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.NewToolStripMenuItem, Me.OpenToolStripMenuItem, Me.SaveToolStripMenuItem, Me.PrintToolStripMenuItem, Me.ExitToolStripMenuItem})
-        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
-        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(44, 24)
-        Me.FileToolStripMenuItem.Text = "file"
-        '
-        'NewToolStripMenuItem
-        '
-        Me.NewToolStripMenuItem.Name = "NewToolStripMenuItem"
-        Me.NewToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.NewToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
-        Me.NewToolStripMenuItem.Text = "new"
-        '
-        'OpenToolStripMenuItem
-        '
-        Me.OpenToolStripMenuItem.Name = "OpenToolStripMenuItem"
-        Me.OpenToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.O), System.Windows.Forms.Keys)
-        Me.OpenToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
-        Me.OpenToolStripMenuItem.Text = "open"
-        '
-        'SaveToolStripMenuItem
-        '
-        Me.SaveToolStripMenuItem.Name = "SaveToolStripMenuItem"
-        Me.SaveToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.SaveToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
-        Me.SaveToolStripMenuItem.Text = "save"
-        '
-        'PrintToolStripMenuItem
-        '
-        Me.PrintToolStripMenuItem.Name = "PrintToolStripMenuItem"
-        Me.PrintToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.PrintToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
-        Me.PrintToolStripMenuItem.Text = "print"
-        '
-        'ExitToolStripMenuItem
-        '
-        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
-        Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(179, 26)
-        Me.ExitToolStripMenuItem.Text = "exit"
         '
         'flightinfo
         '
@@ -204,7 +162,7 @@ Partial Class Form3mll
         Me.flightinfo.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.flightinfo.ForeColor = System.Drawing.Color.DarkRed
         Me.flightinfo.Location = New System.Drawing.Point(0, 34)
-        Me.flightinfo.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.flightinfo.Margin = New System.Windows.Forms.Padding(4)
         Me.flightinfo.Name = "flightinfo"
         Me.flightinfo.Size = New System.Drawing.Size(1695, 44)
         Me.flightinfo.TabIndex = 36
@@ -218,7 +176,7 @@ Partial Class Form3mll
         Me.AircraftType.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AircraftType.ForeColor = System.Drawing.Color.DarkRed
         Me.AircraftType.Location = New System.Drawing.Point(1, 155)
-        Me.AircraftType.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AircraftType.Margin = New System.Windows.Forms.Padding(4)
         Me.AircraftType.Name = "AircraftType"
         Me.AircraftType.Size = New System.Drawing.Size(1632, 37)
         Me.AircraftType.TabIndex = 37
@@ -232,7 +190,7 @@ Partial Class Form3mll
         Me.PAYLOAD.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.PAYLOAD.ForeColor = System.Drawing.Color.DarkRed
         Me.PAYLOAD.Location = New System.Drawing.Point(0, 276)
-        Me.PAYLOAD.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.PAYLOAD.Margin = New System.Windows.Forms.Padding(4)
         Me.PAYLOAD.Name = "PAYLOAD"
         Me.PAYLOAD.Size = New System.Drawing.Size(1736, 38)
         Me.PAYLOAD.TabIndex = 38
@@ -246,7 +204,7 @@ Partial Class Form3mll
         Me.Route.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Route.ForeColor = System.Drawing.Color.DarkRed
         Me.Route.Location = New System.Drawing.Point(5, 384)
-        Me.Route.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Route.Margin = New System.Windows.Forms.Padding(4)
         Me.Route.Name = "Route"
         Me.Route.Size = New System.Drawing.Size(1736, 37)
         Me.Route.TabIndex = 39
@@ -260,7 +218,7 @@ Partial Class Form3mll
         Me.alternates.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.alternates.ForeColor = System.Drawing.Color.DarkRed
         Me.alternates.Location = New System.Drawing.Point(3, 527)
-        Me.alternates.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.alternates.Margin = New System.Windows.Forms.Padding(4)
         Me.alternates.Name = "alternates"
         Me.alternates.Size = New System.Drawing.Size(1739, 42)
         Me.alternates.TabIndex = 40
@@ -272,7 +230,7 @@ Partial Class Form3mll
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Image = CType(resources.GetObject("Button12.Image"), System.Drawing.Image)
         Me.Button12.Location = New System.Drawing.Point(-13, 663)
-        Me.Button12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(1736, 53)
         Me.Button12.TabIndex = 45
@@ -282,7 +240,7 @@ Partial Class Form3mll
         'save1
         '
         Me.save1.Location = New System.Drawing.Point(3, 724)
-        Me.save1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.save1.Margin = New System.Windows.Forms.Padding(4)
         Me.save1.Name = "save1"
         Me.save1.Size = New System.Drawing.Size(1736, 48)
         Me.save1.TabIndex = 47
@@ -291,7 +249,7 @@ Partial Class Form3mll
         '
         'Panel1
         '
-        Me.Panel1.Controls.Add(Me.Label1)
+        Me.Panel1.Controls.Add(Me.registration)
         Me.Panel1.Controls.Add(Me.regisComboBox3)
         Me.Panel1.Controls.Add(Me.Label18)
         Me.Panel1.Controls.Add(Me.Label17)
@@ -307,17 +265,17 @@ Partial Class Form3mll
         Me.Panel1.Controls.Add(Me.CallsignTextBox6)
         Me.Panel1.Controls.Add(Me.FlightTextBox5)
         Me.Panel1.Controls.Add(Me.AirlinetextBox4)
-        Me.Panel1.Controls.Add(Me.Label16)
+        Me.Panel1.Controls.Add(Me.eta)
         Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Controls.Add(Me.Label14)
-        Me.Panel1.Controls.Add(Me.Label12)
-        Me.Panel1.Controls.Add(Me.Label11)
-        Me.Panel1.Controls.Add(Me.Label10)
-        Me.Panel1.Controls.Add(Me.Label9)
-        Me.Panel1.Controls.Add(Me.Label8)
-        Me.Panel1.Controls.Add(Me.Label7)
-        Me.Panel1.Controls.Add(Me.Label6)
-        Me.Panel1.Controls.Add(Me.Label5)
+        Me.Panel1.Controls.Add(Me.dte)
+        Me.Panel1.Controls.Add(Me.taxiin)
+        Me.Panel1.Controls.Add(Me.taxiout)
+        Me.Panel1.Controls.Add(Me.Land)
+        Me.Panel1.Controls.Add(Me.Takeoff)
+        Me.Panel1.Controls.Add(Me.arr)
+        Me.Panel1.Controls.Add(Me.dep)
+        Me.Panel1.Controls.Add(Me.Callsign)
+        Me.Panel1.Controls.Add(Me.flight)
         Me.Panel1.Controls.Add(Me.Label4)
         Me.Panel1.Location = New System.Drawing.Point(0, 75)
         Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
@@ -325,15 +283,15 @@ Partial Class Form3mll
         Me.Panel1.Size = New System.Drawing.Size(1699, 80)
         Me.Panel1.TabIndex = 48
         '
-        'Label1
+        'registration
         '
-        Me.Label1.AutoSize = True
-        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(1485, 18)
-        Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(133, 29)
-        Me.Label1.TabIndex = 94
-        Me.Label1.Text = "registration"
+        Me.registration.AutoSize = True
+        Me.registration.Font = New System.Drawing.Font("Microsoft Sans Serif", 13.8!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.registration.Location = New System.Drawing.Point(1485, 18)
+        Me.registration.Name = "registration"
+        Me.registration.Size = New System.Drawing.Size(133, 29)
+        Me.registration.TabIndex = 94
+        Me.registration.Text = "registration"
         '
         'regisComboBox3
         '
@@ -369,7 +327,7 @@ Partial Class Form3mll
         '
         Me.opeTextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.opeTextBox3.Location = New System.Drawing.Point(1047, 48)
-        Me.opeTextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.opeTextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.opeTextBox3.Name = "opeTextBox3"
         Me.opeTextBox3.Size = New System.Drawing.Size(171, 23)
         Me.opeTextBox3.TabIndex = 89
@@ -378,7 +336,7 @@ Partial Class Form3mll
         '
         Me.arrTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.arrTextBox2.Location = New System.Drawing.Point(439, 48)
-        Me.arrTextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.arrTextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.arrTextBox2.Name = "arrTextBox2"
         Me.arrTextBox2.Size = New System.Drawing.Size(181, 23)
         Me.arrTextBox2.TabIndex = 88
@@ -387,7 +345,7 @@ Partial Class Form3mll
         '
         Me.depTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.depTextBox1.Location = New System.Drawing.Point(284, 48)
-        Me.depTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.depTextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.depTextBox1.Name = "depTextBox1"
         Me.depTextBox1.Size = New System.Drawing.Size(145, 23)
         Me.depTextBox1.TabIndex = 87
@@ -395,7 +353,7 @@ Partial Class Form3mll
         'ettTextBox12
         '
         Me.ettTextBox12.Location = New System.Drawing.Point(1369, 48)
-        Me.ettTextBox12.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.ettTextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.ettTextBox12.Name = "ettTextBox12"
         Me.ettTextBox12.Size = New System.Drawing.Size(83, 22)
         Me.ettTextBox12.TabIndex = 86
@@ -403,7 +361,7 @@ Partial Class Form3mll
         'dteTextBox11
         '
         Me.dteTextBox11.Location = New System.Drawing.Point(1235, 48)
-        Me.dteTextBox11.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.dteTextBox11.Margin = New System.Windows.Forms.Padding(4)
         Me.dteTextBox11.Name = "dteTextBox11"
         Me.dteTextBox11.Size = New System.Drawing.Size(125, 22)
         Me.dteTextBox11.TabIndex = 85
@@ -411,7 +369,7 @@ Partial Class Form3mll
         'taxiinTextBox10
         '
         Me.taxiinTextBox10.Location = New System.Drawing.Point(935, 48)
-        Me.taxiinTextBox10.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.taxiinTextBox10.Margin = New System.Windows.Forms.Padding(4)
         Me.taxiinTextBox10.Name = "taxiinTextBox10"
         Me.taxiinTextBox10.Size = New System.Drawing.Size(103, 22)
         Me.taxiinTextBox10.TabIndex = 84
@@ -419,7 +377,7 @@ Partial Class Form3mll
         'taxioutTextBox9
         '
         Me.taxioutTextBox9.Location = New System.Drawing.Point(829, 48)
-        Me.taxioutTextBox9.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.taxioutTextBox9.Margin = New System.Windows.Forms.Padding(4)
         Me.taxioutTextBox9.Name = "taxioutTextBox9"
         Me.taxioutTextBox9.Size = New System.Drawing.Size(96, 22)
         Me.taxioutTextBox9.TabIndex = 83
@@ -427,7 +385,7 @@ Partial Class Form3mll
         'LandTextBox8
         '
         Me.LandTextBox8.Location = New System.Drawing.Point(731, 48)
-        Me.LandTextBox8.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.LandTextBox8.Margin = New System.Windows.Forms.Padding(4)
         Me.LandTextBox8.Name = "LandTextBox8"
         Me.LandTextBox8.Size = New System.Drawing.Size(89, 22)
         Me.LandTextBox8.TabIndex = 82
@@ -435,7 +393,7 @@ Partial Class Form3mll
         'TakeoffTextBox7
         '
         Me.TakeoffTextBox7.Location = New System.Drawing.Point(629, 48)
-        Me.TakeoffTextBox7.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TakeoffTextBox7.Margin = New System.Windows.Forms.Padding(4)
         Me.TakeoffTextBox7.Name = "TakeoffTextBox7"
         Me.TakeoffTextBox7.Size = New System.Drawing.Size(92, 22)
         Me.TakeoffTextBox7.TabIndex = 81
@@ -444,7 +402,7 @@ Partial Class Form3mll
         '
         Me.CallsignTextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CallsignTextBox6.Location = New System.Drawing.Point(209, 48)
-        Me.CallsignTextBox6.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.CallsignTextBox6.Margin = New System.Windows.Forms.Padding(4)
         Me.CallsignTextBox6.Name = "CallsignTextBox6"
         Me.CallsignTextBox6.Size = New System.Drawing.Size(65, 23)
         Me.CallsignTextBox6.TabIndex = 80
@@ -453,7 +411,7 @@ Partial Class Form3mll
         '
         Me.FlightTextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FlightTextBox5.Location = New System.Drawing.Point(108, 48)
-        Me.FlightTextBox5.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FlightTextBox5.Margin = New System.Windows.Forms.Padding(4)
         Me.FlightTextBox5.Name = "FlightTextBox5"
         Me.FlightTextBox5.Size = New System.Drawing.Size(88, 23)
         Me.FlightTextBox5.TabIndex = 79
@@ -462,21 +420,21 @@ Partial Class Form3mll
         '
         Me.AirlinetextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AirlinetextBox4.Location = New System.Drawing.Point(13, 48)
-        Me.AirlinetextBox4.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AirlinetextBox4.Margin = New System.Windows.Forms.Padding(4)
         Me.AirlinetextBox4.Name = "AirlinetextBox4"
         Me.AirlinetextBox4.Size = New System.Drawing.Size(85, 23)
         Me.AirlinetextBox4.TabIndex = 78
         '
-        'Label16
+        'eta
         '
-        Me.Label16.AutoSize = True
-        Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(1379, 26)
-        Me.Label16.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(33, 25)
-        Me.Label16.TabIndex = 77
-        Me.Label16.Text = "ett"
+        Me.eta.AutoSize = True
+        Me.eta.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.eta.Location = New System.Drawing.Point(1379, 26)
+        Me.eta.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.eta.Name = "eta"
+        Me.eta.Size = New System.Drawing.Size(33, 25)
+        Me.eta.TabIndex = 77
+        Me.eta.Text = "ett"
         '
         'Label15
         '
@@ -489,104 +447,104 @@ Partial Class Form3mll
         Me.Label15.TabIndex = 76
         Me.Label15.Text = "Dte"
         '
-        'Label14
+        'dte
         '
-        Me.Label14.AutoSize = True
-        Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(1048, 18)
-        Me.Label14.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(156, 25)
-        Me.Label14.TabIndex = 75
-        Me.Label14.Text = "type of operation"
+        Me.dte.AutoSize = True
+        Me.dte.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dte.Location = New System.Drawing.Point(1048, 18)
+        Me.dte.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.dte.Name = "dte"
+        Me.dte.Size = New System.Drawing.Size(156, 25)
+        Me.dte.TabIndex = 75
+        Me.dte.Text = "type of operation"
         '
-        'Label12
+        'taxiin
         '
-        Me.Label12.AutoSize = True
-        Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(929, 14)
-        Me.Label12.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(57, 25)
-        Me.Label12.TabIndex = 74
-        Me.Label12.Text = "taxiin"
+        Me.taxiin.AutoSize = True
+        Me.taxiin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.taxiin.Location = New System.Drawing.Point(929, 14)
+        Me.taxiin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.taxiin.Name = "taxiin"
+        Me.taxiin.Size = New System.Drawing.Size(57, 25)
+        Me.taxiin.TabIndex = 74
+        Me.taxiin.Text = "taxiin"
         '
-        'Label11
+        'taxiout
         '
-        Me.Label11.AutoSize = True
-        Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(829, 14)
-        Me.Label11.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(69, 25)
-        Me.Label11.TabIndex = 73
-        Me.Label11.Text = "taxiout"
+        Me.taxiout.AutoSize = True
+        Me.taxiout.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.taxiout.Location = New System.Drawing.Point(829, 14)
+        Me.taxiout.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.taxiout.Name = "taxiout"
+        Me.taxiout.Size = New System.Drawing.Size(69, 25)
+        Me.taxiout.TabIndex = 73
+        Me.taxiout.Text = "taxiout"
         '
-        'Label10
+        'Land
         '
-        Me.Label10.AutoSize = True
-        Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(747, 15)
-        Me.Label10.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(56, 25)
-        Me.Label10.TabIndex = 72
-        Me.Label10.Text = "Land"
+        Me.Land.AutoSize = True
+        Me.Land.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Land.Location = New System.Drawing.Point(747, 15)
+        Me.Land.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Land.Name = "Land"
+        Me.Land.Size = New System.Drawing.Size(56, 25)
+        Me.Land.TabIndex = 72
+        Me.Land.Text = "Land"
         '
-        'Label9
+        'Takeoff
         '
-        Me.Label9.AutoSize = True
-        Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(633, 14)
-        Me.Label9.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(78, 25)
-        Me.Label9.TabIndex = 71
-        Me.Label9.Text = "Takeoff"
+        Me.Takeoff.AutoSize = True
+        Me.Takeoff.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Takeoff.Location = New System.Drawing.Point(633, 14)
+        Me.Takeoff.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Takeoff.Name = "Takeoff"
+        Me.Takeoff.Size = New System.Drawing.Size(78, 25)
+        Me.Takeoff.TabIndex = 71
+        Me.Takeoff.Text = "Takeoff"
         '
-        'Label8
+        'arr
         '
-        Me.Label8.AutoSize = True
-        Me.Label8.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(483, 10)
-        Me.Label8.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(36, 24)
-        Me.Label8.TabIndex = 70
-        Me.Label8.Text = "Arr"
+        Me.arr.AutoSize = True
+        Me.arr.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.arr.Location = New System.Drawing.Point(483, 10)
+        Me.arr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.arr.Name = "arr"
+        Me.arr.Size = New System.Drawing.Size(36, 24)
+        Me.arr.TabIndex = 70
+        Me.arr.Text = "Arr"
         '
-        'Label7
+        'dep
         '
-        Me.Label7.AutoSize = True
-        Me.Label7.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(319, 14)
-        Me.Label7.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(43, 24)
-        Me.Label7.TabIndex = 69
-        Me.Label7.Text = "Dep"
+        Me.dep.AutoSize = True
+        Me.dep.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.dep.Location = New System.Drawing.Point(319, 14)
+        Me.dep.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.dep.Name = "dep"
+        Me.dep.Size = New System.Drawing.Size(43, 24)
+        Me.dep.TabIndex = 69
+        Me.dep.Text = "Dep"
         '
-        'Label6
+        'Callsign
         '
-        Me.Label6.AutoSize = True
-        Me.Label6.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(195, 21)
-        Me.Label6.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(74, 24)
-        Me.Label6.TabIndex = 68
-        Me.Label6.Text = "Callsign"
+        Me.Callsign.AutoSize = True
+        Me.Callsign.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Callsign.Location = New System.Drawing.Point(195, 21)
+        Me.Callsign.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Callsign.Name = "Callsign"
+        Me.Callsign.Size = New System.Drawing.Size(74, 24)
+        Me.Callsign.TabIndex = 68
+        Me.Callsign.Text = "Callsign"
         '
-        'Label5
+        'flight
         '
-        Me.Label5.AutoSize = True
-        Me.Label5.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(124, 21)
-        Me.Label5.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(56, 24)
-        Me.Label5.TabIndex = 67
-        Me.Label5.Text = "Flight"
+        Me.flight.AutoSize = True
+        Me.flight.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.flight.Location = New System.Drawing.Point(124, 21)
+        Me.flight.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.flight.Name = "flight"
+        Me.flight.Size = New System.Drawing.Size(56, 24)
+        Me.flight.TabIndex = 67
+        Me.flight.Text = "Flight"
         '
         'Label4
         '
@@ -607,12 +565,12 @@ Partial Class Form3mll
         Me.Panel2.Controls.Add(Me.cruiseTextBox15)
         Me.Panel2.Controls.Add(Me.climbTextBox14)
         Me.Panel2.Controls.Add(Me.typeTextBox13)
-        Me.Panel2.Controls.Add(Me.Label24)
-        Me.Panel2.Controls.Add(Me.Label25)
-        Me.Panel2.Controls.Add(Me.Label26)
-        Me.Panel2.Controls.Add(Me.Label27)
-        Me.Panel2.Controls.Add(Me.Label28)
-        Me.Panel2.Controls.Add(Me.Label29)
+        Me.Panel2.Controls.Add(Me.maxlanding)
+        Me.Panel2.Controls.Add(Me.maxtakeoff)
+        Me.Panel2.Controls.Add(Me.cruise)
+        Me.Panel2.Controls.Add(Me.climb)
+        Me.Panel2.Controls.Add(Me.type)
+        Me.Panel2.Controls.Add(Me.aicrt)
         Me.Panel2.Location = New System.Drawing.Point(4, 198)
         Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel2.Name = "Panel2"
@@ -632,7 +590,7 @@ Partial Class Form3mll
         'lanTextBox17
         '
         Me.lanTextBox17.Location = New System.Drawing.Point(736, 38)
-        Me.lanTextBox17.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.lanTextBox17.Margin = New System.Windows.Forms.Padding(4)
         Me.lanTextBox17.Name = "lanTextBox17"
         Me.lanTextBox17.Size = New System.Drawing.Size(137, 22)
         Me.lanTextBox17.TabIndex = 74
@@ -640,7 +598,7 @@ Partial Class Form3mll
         'takeTextBox16
         '
         Me.takeTextBox16.Location = New System.Drawing.Point(605, 38)
-        Me.takeTextBox16.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.takeTextBox16.Margin = New System.Windows.Forms.Padding(4)
         Me.takeTextBox16.Name = "takeTextBox16"
         Me.takeTextBox16.Size = New System.Drawing.Size(123, 22)
         Me.takeTextBox16.TabIndex = 73
@@ -648,7 +606,7 @@ Partial Class Form3mll
         'cruiseTextBox15
         '
         Me.cruiseTextBox15.Location = New System.Drawing.Point(420, 38)
-        Me.cruiseTextBox15.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cruiseTextBox15.Margin = New System.Windows.Forms.Padding(4)
         Me.cruiseTextBox15.Name = "cruiseTextBox15"
         Me.cruiseTextBox15.Size = New System.Drawing.Size(123, 22)
         Me.cruiseTextBox15.TabIndex = 72
@@ -656,7 +614,7 @@ Partial Class Form3mll
         'climbTextBox14
         '
         Me.climbTextBox14.Location = New System.Drawing.Point(295, 38)
-        Me.climbTextBox14.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.climbTextBox14.Margin = New System.Windows.Forms.Padding(4)
         Me.climbTextBox14.Name = "climbTextBox14"
         Me.climbTextBox14.Size = New System.Drawing.Size(89, 22)
         Me.climbTextBox14.TabIndex = 71
@@ -664,76 +622,76 @@ Partial Class Form3mll
         'typeTextBox13
         '
         Me.typeTextBox13.Location = New System.Drawing.Point(180, 38)
-        Me.typeTextBox13.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.typeTextBox13.Margin = New System.Windows.Forms.Padding(4)
         Me.typeTextBox13.Name = "typeTextBox13"
         Me.typeTextBox13.Size = New System.Drawing.Size(89, 22)
         Me.typeTextBox13.TabIndex = 70
         '
-        'Label24
+        'maxlanding
         '
-        Me.Label24.AutoSize = True
-        Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(747, 0)
-        Me.Label24.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(117, 25)
-        Me.Label24.TabIndex = 69
-        Me.Label24.Text = "max landing"
+        Me.maxlanding.AutoSize = True
+        Me.maxlanding.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.maxlanding.Location = New System.Drawing.Point(743, 10)
+        Me.maxlanding.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.maxlanding.Name = "maxlanding"
+        Me.maxlanding.Size = New System.Drawing.Size(117, 25)
+        Me.maxlanding.TabIndex = 69
+        Me.maxlanding.Text = "max landing"
         '
-        'Label25
+        'maxtakeoff
         '
-        Me.Label25.AutoSize = True
-        Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(600, 10)
-        Me.Label25.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(121, 25)
-        Me.Label25.TabIndex = 68
-        Me.Label25.Text = "max-take-off"
+        Me.maxtakeoff.AutoSize = True
+        Me.maxtakeoff.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.maxtakeoff.Location = New System.Drawing.Point(600, 10)
+        Me.maxtakeoff.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.maxtakeoff.Name = "maxtakeoff"
+        Me.maxtakeoff.Size = New System.Drawing.Size(121, 25)
+        Me.maxtakeoff.TabIndex = 68
+        Me.maxtakeoff.Text = "max-take-off"
         '
-        'Label26
+        'cruise
         '
-        Me.Label26.AutoSize = True
-        Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(435, 10)
-        Me.Label26.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(64, 25)
-        Me.Label26.TabIndex = 67
-        Me.Label26.Text = "cruise"
+        Me.cruise.AutoSize = True
+        Me.cruise.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.cruise.Location = New System.Drawing.Point(435, 10)
+        Me.cruise.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.cruise.Name = "cruise"
+        Me.cruise.Size = New System.Drawing.Size(64, 25)
+        Me.cruise.TabIndex = 67
+        Me.cruise.Text = "cruise"
         '
-        'Label27
+        'climb
         '
-        Me.Label27.AutoSize = True
-        Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(305, 10)
-        Me.Label27.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(57, 25)
-        Me.Label27.TabIndex = 66
-        Me.Label27.Text = "climb"
+        Me.climb.AutoSize = True
+        Me.climb.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.climb.Location = New System.Drawing.Point(305, 10)
+        Me.climb.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.climb.Name = "climb"
+        Me.climb.Size = New System.Drawing.Size(57, 25)
+        Me.climb.TabIndex = 66
+        Me.climb.Text = "climb"
         '
-        'Label28
+        'type
         '
-        Me.Label28.AutoSize = True
-        Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(195, 9)
-        Me.Label28.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(49, 25)
-        Me.Label28.TabIndex = 65
-        Me.Label28.Text = "type"
+        Me.type.AutoSize = True
+        Me.type.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.type.Location = New System.Drawing.Point(195, 9)
+        Me.type.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.type.Name = "type"
+        Me.type.Size = New System.Drawing.Size(49, 25)
+        Me.type.TabIndex = 65
+        Me.type.Text = "type"
         '
-        'Label29
+        'aicrt
         '
-        Me.Label29.AutoSize = True
-        Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(8, 10)
-        Me.Label29.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(118, 25)
-        Me.Label29.TabIndex = 64
-        Me.Label29.Text = "AircraftType"
+        Me.aicrt.AutoSize = True
+        Me.aicrt.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.aicrt.Location = New System.Drawing.Point(8, 10)
+        Me.aicrt.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.aicrt.Name = "aicrt"
+        Me.aicrt.Size = New System.Drawing.Size(118, 25)
+        Me.aicrt.TabIndex = 64
+        Me.aicrt.Text = "AircraftType"
         '
         'Panel3
         '
@@ -750,7 +708,7 @@ Partial Class Form3mll
         Me.Panel3.Controls.Add(Me.Label36)
         Me.Panel3.Controls.Add(Me.Label37)
         Me.Panel3.Controls.Add(Me.Label38)
-        Me.Panel3.Controls.Add(Me.Label40)
+        Me.Panel3.Controls.Add(Me.Airline)
         Me.Panel3.Controls.Add(Me.Label41)
         Me.Panel3.Controls.Add(Me.Label42)
         Me.Panel3.Location = New System.Drawing.Point(3, 320)
@@ -762,7 +720,7 @@ Partial Class Form3mll
         'FuelTextBox25
         '
         Me.FuelTextBox25.Location = New System.Drawing.Point(899, 28)
-        Me.FuelTextBox25.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.FuelTextBox25.Margin = New System.Windows.Forms.Padding(4)
         Me.FuelTextBox25.Name = "FuelTextBox25"
         Me.FuelTextBox25.Size = New System.Drawing.Size(123, 22)
         Me.FuelTextBox25.TabIndex = 81
@@ -770,7 +728,7 @@ Partial Class Form3mll
         'maxTextBox24
         '
         Me.maxTextBox24.Location = New System.Drawing.Point(755, 30)
-        Me.maxTextBox24.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.maxTextBox24.Margin = New System.Windows.Forms.Padding(4)
         Me.maxTextBox24.Name = "maxTextBox24"
         Me.maxTextBox24.Size = New System.Drawing.Size(123, 22)
         Me.maxTextBox24.TabIndex = 80
@@ -778,7 +736,7 @@ Partial Class Form3mll
         'zeroTextBox23
         '
         Me.zeroTextBox23.Location = New System.Drawing.Point(593, 30)
-        Me.zeroTextBox23.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.zeroTextBox23.Margin = New System.Windows.Forms.Padding(4)
         Me.zeroTextBox23.Name = "zeroTextBox23"
         Me.zeroTextBox23.Size = New System.Drawing.Size(89, 22)
         Me.zeroTextBox23.TabIndex = 79
@@ -786,7 +744,7 @@ Partial Class Form3mll
         'cargoTextBox22
         '
         Me.cargoTextBox22.Location = New System.Drawing.Point(491, 28)
-        Me.cargoTextBox22.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.cargoTextBox22.Margin = New System.Windows.Forms.Padding(4)
         Me.cargoTextBox22.Name = "cargoTextBox22"
         Me.cargoTextBox22.Size = New System.Drawing.Size(89, 22)
         Me.cargoTextBox22.TabIndex = 78
@@ -794,7 +752,7 @@ Partial Class Form3mll
         'baggageTextBox21
         '
         Me.baggageTextBox21.Location = New System.Drawing.Point(305, 28)
-        Me.baggageTextBox21.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.baggageTextBox21.Margin = New System.Windows.Forms.Padding(4)
         Me.baggageTextBox21.Name = "baggageTextBox21"
         Me.baggageTextBox21.Size = New System.Drawing.Size(165, 22)
         Me.baggageTextBox21.TabIndex = 77
@@ -802,7 +760,7 @@ Partial Class Form3mll
         'infantsTextBox20
         '
         Me.infantsTextBox20.Location = New System.Drawing.Point(205, 28)
-        Me.infantsTextBox20.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.infantsTextBox20.Margin = New System.Windows.Forms.Padding(4)
         Me.infantsTextBox20.Name = "infantsTextBox20"
         Me.infantsTextBox20.Size = New System.Drawing.Size(89, 22)
         Me.infantsTextBox20.TabIndex = 76
@@ -810,7 +768,7 @@ Partial Class Form3mll
         'childrenTextBox19
         '
         Me.childrenTextBox19.Location = New System.Drawing.Point(108, 28)
-        Me.childrenTextBox19.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.childrenTextBox19.Margin = New System.Windows.Forms.Padding(4)
         Me.childrenTextBox19.Name = "childrenTextBox19"
         Me.childrenTextBox19.Size = New System.Drawing.Size(89, 22)
         Me.childrenTextBox19.TabIndex = 75
@@ -818,7 +776,7 @@ Partial Class Form3mll
         'adultsTextBox18
         '
         Me.adultsTextBox18.Location = New System.Drawing.Point(4, 28)
-        Me.adultsTextBox18.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.adultsTextBox18.Margin = New System.Windows.Forms.Padding(4)
         Me.adultsTextBox18.Name = "adultsTextBox18"
         Me.adultsTextBox18.Size = New System.Drawing.Size(89, 22)
         Me.adultsTextBox18.TabIndex = 74
@@ -878,16 +836,16 @@ Partial Class Form3mll
         Me.Label38.TabIndex = 69
         Me.Label38.Text = "baggage"
         '
-        'Label40
+        'Airline
         '
-        Me.Label40.AutoSize = True
-        Me.Label40.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label40.Location = New System.Drawing.Point(211, 0)
-        Me.Label40.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
-        Me.Label40.Name = "Label40"
-        Me.Label40.Size = New System.Drawing.Size(69, 25)
-        Me.Label40.TabIndex = 68
-        Me.Label40.Text = "infants"
+        Me.Airline.AutoSize = True
+        Me.Airline.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Airline.Location = New System.Drawing.Point(211, 0)
+        Me.Airline.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Airline.Name = "Airline"
+        Me.Airline.Size = New System.Drawing.Size(69, 25)
+        Me.Airline.TabIndex = 68
+        Me.Airline.Text = "infants"
         '
         'Label41
         '
@@ -924,7 +882,7 @@ Partial Class Form3mll
         '
         Me.RouteTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RouteTextBox1.Location = New System.Drawing.Point(0, 0)
-        Me.RouteTextBox1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RouteTextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.RouteTextBox1.Multiline = True
         Me.RouteTextBox1.Name = "RouteTextBox1"
         Me.RouteTextBox1.Size = New System.Drawing.Size(1719, 95)
@@ -966,7 +924,7 @@ Partial Class Form3mll
         '
         Me.RouteTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RouteTextBox2.Location = New System.Drawing.Point(164, 4)
-        Me.RouteTextBox2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.RouteTextBox2.Margin = New System.Windows.Forms.Padding(4)
         Me.RouteTextBox2.Multiline = True
         Me.RouteTextBox2.Name = "RouteTextBox2"
         Me.RouteTextBox2.Size = New System.Drawing.Size(1555, 106)
@@ -976,7 +934,7 @@ Partial Class Form3mll
         '
         Me.AIRTPORTextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AIRTPORTextBox3.Location = New System.Drawing.Point(0, 27)
-        Me.AIRTPORTextBox3.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.AIRTPORTextBox3.Margin = New System.Windows.Forms.Padding(4)
         Me.AIRTPORTextBox3.Multiline = True
         Me.AIRTPORTextBox3.Name = "AIRTPORTextBox3"
         Me.AIRTPORTextBox3.Size = New System.Drawing.Size(161, 80)
@@ -998,6 +956,36 @@ Partial Class Form3mll
         Me.Panel6.Name = "Panel6"
         Me.Panel6.Size = New System.Drawing.Size(1695, 111)
         Me.Panel6.TabIndex = 53
+        '
+        'Button10
+        '
+        Me.Button10.Location = New System.Drawing.Point(219, -2)
+        Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button10.Name = "Button10"
+        Me.Button10.Size = New System.Drawing.Size(210, 54)
+        Me.Button10.TabIndex = 11
+        Me.Button10.Text = "save to pmdg p3d"
+        Me.Button10.UseVisualStyleBackColor = True
+        '
+        'Button9
+        '
+        Me.Button9.Location = New System.Drawing.Point(638, 0)
+        Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button9.Name = "Button9"
+        Me.Button9.Size = New System.Drawing.Size(215, 52)
+        Me.Button9.TabIndex = 10
+        Me.Button9.Text = "save to qualitywingssim 787 p3d"
+        Me.Button9.UseVisualStyleBackColor = True
+        '
+        'Button8
+        '
+        Me.Button8.Location = New System.Drawing.Point(1071, -1)
+        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button8.Name = "Button8"
+        Me.Button8.Size = New System.Drawing.Size(249, 52)
+        Me.Button8.TabIndex = 9
+        Me.Button8.Text = "save to aerosoft Airbus family p3d"
+        Me.Button8.UseVisualStyleBackColor = True
         '
         'Button11
         '
@@ -1059,35 +1047,47 @@ Partial Class Form3mll
         Me.Button3.Text = "save to pmdg"
         Me.Button3.UseVisualStyleBackColor = True
         '
-        'Button8
+        'NewToolStripMenuItem1
         '
-        Me.Button8.Location = New System.Drawing.Point(1071, -1)
-        Me.Button8.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button8.Name = "Button8"
-        Me.Button8.Size = New System.Drawing.Size(249, 52)
-        Me.Button8.TabIndex = 9
-        Me.Button8.Text = "save to aerosoft Airbus family p3d"
-        Me.Button8.UseVisualStyleBackColor = True
+        Me.NewToolStripMenuItem1.Name = "NewToolStripMenuItem1"
+        Me.NewToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
+        Me.NewToolStripMenuItem1.Size = New System.Drawing.Size(50, 26)
+        Me.NewToolStripMenuItem1.Text = "new"
         '
-        'Button9
+        'OpenToolStripMenuItem1
         '
-        Me.Button9.Location = New System.Drawing.Point(638, 0)
-        Me.Button9.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button9.Name = "Button9"
-        Me.Button9.Size = New System.Drawing.Size(215, 52)
-        Me.Button9.TabIndex = 10
-        Me.Button9.Text = "save to qualitywingssim 787 p3d"
-        Me.Button9.UseVisualStyleBackColor = True
+        Me.OpenToolStripMenuItem1.Name = "OpenToolStripMenuItem1"
+        Me.OpenToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D0), System.Windows.Forms.Keys)
+        Me.OpenToolStripMenuItem1.Size = New System.Drawing.Size(57, 26)
+        Me.OpenToolStripMenuItem1.Text = "open"
         '
-        'Button10
+        'SaveToolStripMenuItem1
         '
-        Me.Button10.Location = New System.Drawing.Point(219, -2)
-        Me.Button10.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button10.Name = "Button10"
-        Me.Button10.Size = New System.Drawing.Size(210, 54)
-        Me.Button10.TabIndex = 11
-        Me.Button10.Text = "save to pmdg p3d"
-        Me.Button10.UseVisualStyleBackColor = True
+        Me.SaveToolStripMenuItem1.Name = "SaveToolStripMenuItem1"
+        Me.SaveToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
+        Me.SaveToolStripMenuItem1.Size = New System.Drawing.Size(52, 26)
+        Me.SaveToolStripMenuItem1.Text = "save"
+        '
+        'PrintToolStripMenuItem1
+        '
+        Me.PrintToolStripMenuItem1.Name = "PrintToolStripMenuItem1"
+        Me.PrintToolStripMenuItem1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
+        Me.PrintToolStripMenuItem1.Size = New System.Drawing.Size(54, 26)
+        Me.PrintToolStripMenuItem1.Text = "print"
+        '
+        'FileToolStripMenuItem
+        '
+        Me.FileToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.ExitToolStripMenuItem})
+        Me.FileToolStripMenuItem.Name = "FileToolStripMenuItem"
+        Me.FileToolStripMenuItem.Size = New System.Drawing.Size(47, 26)
+        Me.FileToolStripMenuItem.Text = "exit"
+        '
+        'ExitToolStripMenuItem
+        '
+        Me.ExitToolStripMenuItem.Name = "ExitToolStripMenuItem"
+        Me.ExitToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
+        Me.ExitToolStripMenuItem.Size = New System.Drawing.Size(224, 26)
+        Me.ExitToolStripMenuItem.Text = "exit"
         '
         'Form3mll
         '
@@ -1138,12 +1138,6 @@ Partial Class Form3mll
     Friend WithEvents Button2 As Button
     Friend WithEvents wavMenu As MenuStrip
     Friend WithEvents ToolStripMenuItem1 As ToolStripMenuItem
-    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents NewToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents OpenToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents SaveToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents PrintToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents flightinfo As Button
     Friend WithEvents AircraftType As Button
     Friend WithEvents PAYLOAD As Button
@@ -1157,7 +1151,7 @@ Partial Class Form3mll
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
     Friend WithEvents Panel6 As Panel
-    Friend WithEvents Label1 As Label
+    Friend WithEvents registration As Label
     Friend WithEvents regisComboBox3 As ComboBox
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
@@ -1173,17 +1167,17 @@ Partial Class Form3mll
     Friend WithEvents CallsignTextBox6 As TextBox
     Friend WithEvents FlightTextBox5 As TextBox
     Friend WithEvents AirlinetextBox4 As TextBox
-    Friend WithEvents Label16 As Label
+    Friend WithEvents eta As Label
     Friend WithEvents Label15 As Label
-    Friend WithEvents Label14 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents Label11 As Label
-    Friend WithEvents Label10 As Label
-    Friend WithEvents Label9 As Label
-    Friend WithEvents Label8 As Label
-    Friend WithEvents Label7 As Label
-    Friend WithEvents Label6 As Label
-    Friend WithEvents Label5 As Label
+    Friend WithEvents dte As Label
+    Friend WithEvents taxiin As Label
+    Friend WithEvents taxiout As Label
+    Friend WithEvents Land As Label
+    Friend WithEvents Takeoff As Label
+    Friend WithEvents arr As Label
+    Friend WithEvents dep As Label
+    Friend WithEvents Callsign As Label
+    Friend WithEvents flight As Label
     Friend WithEvents Label4 As Label
     Friend WithEvents airtComboBox1 As ComboBox
     Friend WithEvents lanTextBox17 As TextBox
@@ -1191,12 +1185,12 @@ Partial Class Form3mll
     Friend WithEvents cruiseTextBox15 As TextBox
     Friend WithEvents climbTextBox14 As TextBox
     Friend WithEvents typeTextBox13 As TextBox
-    Friend WithEvents Label24 As Label
-    Friend WithEvents Label25 As Label
-    Friend WithEvents Label26 As Label
-    Friend WithEvents Label27 As Label
-    Friend WithEvents Label28 As Label
-    Friend WithEvents Label29 As Label
+    Friend WithEvents maxlanding As Label
+    Friend WithEvents maxtakeoff As Label
+    Friend WithEvents cruise As Label
+    Friend WithEvents climb As Label
+    Friend WithEvents type As Label
+    Friend WithEvents aicrt As Label
     Friend WithEvents FuelTextBox25 As TextBox
     Friend WithEvents maxTextBox24 As TextBox
     Friend WithEvents zeroTextBox23 As TextBox
@@ -1210,7 +1204,7 @@ Partial Class Form3mll
     Friend WithEvents Label36 As Label
     Friend WithEvents Label37 As Label
     Friend WithEvents Label38 As Label
-    Friend WithEvents Label40 As Label
+    Friend WithEvents Airline As Label
     Friend WithEvents Label41 As Label
     Friend WithEvents Label42 As Label
     Friend WithEvents RouteTextBox1 As TextBox
@@ -1227,4 +1221,10 @@ Partial Class Form3mll
     Friend WithEvents Button10 As Button
     Friend WithEvents Button9 As Button
     Friend WithEvents Button8 As Button
+    Friend WithEvents NewToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents OpenToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents SaveToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents PrintToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents FileToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents ExitToolStripMenuItem As ToolStripMenuItem
 End Class
