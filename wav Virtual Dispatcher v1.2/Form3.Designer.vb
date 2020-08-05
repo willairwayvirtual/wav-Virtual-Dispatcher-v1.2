@@ -26,7 +26,7 @@ Partial Class Form3mll
         Me.Button1 = New System.Windows.Forms.Button()
         Me.fbc = New System.Windows.Forms.Button()
         Me.wavMenu = New System.Windows.Forms.MenuStrip()
-        Me.File1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.exit1 = New System.Windows.Forms.ToolStripMenuItem()
         Me.New2 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Open3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Save4 = New System.Windows.Forms.ToolStripMenuItem()
@@ -146,47 +146,47 @@ Partial Class Form3mll
         'wavMenu
         '
         Me.wavMenu.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.File1, Me.New2, Me.Open3, Me.Save4, Me.Print5})
+        Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.exit1, Me.New2, Me.Open3, Me.Save4, Me.Print5})
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
-        'File1
+        'exit1
         '
-        Me.File1.Name = "File1"
-        Me.File1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.File1.Size = New System.Drawing.Size(47, 26)
-        Me.File1.Text = "exit"
+        Me.exit1.Name = "exit1"
+        Me.exit1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
+        Me.exit1.Size = New System.Drawing.Size(47, 24)
+        Me.exit1.Text = "exit"
         '
         'New2
         '
         Me.New2.Name = "New2"
         Me.New2.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.New2.Size = New System.Drawing.Size(50, 26)
+        Me.New2.Size = New System.Drawing.Size(50, 24)
         Me.New2.Text = "new"
         '
         'Open3
         '
         Me.Open3.Name = "Open3"
         Me.Open3.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D0), System.Windows.Forms.Keys)
-        Me.Open3.Size = New System.Drawing.Size(57, 26)
+        Me.Open3.Size = New System.Drawing.Size(57, 24)
         Me.Open3.Text = "open"
         '
         'Save4
         '
         Me.Save4.Name = "Save4"
         Me.Save4.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.Save4.Size = New System.Drawing.Size(52, 26)
+        Me.Save4.Size = New System.Drawing.Size(52, 24)
         Me.Save4.Text = "save"
         '
         'Print5
         '
         Me.Print5.Name = "Print5"
         Me.Print5.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.Print5.Size = New System.Drawing.Size(54, 26)
+        Me.Print5.Size = New System.Drawing.Size(54, 24)
         Me.Print5.Text = "print"
         '
         'flightinfo
@@ -374,6 +374,7 @@ Partial Class Form3mll
         Me.arrTextBox2.Name = "arrTextBox2"
         Me.arrTextBox2.Size = New System.Drawing.Size(181, 23)
         Me.arrTextBox2.TabIndex = 88
+        Me.arrTextBox2.Tag = "arrTextBox2"
         '
         'depTextBox1
         '
@@ -383,6 +384,7 @@ Partial Class Form3mll
         Me.depTextBox1.Name = "depTextBox1"
         Me.depTextBox1.Size = New System.Drawing.Size(145, 23)
         Me.depTextBox1.TabIndex = 87
+        Me.depTextBox1.Tag = "depTextBox1"
         '
         'ettTextBox12
         '
@@ -449,6 +451,7 @@ Partial Class Form3mll
         Me.FlightTextBox5.Name = "FlightTextBox5"
         Me.FlightTextBox5.Size = New System.Drawing.Size(88, 23)
         Me.FlightTextBox5.TabIndex = 79
+        Me.FlightTextBox5.Tag = "FlightTextBox5"
         '
         'AirlinetextBox4
         '
@@ -458,6 +461,7 @@ Partial Class Form3mll
         Me.AirlinetextBox4.Name = "AirlinetextBox4"
         Me.AirlinetextBox4.Size = New System.Drawing.Size(85, 23)
         Me.AirlinetextBox4.TabIndex = 78
+        Me.AirlinetextBox4.Tag = "AirlinetextBox4"
         '
         'eta
         '
@@ -988,7 +992,7 @@ Partial Class Form3mll
         Me.Panel6.Location = New System.Drawing.Point(0, 778)
         Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1695, 111)
+        Me.Panel6.Size = New System.Drawing.Size(1695, 115)
         Me.Panel6.TabIndex = 53
         '
         'Buttonp3d
@@ -1033,7 +1037,7 @@ Partial Class Form3mll
         '
         'mfs20020
         '
-        Me.mfs20020.Location = New System.Drawing.Point(1499, -3)
+        Me.mfs20020.Location = New System.Drawing.Point(1495, -3)
         Me.mfs20020.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.mfs20020.Name = "mfs20020"
         Me.mfs20020.Size = New System.Drawing.Size(176, 59)
@@ -1217,5 +1221,5 @@ Partial Class Form3mll
     Friend WithEvents Open3 As ToolStripMenuItem
     Friend WithEvents Save4 As ToolStripMenuItem
     Friend WithEvents Print5 As ToolStripMenuItem
-    Friend WithEvents File1 As ToolStripMenuItem
+    Friend WithEvents exit1 As ToolStripMenuItem
 End Class
