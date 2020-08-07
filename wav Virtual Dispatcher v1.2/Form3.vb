@@ -37,5 +37,19 @@ Public Class Form3mll
 
     End Sub
 
+    Private Sub Save4_MouseEnter(sender As Object, e As EventArgs) Handles Save4.MouseEnter
+
+    End Sub
+
+    Private Sub Save4_Click(sender As Object, e As EventArgs) Handles Save4.Click
+        SaveFileDialog1.ShowDialog()
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+    End Sub
+
+
 
 End Class

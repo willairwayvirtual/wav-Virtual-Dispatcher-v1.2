@@ -105,6 +105,7 @@ Partial Class Form3mll
         Me.RouteTextBox2 = New System.Windows.Forms.TextBox()
         Me.AIRTPORTextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.Buttonp3d = New System.Windows.Forms.Button()
         Me.Button9787 = New System.Windows.Forms.Button()
         Me.Button8airbus = New System.Windows.Forms.Button()
@@ -114,7 +115,7 @@ Partial Class Form3mll
         Me.Buttonairbus = New System.Windows.Forms.Button()
         Me.Button787 = New System.Windows.Forms.Button()
         Me.pmdg = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -857,7 +858,7 @@ Partial Class Form3mll
         '
         Me.Label37.AutoSize = True
         Me.Label37.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label37.Location = New System.Drawing.Point(500, -4)
+        Me.Label37.Location = New System.Drawing.Point(501, -2)
         Me.Label37.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label37.Name = "Label37"
         Me.Label37.Size = New System.Drawing.Size(61, 25)
@@ -879,7 +880,7 @@ Partial Class Form3mll
         '
         Me.Airline.AutoSize = True
         Me.Airline.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Airline.Location = New System.Drawing.Point(211, 0)
+        Me.Airline.Location = New System.Drawing.Point(211, 2)
         Me.Airline.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Airline.Name = "Airline"
         Me.Airline.Size = New System.Drawing.Size(69, 25)
@@ -890,7 +891,7 @@ Partial Class Form3mll
         '
         Me.Label41.AutoSize = True
         Me.Label41.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label41.Location = New System.Drawing.Point(101, 0)
+        Me.Label41.Location = New System.Drawing.Point(103, 2)
         Me.Label41.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label41.Name = "Label41"
         Me.Label41.Size = New System.Drawing.Size(80, 25)
@@ -901,7 +902,7 @@ Partial Class Form3mll
         '
         Me.Label42.AutoSize = True
         Me.Label42.Font = New System.Drawing.Font("Microsoft YaHei", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label42.Location = New System.Drawing.Point(3, 0)
+        Me.Label42.Location = New System.Drawing.Point(4, 2)
         Me.Label42.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label42.Name = "Label42"
         Me.Label42.Size = New System.Drawing.Size(69, 27)
@@ -997,6 +998,15 @@ Partial Class Form3mll
         Me.Panel6.Size = New System.Drawing.Size(1695, 115)
         Me.Panel6.TabIndex = 53
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(184, 57)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(230, 55)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "expot to projectFLY"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Buttonp3d
         '
         Me.Buttonp3d.Location = New System.Drawing.Point(219, -2)
@@ -1087,14 +1097,10 @@ Partial Class Form3mll
         Me.pmdg.Text = "expot to pmdg"
         Me.pmdg.UseVisualStyleBackColor = True
         '
-        'Button2
+        'SaveFileDialog1
         '
-        Me.Button2.Location = New System.Drawing.Point(184, 57)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(230, 55)
-        Me.Button2.TabIndex = 12
-        Me.Button2.Text = "expot to projectFLY"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.SaveFileDialog1.FileName = "wav Dispatch Center"
+        Me.SaveFileDialog1.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
         '
         'Form3mll
         '
@@ -1234,4 +1240,5 @@ Partial Class Form3mll
     Friend WithEvents Print5 As ToolStripMenuItem
     Friend WithEvents exit1 As ToolStripMenuItem
     Friend WithEvents Button2 As Button
+    Friend WithEvents SaveFileDialog1 As SaveFileDialog
 End Class
