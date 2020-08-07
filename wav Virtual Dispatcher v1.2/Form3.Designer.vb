@@ -114,6 +114,7 @@ Partial Class Form3mll
         Me.Buttonairbus = New System.Windows.Forms.Button()
         Me.Button787 = New System.Windows.Forms.Button()
         Me.pmdg = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -980,6 +981,7 @@ Partial Class Form3mll
         '
         'Panel6
         '
+        Me.Panel6.Controls.Add(Me.Button2)
         Me.Panel6.Controls.Add(Me.Buttonp3d)
         Me.Panel6.Controls.Add(Me.Button9787)
         Me.Panel6.Controls.Add(Me.Button8airbus)
@@ -1084,6 +1086,15 @@ Partial Class Form3mll
         Me.pmdg.TabIndex = 0
         Me.pmdg.Text = "expot to pmdg"
         Me.pmdg.UseVisualStyleBackColor = True
+        '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(184, 57)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(230, 55)
+        Me.Button2.TabIndex = 12
+        Me.Button2.Text = "expot to projectFLY"
+        Me.Button2.UseVisualStyleBackColor = True
         '
         'Form3mll
         '
@@ -1222,4 +1233,5 @@ Partial Class Form3mll
     Friend WithEvents Save4 As ToolStripMenuItem
     Friend WithEvents Print5 As ToolStripMenuItem
     Friend WithEvents exit1 As ToolStripMenuItem
+    Friend WithEvents Button2 As Button
 End Class
