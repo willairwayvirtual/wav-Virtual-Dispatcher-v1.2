@@ -1,0 +1,19 @@
+SaveFileDialog1.ShowDialog()
+
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+        MessageBox.Show("aill routes have been exported")
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        rtie Files(*.txt)|*.txt |flp(*.txt)|  *.txt|all files|*.         fs Flight plan(*.pln)
