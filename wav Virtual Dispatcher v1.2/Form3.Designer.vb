@@ -502,7 +502,7 @@ Partial Class Form3mll
         '
         Me.taxiin.AutoSize = True
         Me.taxiin.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.taxiin.Location = New System.Drawing.Point(929, 14)
+        Me.taxiin.Location = New System.Drawing.Point(949, 15)
         Me.taxiin.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.taxiin.Name = "taxiin"
         Me.taxiin.Size = New System.Drawing.Size(57, 25)
@@ -546,7 +546,7 @@ Partial Class Form3mll
         '
         Me.arr.AutoSize = True
         Me.arr.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.arr.Location = New System.Drawing.Point(478, 18)
+        Me.arr.Location = New System.Drawing.Point(490, 7)
         Me.arr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.arr.Name = "arr"
         Me.arr.Size = New System.Drawing.Size(36, 24)
