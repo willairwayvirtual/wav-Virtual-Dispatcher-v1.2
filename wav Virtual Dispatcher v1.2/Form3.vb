@@ -50,6 +50,19 @@ Public Class Form3mll
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
     End Sub
 
+    Private Sub Open3_Click(sender As Object, e As EventArgs) Handles Open3.Click
+        Dim strtext As String
+
+        OpenFileDialog1.InitialDirectory = "Documents"
+        OpenFileDialog1.Title = "open text files"
+        OpenFileDialog1.ShowDialog()
+
+        strtext = OpenFileDialog1.FileName
+        RouteTextBox1.Text = My.Computer.FileSystem.ReadAllText(strtext)
 
 
+
+
+
+    End Sub
 End Class

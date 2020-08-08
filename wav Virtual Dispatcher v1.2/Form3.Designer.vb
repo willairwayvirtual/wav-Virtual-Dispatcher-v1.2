@@ -123,6 +123,7 @@ Partial Class Form3mll
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
+        Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -134,7 +135,7 @@ Partial Class Form3mll
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1519, 0)
+        Me.Button1.Location = New System.Drawing.Point(1087, 0)
         Me.Button1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button1.Name = "Button1"
         Me.Button1.Size = New System.Drawing.Size(156, 27)
@@ -144,7 +145,7 @@ Partial Class Form3mll
         '
         'fbc
         '
-        Me.fbc.Location = New System.Drawing.Point(1336, 0)
+        Me.fbc.Location = New System.Drawing.Point(864, 0)
         Me.fbc.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.fbc.Name = "fbc"
         Me.fbc.Size = New System.Drawing.Size(189, 27)
@@ -1109,6 +1110,10 @@ Partial Class Form3mll
         Me.SaveFileDialog1.FileName = "wav Dispatch Center"
         Me.SaveFileDialog1.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
         '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
         'Form3mll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1254,4 +1259,5 @@ Partial Class Form3mll
     Friend WithEvents Timer4 As Timer
     Friend WithEvents Timer5 As Timer
     Friend WithEvents Timer6 As Timer
+    Friend WithEvents OpenFileDialog1 As OpenFileDialog
 End Class
