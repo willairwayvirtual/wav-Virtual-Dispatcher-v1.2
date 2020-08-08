@@ -1,0 +1,8 @@
+Dim strtext As String
+
+        OpenFileDialog1.InitialDirectory = "Documents"
+        OpenFileDialog1.Title = "open text files"
+        OpenFileDialog1.ShowDialog()
+
+        strtext = OpenFileDialog1.FileName
+        RouteTextBox1.Text = My.Computer.FileSystem.ReadAllText(strtext)
