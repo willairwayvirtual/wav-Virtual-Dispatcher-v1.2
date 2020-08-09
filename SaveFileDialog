@@ -1,0 +1,3 @@
+ SaveFileDialog1.ShowDialog()
+        SaveFileDialog1.Title = "save text"
+        SaveFileDialog1.InitialDirectory = "Documents"
