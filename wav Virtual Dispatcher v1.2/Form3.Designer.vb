@@ -106,7 +106,7 @@ Partial Class Form3mll
         Me.RouteTextBox2 = New System.Windows.Forms.TextBox()
         Me.AIRTPORTextBox3 = New System.Windows.Forms.TextBox()
         Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.project = New System.Windows.Forms.Button()
         Me.Buttonp3d = New System.Windows.Forms.Button()
         Me.Button9787 = New System.Windows.Forms.Button()
         Me.Button8airbus = New System.Windows.Forms.Button()
@@ -124,6 +124,7 @@ Partial Class Form3mll
         Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
+        Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -160,7 +161,7 @@ Partial Class Form3mll
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -990,7 +991,7 @@ Partial Class Form3mll
         '
         'Panel6
         '
-        Me.Panel6.Controls.Add(Me.Button2)
+        Me.Panel6.Controls.Add(Me.project)
         Me.Panel6.Controls.Add(Me.Buttonp3d)
         Me.Panel6.Controls.Add(Me.Button9787)
         Me.Panel6.Controls.Add(Me.Button8airbus)
@@ -1006,14 +1007,14 @@ Partial Class Form3mll
         Me.Panel6.Size = New System.Drawing.Size(1695, 115)
         Me.Panel6.TabIndex = 53
         '
-        'Button2
+        'project
         '
-        Me.Button2.Location = New System.Drawing.Point(184, 57)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(230, 55)
-        Me.Button2.TabIndex = 12
-        Me.Button2.Text = "expot to projectFLY"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.project.Location = New System.Drawing.Point(184, 57)
+        Me.project.Name = "project"
+        Me.project.Size = New System.Drawing.Size(230, 55)
+        Me.project.TabIndex = 12
+        Me.project.Text = "expot to projectFLY"
+        Me.project.UseVisualStyleBackColor = True
         '
         'Buttonp3d
         '
@@ -1113,6 +1114,10 @@ Partial Class Form3mll
         'OpenFileDialog1
         '
         Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'SaveFileDialog2
+        '
+        Me.SaveFileDialog2.Filter = " Flight plan(*.pln)||*.pln|"
         '
         'Form3mll
         '
@@ -1251,7 +1256,7 @@ Partial Class Form3mll
     Friend WithEvents Save4 As ToolStripMenuItem
     Friend WithEvents Print5 As ToolStripMenuItem
     Friend WithEvents exit1 As ToolStripMenuItem
-    Friend WithEvents Button2 As Button
+    Friend WithEvents project As Button
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
@@ -1260,4 +1265,5 @@ Partial Class Form3mll
     Friend WithEvents Timer5 As Timer
     Friend WithEvents Timer6 As Timer
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
+    Friend WithEvents SaveFileDialog2 As SaveFileDialog
 End Class

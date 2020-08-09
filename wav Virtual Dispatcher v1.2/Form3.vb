@@ -43,6 +43,11 @@ Public Class Form3mll
 
     Private Sub Save4_Click(sender As Object, e As EventArgs) Handles Save4.Click
         SaveFileDialog1.ShowDialog()
+        SaveFileDialog1.Title = "save text"
+        SaveFileDialog1.InitialDirectory = "Documents"
+
+
+
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -64,5 +69,19 @@ Public Class Form3mll
 
 
 
+    End Sub
+
+    Private Sub project_Click(sender As Object, e As EventArgs) Handles project.Click
+        SaveFileDialog2.ShowDialog()
+        SaveFileDialog2.Title = "save text"
+        SaveFileDialog2.InitialDirectory = "Documents"
+
+
+
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".pln", "" & RouteTextBox1.Text, True)
     End Sub
 End Class
