@@ -1,3 +1,11 @@
  SaveFileDialog1.ShowDialog()
         SaveFileDialog1.Title = "save text"
         SaveFileDialog1.InitialDirectory = "Documents"
+
+
+
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
