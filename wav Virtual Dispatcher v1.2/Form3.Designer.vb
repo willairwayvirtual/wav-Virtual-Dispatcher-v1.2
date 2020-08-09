@@ -112,7 +112,6 @@ Partial Class Form3mll
         Me.Button8airbus = New System.Windows.Forms.Button()
         Me.Button11vatsim = New System.Windows.Forms.Button()
         Me.mfs20020 = New System.Windows.Forms.Button()
-        Me.Button6fslabs = New System.Windows.Forms.Button()
         Me.Buttonairbus = New System.Windows.Forms.Button()
         Me.Button787 = New System.Windows.Forms.Button()
         Me.pmdg = New System.Windows.Forms.Button()
@@ -126,6 +125,11 @@ Partial Class Form3mll
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog4 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog5 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog6 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog7 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog8 = New System.Windows.Forms.SaveFileDialog()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -162,7 +166,7 @@ Partial Class Form3mll
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -1004,7 +1008,6 @@ Partial Class Form3mll
         Me.Panel6.Controls.Add(Me.Button8airbus)
         Me.Panel6.Controls.Add(Me.Button11vatsim)
         Me.Panel6.Controls.Add(Me.mfs20020)
-        Me.Panel6.Controls.Add(Me.Button6fslabs)
         Me.Panel6.Controls.Add(Me.Buttonairbus)
         Me.Panel6.Controls.Add(Me.Button787)
         Me.Panel6.Controls.Add(Me.pmdg)
@@ -1048,7 +1051,7 @@ Partial Class Form3mll
         Me.Button8airbus.Location = New System.Drawing.Point(1071, -1)
         Me.Button8airbus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8airbus.Name = "Button8airbus"
-        Me.Button8airbus.Size = New System.Drawing.Size(249, 52)
+        Me.Button8airbus.Size = New System.Drawing.Size(418, 52)
         Me.Button8airbus.TabIndex = 9
         Me.Button8airbus.Text = "expot  to aerosoft Airbus family p3d"
         Me.Button8airbus.UseVisualStyleBackColor = True
@@ -1072,16 +1075,6 @@ Partial Class Form3mll
         Me.mfs20020.TabIndex = 4
         Me.mfs20020.Text = "expot  to mfs20020"
         Me.mfs20020.UseVisualStyleBackColor = True
-        '
-        'Button6fslabs
-        '
-        Me.Button6fslabs.Location = New System.Drawing.Point(1326, 0)
-        Me.Button6fslabs.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button6fslabs.Name = "Button6fslabs"
-        Me.Button6fslabs.Size = New System.Drawing.Size(171, 57)
-        Me.Button6fslabs.TabIndex = 3
-        Me.Button6fslabs.Text = "expot  to fs labs"
-        Me.Button6fslabs.UseVisualStyleBackColor = True
         '
         'Buttonairbus
         '
@@ -1125,6 +1118,30 @@ Partial Class Form3mll
         'SaveFileDialog2
         '
         Me.SaveFileDialog2.Filter = " Flight plan(*.pln)||*.pln|"
+        '
+        'SaveFileDialog3
+        '
+        Me.SaveFileDialog3.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
+        '
+        'SaveFileDialog4
+        '
+        Me.SaveFileDialog4.Filter = "Text Files(*.txt)|*.txt|rtie Files(*.txt)|*.*"
+        '
+        'SaveFileDialog5
+        '
+        Me.SaveFileDialog5.Filter = "tie Files(*.txt)|*Text Files(*.txt)|*.txt|"
+        '
+        'SaveFileDialog6
+        '
+        Me.SaveFileDialog6.Filter = "Text Files(*.txt)|*.txt|rtie Files(*.txt)|*.*"
+        '
+        'SaveFileDialog7
+        '
+        Me.SaveFileDialog7.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
+        '
+        'SaveFileDialog8
+        '
+        Me.SaveFileDialog8.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
         '
         'Form3mll
         '
@@ -1250,7 +1267,6 @@ Partial Class Form3mll
     Friend WithEvents RouteTextBox2 As TextBox
     Friend WithEvents AIRTPORTextBox3 As TextBox
     Friend WithEvents mfs20020 As Button
-    Friend WithEvents Button6fslabs As Button
     Friend WithEvents Buttonairbus As Button
     Friend WithEvents Button787 As Button
     Friend WithEvents pmdg As Button
@@ -1274,4 +1290,9 @@ Partial Class Form3mll
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents SaveFileDialog2 As SaveFileDialog
     Friend WithEvents SaveFileDialog3 As SaveFileDialog
+    Friend WithEvents SaveFileDialog4 As SaveFileDialog
+    Friend WithEvents SaveFileDialog5 As SaveFileDialog
+    Friend WithEvents SaveFileDialog6 As SaveFileDialog
+    Friend WithEvents SaveFileDialog7 As SaveFileDialog
+    Friend WithEvents SaveFileDialog8 As SaveFileDialog
 End Class

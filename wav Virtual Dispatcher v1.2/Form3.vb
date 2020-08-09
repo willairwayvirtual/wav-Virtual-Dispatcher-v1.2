@@ -100,6 +100,63 @@ Public Class Form3mll
 
         location = SaveFileDialog1.FileName
 
-        My.Computer.FileSystem.WriteAllText(location & ".pln", "" & RouteTextBox1.Text, True)
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+    End Sub
+
+    Private Sub Buttonp3d_Click(sender As Object, e As EventArgs) Handles Buttonp3d.Click
+        SaveFileDialog4.ShowDialog()
+        SaveFileDialog4.Title = "save text"
+        SaveFileDialog4.InitialDirectory = "Documents"
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+    End Sub
+
+    Private Sub Button787_Click(sender As Object, e As EventArgs) Handles Button787.Click
+        SaveFileDialog4.ShowDialog()
+        SaveFileDialog4.Title = "save text"
+        SaveFileDialog4.InitialDirectory = "Documents"
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+    End Sub
+
+    Private Sub Button9787_Click(sender As Object, e As EventArgs) Handles Button9787.Click
+        SaveFileDialog6.ShowDialog()
+        SaveFileDialog6.Title = "save text"
+        SaveFileDialog6.InitialDirectory = "Documents"
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
+    End Sub
+
+    Private Sub Buttonairbus_Click(sender As Object, e As EventArgs) Handles Buttonairbus.Click
+        SaveFileDialog7.ShowDialog()
+        SaveFileDialog7.Title = "save text"
+        SaveFileDialog7.InitialDirectory = "Documents"
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
+    End Sub
+
+    Private Sub Button8airbus_Click(sender As Object, e As EventArgs) Handles Button8airbus.Click
+        SaveFileDialog8.ShowDialog()
+        SaveFileDialog8.Title = "save text"
+        SaveFileDialog8.InitialDirectory = "Documents"
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
     End Sub
 End Class
