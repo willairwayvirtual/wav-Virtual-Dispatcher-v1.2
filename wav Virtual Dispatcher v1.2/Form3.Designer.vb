@@ -125,6 +125,7 @@ Partial Class Form3mll
         Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -379,6 +380,7 @@ Partial Class Form3mll
         '
         'arrTextBox2
         '
+        Me.arrTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.arrTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.arrTextBox2.Location = New System.Drawing.Point(439, 48)
         Me.arrTextBox2.Margin = New System.Windows.Forms.Padding(4)
@@ -389,6 +391,7 @@ Partial Class Form3mll
         '
         'depTextBox1
         '
+        Me.depTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.depTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.depTextBox1.Location = New System.Drawing.Point(284, 48)
         Me.depTextBox1.Margin = New System.Windows.Forms.Padding(4)
@@ -447,6 +450,7 @@ Partial Class Form3mll
         '
         'CallsignTextBox6
         '
+        Me.CallsignTextBox6.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.CallsignTextBox6.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.CallsignTextBox6.Location = New System.Drawing.Point(209, 48)
         Me.CallsignTextBox6.Margin = New System.Windows.Forms.Padding(4)
@@ -456,6 +460,7 @@ Partial Class Form3mll
         '
         'FlightTextBox5
         '
+        Me.FlightTextBox5.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.FlightTextBox5.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.FlightTextBox5.Location = New System.Drawing.Point(108, 48)
         Me.FlightTextBox5.Margin = New System.Windows.Forms.Padding(4)
@@ -466,6 +471,7 @@ Partial Class Form3mll
         '
         'AirlinetextBox4
         '
+        Me.AirlinetextBox4.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.AirlinetextBox4.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AirlinetextBox4.Location = New System.Drawing.Point(13, 48)
         Me.AirlinetextBox4.Margin = New System.Windows.Forms.Padding(4)
@@ -929,6 +935,7 @@ Partial Class Form3mll
         '
         'RouteTextBox1
         '
+        Me.RouteTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.RouteTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RouteTextBox1.Location = New System.Drawing.Point(0, 0)
         Me.RouteTextBox1.Margin = New System.Windows.Forms.Padding(4)
@@ -1068,7 +1075,7 @@ Partial Class Form3mll
         '
         'Button6fslabs
         '
-        Me.Button6fslabs.Location = New System.Drawing.Point(1326, -2)
+        Me.Button6fslabs.Location = New System.Drawing.Point(1326, 0)
         Me.Button6fslabs.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button6fslabs.Name = "Button6fslabs"
         Me.Button6fslabs.Size = New System.Drawing.Size(171, 57)
@@ -1266,4 +1273,5 @@ Partial Class Form3mll
     Friend WithEvents Timer6 As Timer
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents SaveFileDialog2 As SaveFileDialog
+    Friend WithEvents SaveFileDialog3 As SaveFileDialog
 End Class

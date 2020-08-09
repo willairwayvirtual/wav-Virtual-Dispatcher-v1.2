@@ -1,6 +1,13 @@
 ﻿Imports System.ComponentModel
 
 Public Class Form3mll
+
+    Private Sub textboxX_leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AirlinetextBox4.Leave, CallsignTextBox6.Leave, FlightTextBox5.Leave, arrTextBox2.Leave, depTextBox1.Leave, RouteTextBox1.Leave
+        Dim tb As TextBox = sender
+        tb.BackColor = Color.White
+
+    End Sub
+
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
         Form4.Show()
 
@@ -78,6 +85,17 @@ Public Class Form3mll
 
 
 
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".pln", "" & RouteTextBox1.Text, True)
+    End Sub
+
+    Private Sub pmdg_Click(sender As Object, e As EventArgs) Handles pmdg.Click
+        SaveFileDialog3.ShowDialog()
+        SaveFileDialog3.Title = "save text"
+        SaveFileDialog3.InitialDirectory = "Documents"
         Dim location As String
 
         location = SaveFileDialog1.FileName
