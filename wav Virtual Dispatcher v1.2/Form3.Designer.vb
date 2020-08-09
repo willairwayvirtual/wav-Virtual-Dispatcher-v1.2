@@ -161,7 +161,7 @@ Partial Class Form3mll
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -555,7 +555,7 @@ Partial Class Form3mll
         '
         Me.arr.AutoSize = True
         Me.arr.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.arr.Location = New System.Drawing.Point(490, 18)
+        Me.arr.Location = New System.Drawing.Point(490, 14)
         Me.arr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.arr.Name = "arr"
         Me.arr.Size = New System.Drawing.Size(36, 24)
