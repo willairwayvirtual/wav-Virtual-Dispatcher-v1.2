@@ -162,7 +162,10 @@ Public Class Form3mll
     End Sub
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
-        MessageBox.Show("wav-Virtual-Dispatcher-v1.0 ")
+        MessageBox.Show("wav-Virtual-Dispatcher-v1.0
+
+
+ CONTACT US Wavuserhelpdesk@hotmail.com")
 
     End Sub
 End Class

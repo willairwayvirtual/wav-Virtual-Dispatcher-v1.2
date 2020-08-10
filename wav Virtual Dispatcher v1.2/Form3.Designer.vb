@@ -32,6 +32,7 @@ Partial Class Form3mll
         Me.Open3 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Save4 = New System.Windows.Forms.ToolStripMenuItem()
         Me.Print5 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.flightinfo = New System.Windows.Forms.Button()
         Me.AircraftType = New System.Windows.Forms.Button()
         Me.PAYLOAD = New System.Windows.Forms.Button()
@@ -132,7 +133,6 @@ Partial Class Form3mll
         Me.SaveFileDialog8 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog9 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog10 = New System.Windows.Forms.SaveFileDialog()
-        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -169,7 +169,7 @@ Partial Class Form3mll
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -177,36 +177,42 @@ Partial Class Form3mll
         '
         Me.exit1.Name = "exit1"
         Me.exit1.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.E), System.Windows.Forms.Keys)
-        Me.exit1.Size = New System.Drawing.Size(47, 24)
+        Me.exit1.Size = New System.Drawing.Size(47, 26)
         Me.exit1.Text = "exit"
         '
         'New2
         '
         Me.New2.Name = "New2"
         Me.New2.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.N), System.Windows.Forms.Keys)
-        Me.New2.Size = New System.Drawing.Size(50, 24)
+        Me.New2.Size = New System.Drawing.Size(50, 26)
         Me.New2.Text = "new"
         '
         'Open3
         '
         Me.Open3.Name = "Open3"
         Me.Open3.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.D0), System.Windows.Forms.Keys)
-        Me.Open3.Size = New System.Drawing.Size(57, 24)
+        Me.Open3.Size = New System.Drawing.Size(57, 26)
         Me.Open3.Text = "open"
         '
         'Save4
         '
         Me.Save4.Name = "Save4"
         Me.Save4.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.S), System.Windows.Forms.Keys)
-        Me.Save4.Size = New System.Drawing.Size(52, 24)
+        Me.Save4.Size = New System.Drawing.Size(52, 26)
         Me.Save4.Text = "save"
         '
         'Print5
         '
         Me.Print5.Name = "Print5"
         Me.Print5.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
-        Me.Print5.Size = New System.Drawing.Size(54, 24)
+        Me.Print5.Size = New System.Drawing.Size(54, 26)
         Me.Print5.Text = "print"
+        '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(62, 26)
+        Me.AboutToolStripMenuItem.Text = "about"
         '
         'flightinfo
         '
@@ -412,7 +418,7 @@ Partial Class Form3mll
         'ettTextBox12
         '
         Me.ettTextBox12.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
-        Me.ettTextBox12.Location = New System.Drawing.Point(1370, 49)
+        Me.ettTextBox12.Location = New System.Drawing.Point(1359, 49)
         Me.ettTextBox12.Margin = New System.Windows.Forms.Padding(4)
         Me.ettTextBox12.Name = "ettTextBox12"
         Me.ettTextBox12.Size = New System.Drawing.Size(83, 22)
@@ -1163,12 +1169,6 @@ Partial Class Form3mll
         'SaveFileDialog10
         '
         Me.SaveFileDialog10.Filter = "flp(*.txt)|*"
-        '
-        'AboutToolStripMenuItem
-        '
-        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
-        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(62, 24)
-        Me.AboutToolStripMenuItem.Text = "about"
         '
         'Form3mll
         '
