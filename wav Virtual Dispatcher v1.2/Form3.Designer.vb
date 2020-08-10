@@ -129,6 +129,9 @@ Partial Class Form3mll
         Me.SaveFileDialog6 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog5 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog8 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog9 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog10 = New System.Windows.Forms.SaveFileDialog()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -1138,6 +1141,18 @@ Partial Class Form3mll
         '
         Me.SaveFileDialog5.Filter = "rtie Files(*.txt)|Text Files(*.txt)|*.txt|*.*"
         '
+        'SaveFileDialog8
+        '
+        Me.SaveFileDialog8.Filter = "Text Files(*.txt)|*.*"
+        '
+        'SaveFileDialog9
+        '
+        Me.SaveFileDialog9.Filter = "rtie Files(*.txt)|Text Files(*.txt)|*.txt|*.*"
+        '
+        'SaveFileDialog10
+        '
+        Me.SaveFileDialog10.Filter = "flp(*.txt)|*"
+        '
         'Form3mll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1289,4 +1304,7 @@ Partial Class Form3mll
     Friend WithEvents SaveFileDialog6 As SaveFileDialog
     Friend WithEvents SaveFileDialog3 As SaveFileDialog
     Friend WithEvents SaveFileDialog5 As SaveFileDialog
+    Friend WithEvents SaveFileDialog8 As SaveFileDialog
+    Friend WithEvents SaveFileDialog9 As SaveFileDialog
+    Friend WithEvents SaveFileDialog10 As SaveFileDialog
 End Class
