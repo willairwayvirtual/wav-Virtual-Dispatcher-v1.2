@@ -949,7 +949,7 @@ Partial Class Form3mll
         '
         'RouteTextBox1
         '
-        Me.RouteTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.RouteTextBox1.BackColor = System.Drawing.Color.White
         Me.RouteTextBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RouteTextBox1.Location = New System.Drawing.Point(0, 0)
         Me.RouteTextBox1.Margin = New System.Windows.Forms.Padding(4)
