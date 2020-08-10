@@ -132,6 +132,7 @@ Partial Class Form3mll
         Me.SaveFileDialog8 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog9 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog10 = New System.Windows.Forms.SaveFileDialog()
+        Me.AboutToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -164,7 +165,7 @@ Partial Class Form3mll
         'wavMenu
         '
         Me.wavMenu.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.exit1, Me.New2, Me.Open3, Me.Save4, Me.Print5})
+        Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.exit1, Me.New2, Me.Open3, Me.Save4, Me.Print5, Me.AboutToolStripMenuItem})
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
@@ -992,6 +993,7 @@ Partial Class Form3mll
         '
         'RouteTextBox2
         '
+        Me.RouteTextBox2.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.RouteTextBox2.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.RouteTextBox2.Location = New System.Drawing.Point(159, 27)
         Me.RouteTextBox2.Margin = New System.Windows.Forms.Padding(4)
@@ -1002,6 +1004,7 @@ Partial Class Form3mll
         '
         'AIRTPORTextBox3
         '
+        Me.AIRTPORTextBox3.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
         Me.AIRTPORTextBox3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.AIRTPORTextBox3.Location = New System.Drawing.Point(0, 27)
         Me.AIRTPORTextBox3.Margin = New System.Windows.Forms.Padding(4)
@@ -1161,6 +1164,12 @@ Partial Class Form3mll
         '
         Me.SaveFileDialog10.Filter = "flp(*.txt)|*"
         '
+        'AboutToolStripMenuItem
+        '
+        Me.AboutToolStripMenuItem.Name = "AboutToolStripMenuItem"
+        Me.AboutToolStripMenuItem.Size = New System.Drawing.Size(62, 24)
+        Me.AboutToolStripMenuItem.Text = "about"
+        '
         'Form3mll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1315,4 +1324,5 @@ Partial Class Form3mll
     Friend WithEvents SaveFileDialog8 As SaveFileDialog
     Friend WithEvents SaveFileDialog9 As SaveFileDialog
     Friend WithEvents SaveFileDialog10 As SaveFileDialog
+    Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
 End Class
