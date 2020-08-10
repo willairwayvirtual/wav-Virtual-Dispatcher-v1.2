@@ -104,9 +104,9 @@ Public Class Form3mll
     End Sub
 
     Private Sub Buttonp3d_Click(sender As Object, e As EventArgs) Handles Buttonp3d.Click
-        SaveFileDialog4.ShowDialog()
-        SaveFileDialog4.Title = "save text"
-        SaveFileDialog4.InitialDirectory = "Documents"
+        SaveFileDialog3.ShowDialog()
+        SaveFileDialog3.Title = "save text"
+        SaveFileDialog3.InitialDirectory = "Documents"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -126,9 +126,9 @@ Public Class Form3mll
     End Sub
 
     Private Sub Button9787_Click(sender As Object, e As EventArgs) Handles Button9787.Click
-        SaveFileDialog6.ShowDialog()
-        SaveFileDialog6.Title = "save text"
-        SaveFileDialog6.InitialDirectory = "Documents"
+        SaveFileDialog4.ShowDialog()
+        SaveFileDialog4.Title = "save text"
+        SaveFileDialog4.InitialDirectory = "Documents"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -150,9 +150,9 @@ Public Class Form3mll
     End Sub
 
     Private Sub Button8airbus_Click(sender As Object, e As EventArgs) Handles Button8airbus.Click
-        SaveFileDialog8.ShowDialog()
-        SaveFileDialog8.Title = "save text"
-        SaveFileDialog8.InitialDirectory = "Documents"
+        SaveFileDialog7.ShowDialog()
+        SaveFileDialog7.Title = "save text"
+        SaveFileDialog7.InitialDirectory = "Documents"
         Dim location As String
 
         location = SaveFileDialog1.FileName

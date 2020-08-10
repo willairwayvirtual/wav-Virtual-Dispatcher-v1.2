@@ -105,16 +105,6 @@ Partial Class Form3mll
         Me.Label43 = New System.Windows.Forms.Label()
         Me.RouteTextBox2 = New System.Windows.Forms.TextBox()
         Me.AIRTPORTextBox3 = New System.Windows.Forms.TextBox()
-        Me.Panel6 = New System.Windows.Forms.Panel()
-        Me.project = New System.Windows.Forms.Button()
-        Me.Buttonp3d = New System.Windows.Forms.Button()
-        Me.Button9787 = New System.Windows.Forms.Button()
-        Me.Button8airbus = New System.Windows.Forms.Button()
-        Me.Button11vatsim = New System.Windows.Forms.Button()
-        Me.mfs20020 = New System.Windows.Forms.Button()
-        Me.Buttonairbus = New System.Windows.Forms.Button()
-        Me.Button787 = New System.Windows.Forms.Button()
-        Me.pmdg = New System.Windows.Forms.Button()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
@@ -124,12 +114,21 @@ Partial Class Form3mll
         Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog4 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog5 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog6 = New System.Windows.Forms.SaveFileDialog()
+        Me.pmdg = New System.Windows.Forms.Button()
+        Me.Button787 = New System.Windows.Forms.Button()
+        Me.Buttonairbus = New System.Windows.Forms.Button()
+        Me.mfs20020 = New System.Windows.Forms.Button()
+        Me.Button11vatsim = New System.Windows.Forms.Button()
+        Me.Button8airbus = New System.Windows.Forms.Button()
+        Me.Button9787 = New System.Windows.Forms.Button()
+        Me.Buttonp3d = New System.Windows.Forms.Button()
+        Me.project = New System.Windows.Forms.Button()
+        Me.Panel6 = New System.Windows.Forms.Panel()
         Me.SaveFileDialog7 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog8 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog4 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog6 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog5 = New System.Windows.Forms.SaveFileDialog()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -1000,6 +999,108 @@ Partial Class Form3mll
         Me.AIRTPORTextBox3.Size = New System.Drawing.Size(161, 80)
         Me.AIRTPORTextBox3.TabIndex = 46
         '
+        'SaveFileDialog1
+        '
+        Me.SaveFileDialog1.FileName = "wav Dispatch Center"
+        Me.SaveFileDialog1.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
+        '
+        'OpenFileDialog1
+        '
+        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
+        '
+        'SaveFileDialog2
+        '
+        Me.SaveFileDialog2.Filter = " Flight plan(*.pln)||*.pln|"
+        '
+        'pmdg
+        '
+        Me.pmdg.Location = New System.Drawing.Point(4, -2)
+        Me.pmdg.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.pmdg.Name = "pmdg"
+        Me.pmdg.Size = New System.Drawing.Size(222, 50)
+        Me.pmdg.TabIndex = 0
+        Me.pmdg.Text = "expot to pmdg"
+        Me.pmdg.UseVisualStyleBackColor = True
+        '
+        'Button787
+        '
+        Me.Button787.Location = New System.Drawing.Point(424, -2)
+        Me.Button787.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button787.Name = "Button787"
+        Me.Button787.Size = New System.Drawing.Size(215, 52)
+        Me.Button787.TabIndex = 1
+        Me.Button787.Text = "expot to qualitywingssim 787"
+        Me.Button787.UseVisualStyleBackColor = True
+        '
+        'Buttonairbus
+        '
+        Me.Buttonairbus.Location = New System.Drawing.Point(834, 0)
+        Me.Buttonairbus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Buttonairbus.Name = "Buttonairbus"
+        Me.Buttonairbus.Size = New System.Drawing.Size(249, 52)
+        Me.Buttonairbus.TabIndex = 2
+        Me.Buttonairbus.Text = "expot  to aerosoft Airbus family"
+        Me.Buttonairbus.UseVisualStyleBackColor = True
+        '
+        'mfs20020
+        '
+        Me.mfs20020.Location = New System.Drawing.Point(1495, -3)
+        Me.mfs20020.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.mfs20020.Name = "mfs20020"
+        Me.mfs20020.Size = New System.Drawing.Size(176, 59)
+        Me.mfs20020.TabIndex = 4
+        Me.mfs20020.Text = "expot  to mfs20020"
+        Me.mfs20020.UseVisualStyleBackColor = True
+        '
+        'Button11vatsim
+        '
+        Me.Button11vatsim.Location = New System.Drawing.Point(0, 58)
+        Me.Button11vatsim.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button11vatsim.Name = "Button11vatsim"
+        Me.Button11vatsim.Size = New System.Drawing.Size(180, 57)
+        Me.Button11vatsim.TabIndex = 8
+        Me.Button11vatsim.Text = "expot  to vatsim"
+        Me.Button11vatsim.UseVisualStyleBackColor = True
+        '
+        'Button8airbus
+        '
+        Me.Button8airbus.Location = New System.Drawing.Point(1071, -1)
+        Me.Button8airbus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button8airbus.Name = "Button8airbus"
+        Me.Button8airbus.Size = New System.Drawing.Size(418, 52)
+        Me.Button8airbus.TabIndex = 9
+        Me.Button8airbus.Text = "expot  to aerosoft Airbus family p3d"
+        Me.Button8airbus.UseVisualStyleBackColor = True
+        '
+        'Button9787
+        '
+        Me.Button9787.Location = New System.Drawing.Point(638, 0)
+        Me.Button9787.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Button9787.Name = "Button9787"
+        Me.Button9787.Size = New System.Drawing.Size(215, 52)
+        Me.Button9787.TabIndex = 10
+        Me.Button9787.Text = "expot  to qualitywingssim 787 p3d"
+        Me.Button9787.UseVisualStyleBackColor = True
+        '
+        'Buttonp3d
+        '
+        Me.Buttonp3d.Location = New System.Drawing.Point(219, -2)
+        Me.Buttonp3d.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.Buttonp3d.Name = "Buttonp3d"
+        Me.Buttonp3d.Size = New System.Drawing.Size(210, 54)
+        Me.Buttonp3d.TabIndex = 11
+        Me.Buttonp3d.Text = "expot  to pmdg p3d"
+        Me.Buttonp3d.UseVisualStyleBackColor = True
+        '
+        'project
+        '
+        Me.project.Location = New System.Drawing.Point(184, 57)
+        Me.project.Name = "project"
+        Me.project.Size = New System.Drawing.Size(230, 55)
+        Me.project.TabIndex = 12
+        Me.project.Text = "expot to projectFLY"
+        Me.project.UseVisualStyleBackColor = True
+        '
         'Panel6
         '
         Me.Panel6.Controls.Add(Me.project)
@@ -1017,131 +1118,25 @@ Partial Class Form3mll
         Me.Panel6.Size = New System.Drawing.Size(1695, 115)
         Me.Panel6.TabIndex = 53
         '
-        'project
+        'SaveFileDialog7
         '
-        Me.project.Location = New System.Drawing.Point(184, 57)
-        Me.project.Name = "project"
-        Me.project.Size = New System.Drawing.Size(230, 55)
-        Me.project.TabIndex = 12
-        Me.project.Text = "expot to projectFLY"
-        Me.project.UseVisualStyleBackColor = True
-        '
-        'Buttonp3d
-        '
-        Me.Buttonp3d.Location = New System.Drawing.Point(219, -2)
-        Me.Buttonp3d.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Buttonp3d.Name = "Buttonp3d"
-        Me.Buttonp3d.Size = New System.Drawing.Size(210, 54)
-        Me.Buttonp3d.TabIndex = 11
-        Me.Buttonp3d.Text = "expot  to pmdg p3d"
-        Me.Buttonp3d.UseVisualStyleBackColor = True
-        '
-        'Button9787
-        '
-        Me.Button9787.Location = New System.Drawing.Point(638, 0)
-        Me.Button9787.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button9787.Name = "Button9787"
-        Me.Button9787.Size = New System.Drawing.Size(215, 52)
-        Me.Button9787.TabIndex = 10
-        Me.Button9787.Text = "expot  to qualitywingssim 787 p3d"
-        Me.Button9787.UseVisualStyleBackColor = True
-        '
-        'Button8airbus
-        '
-        Me.Button8airbus.Location = New System.Drawing.Point(1071, -1)
-        Me.Button8airbus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button8airbus.Name = "Button8airbus"
-        Me.Button8airbus.Size = New System.Drawing.Size(418, 52)
-        Me.Button8airbus.TabIndex = 9
-        Me.Button8airbus.Text = "expot  to aerosoft Airbus family p3d"
-        Me.Button8airbus.UseVisualStyleBackColor = True
-        '
-        'Button11vatsim
-        '
-        Me.Button11vatsim.Location = New System.Drawing.Point(0, 58)
-        Me.Button11vatsim.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button11vatsim.Name = "Button11vatsim"
-        Me.Button11vatsim.Size = New System.Drawing.Size(180, 57)
-        Me.Button11vatsim.TabIndex = 8
-        Me.Button11vatsim.Text = "expot  to vatsim"
-        Me.Button11vatsim.UseVisualStyleBackColor = True
-        '
-        'mfs20020
-        '
-        Me.mfs20020.Location = New System.Drawing.Point(1495, -3)
-        Me.mfs20020.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.mfs20020.Name = "mfs20020"
-        Me.mfs20020.Size = New System.Drawing.Size(176, 59)
-        Me.mfs20020.TabIndex = 4
-        Me.mfs20020.Text = "expot  to mfs20020"
-        Me.mfs20020.UseVisualStyleBackColor = True
-        '
-        'Buttonairbus
-        '
-        Me.Buttonairbus.Location = New System.Drawing.Point(834, 0)
-        Me.Buttonairbus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Buttonairbus.Name = "Buttonairbus"
-        Me.Buttonairbus.Size = New System.Drawing.Size(249, 52)
-        Me.Buttonairbus.TabIndex = 2
-        Me.Buttonairbus.Text = "expot  to aerosoft Airbus family"
-        Me.Buttonairbus.UseVisualStyleBackColor = True
-        '
-        'Button787
-        '
-        Me.Button787.Location = New System.Drawing.Point(424, -2)
-        Me.Button787.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Button787.Name = "Button787"
-        Me.Button787.Size = New System.Drawing.Size(215, 52)
-        Me.Button787.TabIndex = 1
-        Me.Button787.Text = "expot to qualitywingssim 787"
-        Me.Button787.UseVisualStyleBackColor = True
-        '
-        'pmdg
-        '
-        Me.pmdg.Location = New System.Drawing.Point(4, -2)
-        Me.pmdg.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.pmdg.Name = "pmdg"
-        Me.pmdg.Size = New System.Drawing.Size(222, 50)
-        Me.pmdg.TabIndex = 0
-        Me.pmdg.Text = "expot to pmdg"
-        Me.pmdg.UseVisualStyleBackColor = True
-        '
-        'SaveFileDialog1
-        '
-        Me.SaveFileDialog1.FileName = "wav Dispatch Center"
-        Me.SaveFileDialog1.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
-        '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
-        '
-        'SaveFileDialog2
-        '
-        Me.SaveFileDialog2.Filter = " Flight plan(*.pln)||*.pln|"
-        '
-        'SaveFileDialog3
-        '
-        Me.SaveFileDialog3.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
+        Me.SaveFileDialog7.Filter = "flp(*.txt)|*"
         '
         'SaveFileDialog4
         '
-        Me.SaveFileDialog4.Filter = "Text Files(*.txt)|*.txt|rtie Files(*.txt)|*.*"
-        '
-        'SaveFileDialog5
-        '
-        Me.SaveFileDialog5.Filter = "tie Files(*.txt)|*Text Files(*.txt)|*.txt|"
+        Me.SaveFileDialog4.Filter = "rtie Files(*.txt)|Text Files(*.txt)|*.txt|*.*"
         '
         'SaveFileDialog6
         '
         Me.SaveFileDialog6.Filter = "Text Files(*.txt)|*.txt|rtie Files(*.txt)|*.*"
         '
-        'SaveFileDialog7
+        'SaveFileDialog3
         '
-        Me.SaveFileDialog7.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
+        Me.SaveFileDialog3.Filter = "Text Files(*.txt)|*.*"
         '
-        'SaveFileDialog8
+        'SaveFileDialog5
         '
-        Me.SaveFileDialog8.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
+        Me.SaveFileDialog5.Filter = "rtie Files(*.txt)|Text Files(*.txt)|*.txt|*.*"
         '
         'Form3mll
         '
@@ -1204,7 +1199,6 @@ Partial Class Form3mll
     Friend WithEvents Panel3 As Panel
     Friend WithEvents Panel4 As Panel
     Friend WithEvents Panel5 As Panel
-    Friend WithEvents Panel6 As Panel
     Friend WithEvents registration As Label
     Friend WithEvents regisComboBox3 As ComboBox
     Friend WithEvents Label18 As Label
@@ -1266,20 +1260,11 @@ Partial Class Form3mll
     Friend WithEvents Label43 As Label
     Friend WithEvents RouteTextBox2 As TextBox
     Friend WithEvents AIRTPORTextBox3 As TextBox
-    Friend WithEvents mfs20020 As Button
-    Friend WithEvents Buttonairbus As Button
-    Friend WithEvents Button787 As Button
-    Friend WithEvents pmdg As Button
-    Friend WithEvents Button11vatsim As Button
-    Friend WithEvents Buttonp3d As Button
-    Friend WithEvents Button9787 As Button
-    Friend WithEvents Button8airbus As Button
     Friend WithEvents New2 As ToolStripMenuItem
     Friend WithEvents Open3 As ToolStripMenuItem
     Friend WithEvents Save4 As ToolStripMenuItem
     Friend WithEvents Print5 As ToolStripMenuItem
     Friend WithEvents exit1 As ToolStripMenuItem
-    Friend WithEvents project As Button
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
     Friend WithEvents Timer1 As Timer
     Friend WithEvents Timer2 As Timer
@@ -1289,10 +1274,19 @@ Partial Class Form3mll
     Friend WithEvents Timer6 As Timer
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents SaveFileDialog2 As SaveFileDialog
-    Friend WithEvents SaveFileDialog3 As SaveFileDialog
-    Friend WithEvents SaveFileDialog4 As SaveFileDialog
-    Friend WithEvents SaveFileDialog5 As SaveFileDialog
-    Friend WithEvents SaveFileDialog6 As SaveFileDialog
+    Friend WithEvents pmdg As Button
+    Friend WithEvents Button787 As Button
+    Friend WithEvents Buttonairbus As Button
+    Friend WithEvents mfs20020 As Button
+    Friend WithEvents Button11vatsim As Button
+    Friend WithEvents Button8airbus As Button
+    Friend WithEvents Button9787 As Button
+    Friend WithEvents Buttonp3d As Button
+    Friend WithEvents project As Button
+    Friend WithEvents Panel6 As Panel
     Friend WithEvents SaveFileDialog7 As SaveFileDialog
-    Friend WithEvents SaveFileDialog8 As SaveFileDialog
+    Friend WithEvents SaveFileDialog4 As SaveFileDialog
+    Friend WithEvents SaveFileDialog6 As SaveFileDialog
+    Friend WithEvents SaveFileDialog3 As SaveFileDialog
+    Friend WithEvents SaveFileDialog5 As SaveFileDialog
 End Class
