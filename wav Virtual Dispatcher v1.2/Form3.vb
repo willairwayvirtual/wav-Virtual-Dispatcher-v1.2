@@ -165,7 +165,8 @@ Public Class Form3mll
         MessageBox.Show("wav-Virtual-Dispatcher-v1.0
 
 
- CONTACT US Wavuserhelpdesk@hotmail.com")
+ CONTACT US Wavuserhelpdesk@hotmail.com or go to
+www.willairwayvirtual34.com/It Help desk")
 
     End Sub
 End Class
