@@ -133,6 +133,7 @@ Partial Class Form3mll
         Me.SaveFileDialog8 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog9 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog10 = New System.Windows.Forms.SaveFileDialog()
+        Me.PrintPreviewToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -165,11 +166,11 @@ Partial Class Form3mll
         'wavMenu
         '
         Me.wavMenu.ImageScalingSize = New System.Drawing.Size(20, 20)
-        Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.exit1, Me.New2, Me.Open3, Me.Save4, Me.Print5, Me.AboutToolStripMenuItem})
+        Me.wavMenu.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.exit1, Me.New2, Me.Open3, Me.Save4, Me.Print5, Me.PrintPreviewToolStripMenuItem, Me.AboutToolStripMenuItem})
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -1170,6 +1171,13 @@ Partial Class Form3mll
         '
         Me.SaveFileDialog10.Filter = "flp(*.txt)|*"
         '
+        'PrintPreviewToolStripMenuItem
+        '
+        Me.PrintPreviewToolStripMenuItem.Name = "PrintPreviewToolStripMenuItem"
+        Me.PrintPreviewToolStripMenuItem.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.T), System.Windows.Forms.Keys)
+        Me.PrintPreviewToolStripMenuItem.Size = New System.Drawing.Size(104, 24)
+        Me.PrintPreviewToolStripMenuItem.Text = "PrintPreview"
+        '
         'Form3mll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1325,4 +1333,5 @@ Partial Class Form3mll
     Friend WithEvents SaveFileDialog9 As SaveFileDialog
     Friend WithEvents SaveFileDialog10 As SaveFileDialog
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
+    Friend WithEvents PrintPreviewToolStripMenuItem As ToolStripMenuItem
 End Class
