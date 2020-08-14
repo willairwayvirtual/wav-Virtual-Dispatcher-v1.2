@@ -2,7 +2,7 @@
 
 Public Class Form3mll
 
-    Private Sub textboxX_leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AirlinetextBox4.Leave, CallsignTextBox6.Leave, FlightTextBox5.Leave, arrTextBox2.Leave, depTextBox1.Leave, TakeoffTextBox7.Leave, LandTextBox8.Leave, taxioutTextBox9.Leave, taxiinTextBox10.Leave, opeTextBox3.Leave, dteTextBox11.Leave, ettTextBox12.Leave, AIRTPORTextBox3.Leave, RouteTextBox2.Leave
+    Private Sub textboxX_leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AirlinetextBox4.Leave, CallsignTextBox6.Leave, FlightTextBox5.Leave, arrTextBox2.Leave, depTextBox1.Leave, TakeoffTextBox7.Leave, LandTextBox8.Leave, taxioutTextBox9.Leave, taxiinTextBox10.Leave, opeTextBox3.Leave, dteTextBox11.Leave, ettTextBox12.Leave, AIRTPORTextBox3.Leave, regiTextBox1.Leave, RouteTextBox2.Leave
 
 
         Dim tb As TextBox = sender
@@ -192,6 +192,39 @@ Public Class Form3mll
 
     Private Sub New2_Click(sender As Object, e As EventArgs) Handles New2.Click
         AirlinetextBox4.Clear()
+        FlightTextBox5.Clear()
+        CallsignTextBox6.Clear()
+        depTextBox1.Clear()
+        arrTextBox2.Clear()
+        TakeoffTextBox7.Clear()
+        LandTextBox8.Clear()
+        taxioutTextBox9.Clear()
+        taxiinTextBox10.Clear()
+        opeTextBox3.Clear()
+        dteTextBox11.Clear()
+        ettTextBox12.Clear()
+        regiTextBox1.Clear()
+        arrTextBox2.Clear()
+        typeTextBox13.Clear()
+        climbTextBox14.Clear()
+        cruiseTextBox15.Clear()
+        takeTextBox16.Clear()
+        lanTextBox17.Clear()
+        adultsTextBox18.Clear()
+        childrenTextBox19.Clear()
+        infantsTextBox20.Clear()
+        baggageTextBox21.Clear()
+        cargoTextBox22.Clear()
+        zeroTextBox23.Clear()
+        maxTextBox24.Clear()
+        FuelTextBox25.Clear()
+        RouteTextBox1.Clear()
+        AIRTPORTextBox3.Clear()
+        RouteTextBox2.Clear()
+
+
+
+
     End Sub
 
     Private Sub Print5_Click(sender As Object, e As EventArgs) Handles Print5.Click
