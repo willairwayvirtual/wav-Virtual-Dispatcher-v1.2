@@ -55,23 +55,43 @@ Public Class Form3mll
         SaveFileDialog1.InitialDirectory = "Documents"
 
 
-
         Dim location As String
 
         location = SaveFileDialog1.FileName
 
-        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+        'My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
+        Dim writer As New System.IO.StreamWriter(location & ".txt")
+        writer.WriteLine(AirlinetextBox4.Text)
+        writer.WriteLine(FlightTextBox5.Text)
+        writer.WriteLine(CallsignTextBox6.Text)
+        writer.WriteLine(RouteTextBox1.Text)
+        writer.Close()
     End Sub
 
     Private Sub Open3_Click(sender As Object, e As EventArgs) Handles Open3.Click
-        Dim strtext As String
 
         OpenFileDialog1.InitialDirectory = "Documents"
         OpenFileDialog1.Title = "open text files"
         OpenFileDialog1.ShowDialog()
 
-        strtext = OpenFileDialog1.FileName
-        RouteTextBox1.Text = My.Computer.FileSystem.ReadAllText(strtext)
+        Dim openlocation As String
+
+        openlocation = OpenFileDialog1.FileName
+
+        Dim reader As New System.IO.StreamReader(openlocation)
+        Dim str1, str2, str3, str4 As String
+        str1 = reader.ReadLine()
+        str2 = reader.ReadLine()
+        str3 = reader.ReadLine()
+        str4 = reader.ReadLine()
+        reader.Close()
+        AirlinetextBox4.Text = str1
+        FlightTextBox5.Text = str2
+        CallsignTextBox6.Text = str3
+        RouteTextBox1.Text = str4
+
+
 
 
 
@@ -165,8 +185,25 @@ Public Class Form3mll
         MessageBox.Show("wav-Virtual-Dispatcher-v1.0
 
 
- CONTACT US Wavuserhelpdesk@hotmail.com or go to
-www.willairwayvirtual34.com/It Help desk")
+        CONTACT US Wavuserhelpdesk@hotmail.com or go to
+        www.willairwayvirtual34.com/It Help desk")
 
+    End Sub
+
+    Private Sub New2_Click(sender As Object, e As EventArgs) Handles New2.Click
+        AirlinetextBox4.Clear()
+    End Sub
+
+    Private Sub Print5_Click(sender As Object, e As EventArgs) Handles Print5.Click
+        PrintDialog1.Document = PrintDocument1
+        PrintDialog1.PrinterSettings = PrintDocument1.PrinterSettings
+        PrintDialog1.AllowSomePages = True
+
+        If PrintDialog1.ShowDialog = DialogResult.OK Then
+            PrintDocument1.PrinterSettings = PrintDialog1.PrinterSettings
+            PrintDocument1.Print()
+
+
+        End If
     End Sub
 End Class

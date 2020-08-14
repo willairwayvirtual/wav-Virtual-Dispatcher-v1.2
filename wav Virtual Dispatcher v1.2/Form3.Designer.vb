@@ -133,7 +133,8 @@ Partial Class Form3mll
         Me.SaveFileDialog8 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog9 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog10 = New System.Windows.Forms.SaveFileDialog()
-        Me.PrintPreviewToolStripMenuItem1 = New System.Windows.Forms.ToolStripMenuItem()
+        Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
+        Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -204,7 +205,6 @@ Partial Class Form3mll
         '
         'Print5
         '
-        Me.Print5.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.PrintPreviewToolStripMenuItem1})
         Me.Print5.Name = "Print5"
         Me.Print5.ShortcutKeys = CType((System.Windows.Forms.Keys.Control Or System.Windows.Forms.Keys.P), System.Windows.Forms.Keys)
         Me.Print5.Size = New System.Drawing.Size(54, 24)
@@ -1172,11 +1172,9 @@ Partial Class Form3mll
         '
         Me.SaveFileDialog10.Filter = "flp(*.txt)|*"
         '
-        'PrintPreviewToolStripMenuItem1
+        'PrintDialog1
         '
-        Me.PrintPreviewToolStripMenuItem1.Name = "PrintPreviewToolStripMenuItem1"
-        Me.PrintPreviewToolStripMenuItem1.Size = New System.Drawing.Size(224, 26)
-        Me.PrintPreviewToolStripMenuItem1.Text = "PrintPreview"
+        Me.PrintDialog1.UseEXDialog = True
         '
         'Form3mll
         '
@@ -1333,5 +1331,6 @@ Partial Class Form3mll
     Friend WithEvents SaveFileDialog9 As SaveFileDialog
     Friend WithEvents SaveFileDialog10 As SaveFileDialog
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents PrintPreviewToolStripMenuItem1 As ToolStripMenuItem
+    Friend WithEvents PrintDialog1 As PrintDialog
+    Friend WithEvents PrintDocument1 As Printing.PrintDocument
 End Class
