@@ -654,7 +654,8 @@ Partial Class Form3mll
         '
         'aicrtTextBox1
         '
-        Me.aicrtTextBox1.Location = New System.Drawing.Point(8, 37)
+        Me.aicrtTextBox1.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(192, Byte), Integer), CType(CType(192, Byte), Integer))
+        Me.aicrtTextBox1.Location = New System.Drawing.Point(21, 38)
         Me.aicrtTextBox1.Name = "aicrtTextBox1"
         Me.aicrtTextBox1.Size = New System.Drawing.Size(152, 22)
         Me.aicrtTextBox1.TabIndex = 75
