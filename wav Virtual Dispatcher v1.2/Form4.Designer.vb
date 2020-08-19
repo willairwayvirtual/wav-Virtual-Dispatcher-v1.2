@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form4
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form4
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form4))
         Me.TabControl1 = New System.Windows.Forms.TabControl()
@@ -49,10 +49,10 @@ Partial Class Form4
         Me.TabControl1.Controls.Add(Me.TabPage1)
         Me.TabControl1.Controls.Add(Me.TabPage4)
         Me.TabControl1.Controls.Add(Me.TabPage5)
-        Me.TabControl1.Location = New System.Drawing.Point(-3, -8)
+        Me.TabControl1.Location = New System.Drawing.Point(0, -6)
         Me.TabControl1.Name = "TabControl1"
         Me.TabControl1.SelectedIndex = 0
-        Me.TabControl1.Size = New System.Drawing.Size(1964, 813)
+        Me.TabControl1.Size = New System.Drawing.Size(1964, 846)
         Me.TabControl1.TabIndex = 0
         '
         'TabPage2
@@ -61,7 +61,7 @@ Partial Class Form4
         Me.TabPage2.Location = New System.Drawing.Point(4, 25)
         Me.TabPage2.Name = "TabPage2"
         Me.TabPage2.Padding = New System.Windows.Forms.Padding(3)
-        Me.TabPage2.Size = New System.Drawing.Size(1956, 784)
+        Me.TabPage2.Size = New System.Drawing.Size(1956, 817)
         Me.TabPage2.TabIndex = 1
         Me.TabPage2.Text = "rfinder"
         Me.TabPage2.UseVisualStyleBackColor = True
@@ -72,7 +72,7 @@ Partial Class Form4
         Me.WebBrowser2.Location = New System.Drawing.Point(3, 3)
         Me.WebBrowser2.MinimumSize = New System.Drawing.Size(20, 20)
         Me.WebBrowser2.Name = "WebBrowser2"
-        Me.WebBrowser2.Size = New System.Drawing.Size(1950, 778)
+        Me.WebBrowser2.Size = New System.Drawing.Size(1950, 811)
         Me.WebBrowser2.TabIndex = 0
         Me.WebBrowser2.Url = New System.Uri("http://rfinder.asalink.net/free/", System.UriKind.Absolute)
         '

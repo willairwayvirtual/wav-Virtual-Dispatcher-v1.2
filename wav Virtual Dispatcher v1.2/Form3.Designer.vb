@@ -135,6 +135,7 @@ Partial Class Form3mll
         Me.SaveFileDialog10 = New System.Windows.Forms.SaveFileDialog()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
+        Me.SaveFileDialog2020 = New System.Windows.Forms.SaveFileDialog()
         Me.wavMenu.SuspendLayout()
         Me.Panel1.SuspendLayout()
         Me.Panel2.SuspendLayout()
@@ -1171,6 +1172,10 @@ Partial Class Form3mll
         '
         Me.PrintDialog1.UseEXDialog = True
         '
+        'SaveFileDialog2020
+        '
+        Me.SaveFileDialog2020.Filter = "flp(*.txt)|*"
+        '
         'Form3mll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
@@ -1328,4 +1333,5 @@ Partial Class Form3mll
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
     Friend WithEvents regiTextBox1 As TextBox
     Friend WithEvents aicrtTextBox1 As TextBox
+    Friend WithEvents SaveFileDialog2020 As SaveFileDialog
 End Class

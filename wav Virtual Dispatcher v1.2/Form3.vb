@@ -239,4 +239,16 @@ Public Class Form3mll
 
         End If
     End Sub
+
+    Private Sub mfs20020_Click(sender As Object, e As EventArgs) Handles mfs20020.Click
+        SaveFileDialog2020.ShowDialog()
+        SaveFileDialog2020.Title = "save text"
+        SaveFileDialog2020.InitialDirectory = "Documents"
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
+    End Sub
 End Class
