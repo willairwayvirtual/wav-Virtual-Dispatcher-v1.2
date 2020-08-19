@@ -1174,7 +1174,7 @@ Partial Class Form3mll
         '
         'SaveFileDialog2020
         '
-        Me.SaveFileDialog2020.Filter = "flp(*.txt)|*"
+        Me.SaveFileDialog2020.Filter = "Text Files(*.txt)|*.*"
         '
         'Form3mll
         '
