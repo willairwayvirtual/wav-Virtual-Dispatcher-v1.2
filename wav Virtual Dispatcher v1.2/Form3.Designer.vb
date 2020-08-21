@@ -172,7 +172,7 @@ Partial Class Form3mll
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -1174,7 +1174,7 @@ Partial Class Form3mll
         '
         'SaveFileDialog2020
         '
-        Me.SaveFileDialog2020.Filter = "Text Files(*.txt)|*.*"
+        Me.SaveFileDialog2020.Filter = " Flight plan(*flt.)*.pln|"
         '
         'Form3mll
         '
@@ -1334,4 +1334,13 @@ Partial Class Form3mll
     Friend WithEvents regiTextBox1 As TextBox
     Friend WithEvents aicrtTextBox1 As TextBox
     Friend WithEvents SaveFileDialog2020 As SaveFileDialog
+
+    Public Sub New()
+
+        ' This call is required by the designer.
+        InitializeComponent()
+
+        ' Add any initialization after the InitializeComponent() call.
+
+    End Sub
 End Class

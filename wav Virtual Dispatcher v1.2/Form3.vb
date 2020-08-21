@@ -1,6 +1,12 @@
 ﻿Imports System.ComponentModel
-
+Imports System.Data.OleDb
 Public Class Form3mll
+    Public Property stringtext1 As String
+    Dim provider As String
+    Dim dataFile As String
+    Dim connString As String
+    Dim conn As OleDbConnection = New OleDbConnection
+
 
     Private Sub textboxX_leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AirlinetextBox4.Leave, CallsignTextBox6.Leave, FlightTextBox5.Leave, arrTextBox2.Leave, depTextBox1.Leave, TakeoffTextBox7.Leave, LandTextBox8.Leave, taxioutTextBox9.Leave, taxiinTextBox10.Leave, opeTextBox3.Leave, dteTextBox11.Leave, ettTextBox12.Leave, AIRTPORTextBox3.Leave, regiTextBox1.Leave, aicrtTextBox1.Leave, RouteTextBox2.Leave
 
@@ -249,6 +255,59 @@ Public Class Form3mll
         location = SaveFileDialog1.FileName
 
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
+    End Sub
+
+    Private Sub Button12_Click(sender As Object, e As EventArgs) Handles Button12.Click
+        conn.Close()
+        provider = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source ="
+        'Change the following to your access database location
+        dataFile = "C:\VisStudioProj\wav web\willairwayvirtual34\willairwayvirtual34\app_data\willairwayvirtualDBv1.accdb"
+        connString = provider & dataFile
+        conn.ConnectionString = connString
+        conn.Open()
+
+        Dim savenew As String = "INSERT INTO [wavvirtdispatch]  (airline,flight,callsign,dep,arr,takeoff,land,taxiout,taxiin,registration,ope,dte,ett,aicrt,type,climb,cruise,maxtakeoff,maxlanding,adults,children,infants,baggage,cargo,zerofuel,maxzerofuel,fuel,route,altairport,altairroute) values('" &
+      AirlinetextBox4.Text & "','" &
+      FlightTextBox5.Text & "','" &
+      CallsignTextBox6.Text & "','" &
+      depTextBox1.Text & "','" &
+      arrTextBox2.Text & "','" &
+      TakeoffTextBox7.Text & "','" &
+      LandTextBox8.Text & "','" &
+      taxioutTextBox9.Text & "','" &
+     taxiinTextBox10.Text & "','" &
+      regiTextBox1.Text & "','" &
+        opeTextBox3.Text & "','" &
+     dteTextBox11.Text & "','" &
+     ettTextBox12.Text & "','" &
+     aicrtTextBox1.Text & "','" &
+     typeTextBox13.Text & "','" &
+    climbTextBox14.Text & "','" &
+     cruiseTextBox15.Text & "','" &
+     takeTextBox16.Text & "','" &
+   lanTextBox17.Text & "','" &
+  adultsTextBox18.Text & "','" &
+   childrenTextBox19.Text & "','" &
+  infantsTextBox20.Text & "','" &
+  baggageTextBox21.Text & "','" &
+   cargoTextBox22.Text & "','" &
+  zeroTextBox23.Text & "','" &
+maxTextBox24.Text & "','" &
+  FuelTextBox25.Text & "','" &
+   RouteTextBox1.Text & "','" &
+    AIRTPORTextBox3.Text & "','" &
+      RouteTextBox2.Text & "');"
+        Dim cmd As New OleDbCommand
+
+        With cmd
+            .CommandText = savenew
+            .Connection = conn
+            .ExecuteNonQuery()
+        End With
+        MessageBox.Show("Please Wait.  Please go to the Briefing Center to get the flight plan")
+
+        conn.Close()
 
     End Sub
 End Class
