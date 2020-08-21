@@ -1,8 +1,20 @@
-Dim strtext As String
 
-        OpenFileDialog1.InitialDirectory = "Documents"
+  OpenFileDialog1.InitialDirectory = "Documents"
         OpenFileDialog1.Title = "open text files"
         OpenFileDialog1.ShowDialog()
 
-        strtext = OpenFileDialog1.FileName
-        RouteTextBox1.Text = My.Computer.FileSystem.ReadAllText(strtext)
+        Dim openlocation As String
+
+        openlocation = OpenFileDialog1.FileName
+
+        Dim reader As New System.IO.StreamReader(openlocation)
+        Dim str1, str2, str3, str4 As String
+        str1 = reader.ReadLine()
+        str2 = reader.ReadLine()
+        str3 = reader.ReadLine()
+        str4 = reader.ReadLine()
+        reader.Close()
+        AirlinetextBox4.Text = str1
+        FlightTextBox5.Text = str2
+        CallsignTextBox6.Text = str3
+        RouteTextBox1.Text = str4
