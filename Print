@@ -1,0 +1,7 @@
+PrintDialog1.Document = PrintDocument1
+        PrintDialog1.PrinterSettings = PrintDocument1.PrinterSettings
+        PrintDialog1.AllowSomePages = True
+
+        If PrintDialog1.ShowDialog = DialogResult.OK Then
+            PrintDocument1.PrinterSettings = PrintDialog1.PrinterSettings
+            PrintDocument1.Print()
