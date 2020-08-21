@@ -366,7 +366,7 @@ Partial Class Form3mll
         'Label18
         '
         Me.Label18.AutoSize = True
-        Me.Label18.Location = New System.Drawing.Point(4, 10)
+        Me.Label18.Location = New System.Drawing.Point(4, 0)
         Me.Label18.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label18.Name = "Label18"
         Me.Label18.Size = New System.Drawing.Size(105, 17)
@@ -582,7 +582,7 @@ Partial Class Form3mll
         '
         Me.arr.AutoSize = True
         Me.arr.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.arr.Location = New System.Drawing.Point(490, 14)
+        Me.arr.Location = New System.Drawing.Point(490, 20)
         Me.arr.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.arr.Name = "arr"
         Me.arr.Size = New System.Drawing.Size(36, 24)
@@ -626,7 +626,7 @@ Partial Class Form3mll
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Calibri", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(16, 27)
+        Me.Label4.Location = New System.Drawing.Point(13, 21)
         Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
         Me.Label4.Name = "Label4"
         Me.Label4.Size = New System.Drawing.Size(65, 24)
@@ -1174,7 +1174,7 @@ Partial Class Form3mll
         '
         'SaveFileDialog2020
         '
-        Me.SaveFileDialog2020.Filter = " Flight plan(*flt.)*.pln|"
+        Me.SaveFileDialog2020.Filter = " Flight plan(*.flt.*.pln )|"
         '
         'Form3mll
         '
