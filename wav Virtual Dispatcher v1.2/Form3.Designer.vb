@@ -40,7 +40,7 @@ Partial Class Form3mll
         Me.alternates = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
         Me.export = New System.Windows.Forms.Button()
-        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.fligPanel1 = New System.Windows.Forms.Panel()
         Me.regiTextBox1 = New System.Windows.Forms.TextBox()
         Me.registration = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -69,7 +69,7 @@ Partial Class Form3mll
         Me.Callsign = New System.Windows.Forms.Label()
         Me.flight = New System.Windows.Forms.Label()
         Me.Label4 = New System.Windows.Forms.Label()
-        Me.Panel2 = New System.Windows.Forms.Panel()
+        Me.aircrPanel2 = New System.Windows.Forms.Panel()
         Me.aicrtTextBox1 = New System.Windows.Forms.TextBox()
         Me.lanTextBox17 = New System.Windows.Forms.TextBox()
         Me.takeTextBox16 = New System.Windows.Forms.TextBox()
@@ -82,7 +82,7 @@ Partial Class Form3mll
         Me.climb = New System.Windows.Forms.Label()
         Me.type = New System.Windows.Forms.Label()
         Me.aicrt = New System.Windows.Forms.Label()
-        Me.Panel3 = New System.Windows.Forms.Panel()
+        Me.PAYPanel3 = New System.Windows.Forms.Panel()
         Me.FuelTextBox25 = New System.Windows.Forms.TextBox()
         Me.maxTextBox24 = New System.Windows.Forms.TextBox()
         Me.zeroTextBox23 = New System.Windows.Forms.TextBox()
@@ -99,9 +99,9 @@ Partial Class Form3mll
         Me.Airline = New System.Windows.Forms.Label()
         Me.Label41 = New System.Windows.Forms.Label()
         Me.Label42 = New System.Windows.Forms.Label()
-        Me.Panel4 = New System.Windows.Forms.Panel()
+        Me.RoPanel4 = New System.Windows.Forms.Panel()
         Me.RouteTextBox1 = New System.Windows.Forms.TextBox()
-        Me.Panel5 = New System.Windows.Forms.Panel()
+        Me.altePanel5 = New System.Windows.Forms.Panel()
         Me.Label44 = New System.Windows.Forms.Label()
         Me.Label43 = New System.Windows.Forms.Label()
         Me.RouteTextBox2 = New System.Windows.Forms.TextBox()
@@ -124,7 +124,7 @@ Partial Class Form3mll
         Me.Button9787 = New System.Windows.Forms.Button()
         Me.Buttonp3d = New System.Windows.Forms.Button()
         Me.project = New System.Windows.Forms.Button()
-        Me.Panel6 = New System.Windows.Forms.Panel()
+        Me.expPanel6 = New System.Windows.Forms.Panel()
         Me.SaveFileDialog7 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog4 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog6 = New System.Windows.Forms.SaveFileDialog()
@@ -137,12 +137,12 @@ Partial Class Form3mll
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.SaveFileDialog2020 = New System.Windows.Forms.SaveFileDialog()
         Me.wavMenu.SuspendLayout()
-        Me.Panel1.SuspendLayout()
-        Me.Panel2.SuspendLayout()
-        Me.Panel3.SuspendLayout()
-        Me.Panel4.SuspendLayout()
-        Me.Panel5.SuspendLayout()
-        Me.Panel6.SuspendLayout()
+        Me.fligPanel1.SuspendLayout()
+        Me.aircrPanel2.SuspendLayout()
+        Me.PAYPanel3.SuspendLayout()
+        Me.RoPanel4.SuspendLayout()
+        Me.altePanel5.SuspendLayout()
+        Me.expPanel6.SuspendLayout()
         Me.SuspendLayout()
         '
         'Button1
@@ -309,41 +309,41 @@ Partial Class Form3mll
         Me.export.Text = "export  flight paln"
         Me.export.UseVisualStyleBackColor = True
         '
-        'Panel1
+        'fligPanel1
         '
-        Me.Panel1.Controls.Add(Me.regiTextBox1)
-        Me.Panel1.Controls.Add(Me.registration)
-        Me.Panel1.Controls.Add(Me.Label18)
-        Me.Panel1.Controls.Add(Me.Label17)
-        Me.Panel1.Controls.Add(Me.opeTextBox3)
-        Me.Panel1.Controls.Add(Me.arrTextBox2)
-        Me.Panel1.Controls.Add(Me.depTextBox1)
-        Me.Panel1.Controls.Add(Me.ettTextBox12)
-        Me.Panel1.Controls.Add(Me.dteTextBox11)
-        Me.Panel1.Controls.Add(Me.taxiinTextBox10)
-        Me.Panel1.Controls.Add(Me.taxioutTextBox9)
-        Me.Panel1.Controls.Add(Me.LandTextBox8)
-        Me.Panel1.Controls.Add(Me.TakeoffTextBox7)
-        Me.Panel1.Controls.Add(Me.CallsignTextBox6)
-        Me.Panel1.Controls.Add(Me.FlightTextBox5)
-        Me.Panel1.Controls.Add(Me.AirlinetextBox4)
-        Me.Panel1.Controls.Add(Me.eta)
-        Me.Panel1.Controls.Add(Me.Label15)
-        Me.Panel1.Controls.Add(Me.dte)
-        Me.Panel1.Controls.Add(Me.taxiin)
-        Me.Panel1.Controls.Add(Me.taxiout)
-        Me.Panel1.Controls.Add(Me.Land)
-        Me.Panel1.Controls.Add(Me.Takeoff)
-        Me.Panel1.Controls.Add(Me.arr)
-        Me.Panel1.Controls.Add(Me.dep)
-        Me.Panel1.Controls.Add(Me.Callsign)
-        Me.Panel1.Controls.Add(Me.flight)
-        Me.Panel1.Controls.Add(Me.Label4)
-        Me.Panel1.Location = New System.Drawing.Point(0, 75)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Panel1.Name = "Panel1"
-        Me.Panel1.Size = New System.Drawing.Size(1699, 80)
-        Me.Panel1.TabIndex = 48
+        Me.fligPanel1.Controls.Add(Me.regiTextBox1)
+        Me.fligPanel1.Controls.Add(Me.registration)
+        Me.fligPanel1.Controls.Add(Me.Label18)
+        Me.fligPanel1.Controls.Add(Me.Label17)
+        Me.fligPanel1.Controls.Add(Me.opeTextBox3)
+        Me.fligPanel1.Controls.Add(Me.arrTextBox2)
+        Me.fligPanel1.Controls.Add(Me.depTextBox1)
+        Me.fligPanel1.Controls.Add(Me.ettTextBox12)
+        Me.fligPanel1.Controls.Add(Me.dteTextBox11)
+        Me.fligPanel1.Controls.Add(Me.taxiinTextBox10)
+        Me.fligPanel1.Controls.Add(Me.taxioutTextBox9)
+        Me.fligPanel1.Controls.Add(Me.LandTextBox8)
+        Me.fligPanel1.Controls.Add(Me.TakeoffTextBox7)
+        Me.fligPanel1.Controls.Add(Me.CallsignTextBox6)
+        Me.fligPanel1.Controls.Add(Me.FlightTextBox5)
+        Me.fligPanel1.Controls.Add(Me.AirlinetextBox4)
+        Me.fligPanel1.Controls.Add(Me.eta)
+        Me.fligPanel1.Controls.Add(Me.Label15)
+        Me.fligPanel1.Controls.Add(Me.dte)
+        Me.fligPanel1.Controls.Add(Me.taxiin)
+        Me.fligPanel1.Controls.Add(Me.taxiout)
+        Me.fligPanel1.Controls.Add(Me.Land)
+        Me.fligPanel1.Controls.Add(Me.Takeoff)
+        Me.fligPanel1.Controls.Add(Me.arr)
+        Me.fligPanel1.Controls.Add(Me.dep)
+        Me.fligPanel1.Controls.Add(Me.Callsign)
+        Me.fligPanel1.Controls.Add(Me.flight)
+        Me.fligPanel1.Controls.Add(Me.Label4)
+        Me.fligPanel1.Location = New System.Drawing.Point(0, 75)
+        Me.fligPanel1.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.fligPanel1.Name = "fligPanel1"
+        Me.fligPanel1.Size = New System.Drawing.Size(1699, 80)
+        Me.fligPanel1.TabIndex = 48
         '
         'regiTextBox1
         '
@@ -633,25 +633,25 @@ Partial Class Form3mll
         Me.Label4.TabIndex = 66
         Me.Label4.Text = "Airline"
         '
-        'Panel2
+        'aircrPanel2
         '
-        Me.Panel2.Controls.Add(Me.aicrtTextBox1)
-        Me.Panel2.Controls.Add(Me.lanTextBox17)
-        Me.Panel2.Controls.Add(Me.takeTextBox16)
-        Me.Panel2.Controls.Add(Me.cruiseTextBox15)
-        Me.Panel2.Controls.Add(Me.climbTextBox14)
-        Me.Panel2.Controls.Add(Me.typeTextBox13)
-        Me.Panel2.Controls.Add(Me.maxlanding)
-        Me.Panel2.Controls.Add(Me.maxtakeoff)
-        Me.Panel2.Controls.Add(Me.cruise)
-        Me.Panel2.Controls.Add(Me.climb)
-        Me.Panel2.Controls.Add(Me.type)
-        Me.Panel2.Controls.Add(Me.aicrt)
-        Me.Panel2.Location = New System.Drawing.Point(4, 198)
-        Me.Panel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Panel2.Name = "Panel2"
-        Me.Panel2.Size = New System.Drawing.Size(1632, 71)
-        Me.Panel2.TabIndex = 49
+        Me.aircrPanel2.Controls.Add(Me.aicrtTextBox1)
+        Me.aircrPanel2.Controls.Add(Me.lanTextBox17)
+        Me.aircrPanel2.Controls.Add(Me.takeTextBox16)
+        Me.aircrPanel2.Controls.Add(Me.cruiseTextBox15)
+        Me.aircrPanel2.Controls.Add(Me.climbTextBox14)
+        Me.aircrPanel2.Controls.Add(Me.typeTextBox13)
+        Me.aircrPanel2.Controls.Add(Me.maxlanding)
+        Me.aircrPanel2.Controls.Add(Me.maxtakeoff)
+        Me.aircrPanel2.Controls.Add(Me.cruise)
+        Me.aircrPanel2.Controls.Add(Me.climb)
+        Me.aircrPanel2.Controls.Add(Me.type)
+        Me.aircrPanel2.Controls.Add(Me.aicrt)
+        Me.aircrPanel2.Location = New System.Drawing.Point(4, 198)
+        Me.aircrPanel2.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.aircrPanel2.Name = "aircrPanel2"
+        Me.aircrPanel2.Size = New System.Drawing.Size(1632, 71)
+        Me.aircrPanel2.TabIndex = 49
         '
         'aicrtTextBox1
         '
@@ -767,29 +767,29 @@ Partial Class Form3mll
         Me.aicrt.TabIndex = 64
         Me.aicrt.Text = "AircraftType"
         '
-        'Panel3
+        'PAYPanel3
         '
-        Me.Panel3.Controls.Add(Me.FuelTextBox25)
-        Me.Panel3.Controls.Add(Me.maxTextBox24)
-        Me.Panel3.Controls.Add(Me.zeroTextBox23)
-        Me.Panel3.Controls.Add(Me.cargoTextBox22)
-        Me.Panel3.Controls.Add(Me.baggageTextBox21)
-        Me.Panel3.Controls.Add(Me.infantsTextBox20)
-        Me.Panel3.Controls.Add(Me.childrenTextBox19)
-        Me.Panel3.Controls.Add(Me.adultsTextBox18)
-        Me.Panel3.Controls.Add(Me.Label13)
-        Me.Panel3.Controls.Add(Me.Label35)
-        Me.Panel3.Controls.Add(Me.Label36)
-        Me.Panel3.Controls.Add(Me.Label37)
-        Me.Panel3.Controls.Add(Me.Label38)
-        Me.Panel3.Controls.Add(Me.Airline)
-        Me.Panel3.Controls.Add(Me.Label41)
-        Me.Panel3.Controls.Add(Me.Label42)
-        Me.Panel3.Location = New System.Drawing.Point(3, 320)
-        Me.Panel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Panel3.Name = "Panel3"
-        Me.Panel3.Size = New System.Drawing.Size(1772, 58)
-        Me.Panel3.TabIndex = 50
+        Me.PAYPanel3.Controls.Add(Me.FuelTextBox25)
+        Me.PAYPanel3.Controls.Add(Me.maxTextBox24)
+        Me.PAYPanel3.Controls.Add(Me.zeroTextBox23)
+        Me.PAYPanel3.Controls.Add(Me.cargoTextBox22)
+        Me.PAYPanel3.Controls.Add(Me.baggageTextBox21)
+        Me.PAYPanel3.Controls.Add(Me.infantsTextBox20)
+        Me.PAYPanel3.Controls.Add(Me.childrenTextBox19)
+        Me.PAYPanel3.Controls.Add(Me.adultsTextBox18)
+        Me.PAYPanel3.Controls.Add(Me.Label13)
+        Me.PAYPanel3.Controls.Add(Me.Label35)
+        Me.PAYPanel3.Controls.Add(Me.Label36)
+        Me.PAYPanel3.Controls.Add(Me.Label37)
+        Me.PAYPanel3.Controls.Add(Me.Label38)
+        Me.PAYPanel3.Controls.Add(Me.Airline)
+        Me.PAYPanel3.Controls.Add(Me.Label41)
+        Me.PAYPanel3.Controls.Add(Me.Label42)
+        Me.PAYPanel3.Location = New System.Drawing.Point(3, 320)
+        Me.PAYPanel3.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.PAYPanel3.Name = "PAYPanel3"
+        Me.PAYPanel3.Size = New System.Drawing.Size(1772, 58)
+        Me.PAYPanel3.TabIndex = 50
         '
         'FuelTextBox25
         '
@@ -943,14 +943,14 @@ Partial Class Form3mll
         Me.Label42.TabIndex = 66
         Me.Label42.Text = "adults"
         '
-        'Panel4
+        'RoPanel4
         '
-        Me.Panel4.Controls.Add(Me.RouteTextBox1)
-        Me.Panel4.Location = New System.Drawing.Point(0, 427)
-        Me.Panel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Panel4.Name = "Panel4"
-        Me.Panel4.Size = New System.Drawing.Size(1736, 94)
-        Me.Panel4.TabIndex = 51
+        Me.RoPanel4.Controls.Add(Me.RouteTextBox1)
+        Me.RoPanel4.Location = New System.Drawing.Point(0, 427)
+        Me.RoPanel4.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.RoPanel4.Name = "RoPanel4"
+        Me.RoPanel4.Size = New System.Drawing.Size(1736, 94)
+        Me.RoPanel4.TabIndex = 51
         '
         'RouteTextBox1
         '
@@ -960,20 +960,20 @@ Partial Class Form3mll
         Me.RouteTextBox1.Margin = New System.Windows.Forms.Padding(4)
         Me.RouteTextBox1.Multiline = True
         Me.RouteTextBox1.Name = "RouteTextBox1"
-        Me.RouteTextBox1.Size = New System.Drawing.Size(1719, 95)
+        Me.RouteTextBox1.Size = New System.Drawing.Size(1719, 77)
         Me.RouteTextBox1.TabIndex = 40
         '
-        'Panel5
+        'altePanel5
         '
-        Me.Panel5.Controls.Add(Me.Label44)
-        Me.Panel5.Controls.Add(Me.Label43)
-        Me.Panel5.Controls.Add(Me.RouteTextBox2)
-        Me.Panel5.Controls.Add(Me.AIRTPORTextBox3)
-        Me.Panel5.Location = New System.Drawing.Point(3, 575)
-        Me.Panel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Panel5.Name = "Panel5"
-        Me.Panel5.Size = New System.Drawing.Size(1720, 82)
-        Me.Panel5.TabIndex = 52
+        Me.altePanel5.Controls.Add(Me.Label44)
+        Me.altePanel5.Controls.Add(Me.Label43)
+        Me.altePanel5.Controls.Add(Me.RouteTextBox2)
+        Me.altePanel5.Controls.Add(Me.AIRTPORTextBox3)
+        Me.altePanel5.Location = New System.Drawing.Point(3, 575)
+        Me.altePanel5.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.altePanel5.Name = "altePanel5"
+        Me.altePanel5.Size = New System.Drawing.Size(1720, 82)
+        Me.altePanel5.TabIndex = 52
         '
         'Label44
         '
@@ -1119,22 +1119,22 @@ Partial Class Form3mll
         Me.project.Text = "expot to projectFLY"
         Me.project.UseVisualStyleBackColor = True
         '
-        'Panel6
+        'expPanel6
         '
-        Me.Panel6.Controls.Add(Me.project)
-        Me.Panel6.Controls.Add(Me.Buttonp3d)
-        Me.Panel6.Controls.Add(Me.Button9787)
-        Me.Panel6.Controls.Add(Me.Button8airbus)
-        Me.Panel6.Controls.Add(Me.Button11vatsim)
-        Me.Panel6.Controls.Add(Me.mfs20020)
-        Me.Panel6.Controls.Add(Me.Buttonairbus)
-        Me.Panel6.Controls.Add(Me.Button787)
-        Me.Panel6.Controls.Add(Me.pmdg)
-        Me.Panel6.Location = New System.Drawing.Point(0, 778)
-        Me.Panel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
-        Me.Panel6.Name = "Panel6"
-        Me.Panel6.Size = New System.Drawing.Size(1695, 115)
-        Me.Panel6.TabIndex = 53
+        Me.expPanel6.Controls.Add(Me.project)
+        Me.expPanel6.Controls.Add(Me.Buttonp3d)
+        Me.expPanel6.Controls.Add(Me.Button9787)
+        Me.expPanel6.Controls.Add(Me.Button8airbus)
+        Me.expPanel6.Controls.Add(Me.Button11vatsim)
+        Me.expPanel6.Controls.Add(Me.mfs20020)
+        Me.expPanel6.Controls.Add(Me.Buttonairbus)
+        Me.expPanel6.Controls.Add(Me.Button787)
+        Me.expPanel6.Controls.Add(Me.pmdg)
+        Me.expPanel6.Location = New System.Drawing.Point(0, 778)
+        Me.expPanel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
+        Me.expPanel6.Name = "expPanel6"
+        Me.expPanel6.Size = New System.Drawing.Size(1695, 115)
+        Me.expPanel6.TabIndex = 53
         '
         'SaveFileDialog7
         '
@@ -1182,12 +1182,12 @@ Partial Class Form3mll
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(1659, 891)
-        Me.Controls.Add(Me.Panel6)
-        Me.Controls.Add(Me.Panel5)
-        Me.Controls.Add(Me.Panel4)
-        Me.Controls.Add(Me.Panel3)
-        Me.Controls.Add(Me.Panel2)
-        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.expPanel6)
+        Me.Controls.Add(Me.altePanel5)
+        Me.Controls.Add(Me.RoPanel4)
+        Me.Controls.Add(Me.PAYPanel3)
+        Me.Controls.Add(Me.aircrPanel2)
+        Me.Controls.Add(Me.fligPanel1)
         Me.Controls.Add(Me.export)
         Me.Controls.Add(Me.Button12)
         Me.Controls.Add(Me.alternates)
@@ -1206,17 +1206,17 @@ Partial Class Form3mll
         Me.Text = "wav Dispatch Center"
         Me.wavMenu.ResumeLayout(False)
         Me.wavMenu.PerformLayout()
-        Me.Panel1.ResumeLayout(False)
-        Me.Panel1.PerformLayout()
-        Me.Panel2.ResumeLayout(False)
-        Me.Panel2.PerformLayout()
-        Me.Panel3.ResumeLayout(False)
-        Me.Panel3.PerformLayout()
-        Me.Panel4.ResumeLayout(False)
-        Me.Panel4.PerformLayout()
-        Me.Panel5.ResumeLayout(False)
-        Me.Panel5.PerformLayout()
-        Me.Panel6.ResumeLayout(False)
+        Me.fligPanel1.ResumeLayout(False)
+        Me.fligPanel1.PerformLayout()
+        Me.aircrPanel2.ResumeLayout(False)
+        Me.aircrPanel2.PerformLayout()
+        Me.PAYPanel3.ResumeLayout(False)
+        Me.PAYPanel3.PerformLayout()
+        Me.RoPanel4.ResumeLayout(False)
+        Me.RoPanel4.PerformLayout()
+        Me.altePanel5.ResumeLayout(False)
+        Me.altePanel5.PerformLayout()
+        Me.expPanel6.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -1232,11 +1232,11 @@ Partial Class Form3mll
     Friend WithEvents alternates As Button
     Friend WithEvents Button12 As Button
     Friend WithEvents export As Button
-    Friend WithEvents Panel1 As Panel
-    Friend WithEvents Panel2 As Panel
-    Friend WithEvents Panel3 As Panel
-    Friend WithEvents Panel4 As Panel
-    Friend WithEvents Panel5 As Panel
+    Friend WithEvents fligPanel1 As Panel
+    Friend WithEvents aircrPanel2 As Panel
+    Friend WithEvents PAYPanel3 As Panel
+    Friend WithEvents RoPanel4 As Panel
+    Friend WithEvents altePanel5 As Panel
     Friend WithEvents registration As Label
     Friend WithEvents Label18 As Label
     Friend WithEvents Label17 As Label
@@ -1319,7 +1319,7 @@ Partial Class Form3mll
     Friend WithEvents Button9787 As Button
     Friend WithEvents Buttonp3d As Button
     Friend WithEvents project As Button
-    Friend WithEvents Panel6 As Panel
+    Friend WithEvents expPanel6 As Panel
     Friend WithEvents SaveFileDialog7 As SaveFileDialog
     Friend WithEvents SaveFileDialog4 As SaveFileDialog
     Friend WithEvents SaveFileDialog6 As SaveFileDialog
