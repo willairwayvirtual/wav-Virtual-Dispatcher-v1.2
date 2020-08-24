@@ -107,12 +107,12 @@ Partial Class Form3mll
         Me.RouteTextBox2 = New System.Windows.Forms.TextBox()
         Me.AIRTPORTextBox3 = New System.Windows.Forms.TextBox()
         Me.SaveFileDialog1 = New System.Windows.Forms.SaveFileDialog()
-        Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer2 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
+        Me.flilgTimer1 = New System.Windows.Forms.Timer(Me.components)
+        Me.AircrTimer2 = New System.Windows.Forms.Timer(Me.components)
+        Me.PAYTimer3 = New System.Windows.Forms.Timer(Me.components)
+        Me.RoTimer4 = New System.Windows.Forms.Timer(Me.components)
+        Me.alteTimer5 = New System.Windows.Forms.Timer(Me.components)
+        Me.expTimer6 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
         Me.pmdg = New System.Windows.Forms.Button()
@@ -172,7 +172,7 @@ Partial Class Form3mll
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
@@ -279,7 +279,7 @@ Partial Class Form3mll
         Me.alternates.FlatStyle = System.Windows.Forms.FlatStyle.Flat
         Me.alternates.Font = New System.Drawing.Font("Microsoft Sans Serif", 11.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.alternates.ForeColor = System.Drawing.Color.DarkRed
-        Me.alternates.Location = New System.Drawing.Point(3, 527)
+        Me.alternates.Location = New System.Drawing.Point(7, 529)
         Me.alternates.Margin = New System.Windows.Forms.Padding(4)
         Me.alternates.Name = "alternates"
         Me.alternates.Size = New System.Drawing.Size(1739, 42)
@@ -1302,12 +1302,12 @@ Partial Class Form3mll
     Friend WithEvents Print5 As ToolStripMenuItem
     Friend WithEvents exit1 As ToolStripMenuItem
     Friend WithEvents SaveFileDialog1 As SaveFileDialog
-    Friend WithEvents Timer1 As Timer
-    Friend WithEvents Timer2 As Timer
-    Friend WithEvents Timer3 As Timer
-    Friend WithEvents Timer4 As Timer
-    Friend WithEvents Timer5 As Timer
-    Friend WithEvents Timer6 As Timer
+    Friend WithEvents flilgTimer1 As Timer
+    Friend WithEvents AircrTimer2 As Timer
+    Friend WithEvents PAYTimer3 As Timer
+    Friend WithEvents RoTimer4 As Timer
+    Friend WithEvents alteTimer5 As Timer
+    Friend WithEvents expTimer6 As Timer
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents SaveFileDialog2 As SaveFileDialog
     Friend WithEvents pmdg As Button
