@@ -172,7 +172,7 @@ Partial Class Form3mll
         Me.wavMenu.Location = New System.Drawing.Point(0, 0)
         Me.wavMenu.Name = "wavMenu"
         Me.wavMenu.Padding = New System.Windows.Forms.Padding(5, 2, 0, 2)
-        Me.wavMenu.Size = New System.Drawing.Size(1659, 28)
+        Me.wavMenu.Size = New System.Drawing.Size(1659, 30)
         Me.wavMenu.TabIndex = 3
         Me.wavMenu.Text = "MenuStrip1"
         '
