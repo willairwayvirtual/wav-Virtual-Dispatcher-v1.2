@@ -76,7 +76,7 @@ Public Class Form3mll
     End Sub
 
     Private Sub Open3_Click(sender As Object, e As EventArgs) Handles Open3.Click
-
+        OpenFileDialog1.Filter = "text file|*.txt"
         OpenFileDialog1.InitialDirectory = "Documents"
         OpenFileDialog1.Title = "open text files"
         OpenFileDialog1.ShowDialog()

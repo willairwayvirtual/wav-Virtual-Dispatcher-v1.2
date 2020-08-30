@@ -1019,12 +1019,7 @@ Partial Class Form3mll
         '
         'SaveFileDialog1
         '
-        Me.SaveFileDialog1.FileName = "wav Dispatch Center"
         Me.SaveFileDialog1.Filter = "Text Files(*.txt)|*.txt|all files|*.*"
-        '
-        'OpenFileDialog1
-        '
-        Me.OpenFileDialog1.FileName = "OpenFileDialog1"
         '
         'SaveFileDialog2
         '
