@@ -46,7 +46,7 @@ Partial Class Form5
         Me.Panel1.Controls.Add(Me.Label1)
         Me.Panel1.Dock = System.Windows.Forms.DockStyle.Top
         Me.Panel1.Location = New System.Drawing.Point(0, 0)
-        Me.Panel1.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Panel1.Margin = New System.Windows.Forms.Padding(4)
         Me.Panel1.Name = "Panel1"
         Me.Panel1.Size = New System.Drawing.Size(1651, 71)
         Me.Panel1.TabIndex = 1
@@ -54,7 +54,7 @@ Partial Class Form5
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(1456, -1)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(4)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(191, 73)
         Me.Button2.TabIndex = 6
@@ -85,7 +85,7 @@ Partial Class Form5
         'Search
         '
         Me.Search.Location = New System.Drawing.Point(1053, 9)
-        Me.Search.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.Search.Margin = New System.Windows.Forms.Padding(4)
         Me.Search.Name = "Search"
         Me.Search.Size = New System.Drawing.Size(201, 59)
         Me.Search.TabIndex = 2
@@ -96,7 +96,7 @@ Partial Class Form5
         '
         Me.TextBoxkeyword.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.TextBoxkeyword.Location = New System.Drawing.Point(749, 38)
-        Me.TextBoxkeyword.Margin = New System.Windows.Forms.Padding(4, 4, 4, 4)
+        Me.TextBoxkeyword.Margin = New System.Windows.Forms.Padding(4)
         Me.TextBoxkeyword.Name = "TextBoxkeyword"
         Me.TextBoxkeyword.Size = New System.Drawing.Size(265, 34)
         Me.TextBoxkeyword.TabIndex = 1
@@ -135,7 +135,7 @@ Partial Class Form5
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
         Me.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Name = "Form5"
-        Me.Text = "`"
+        Me.Text = "Welcome to Flight Dispatch Center "
         Me.Panel1.ResumeLayout(False)
         Me.Panel1.PerformLayout()
         Me.ResumeLayout(False)
