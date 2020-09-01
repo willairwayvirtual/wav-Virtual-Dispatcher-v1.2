@@ -7,6 +7,21 @@ Public Class Form3mll
     Dim connString As String
     Dim conn As OleDbConnection = New OleDbConnection
 
+    ' pl1 = fligPanel1 height
+    Dim pl1 As Integer = 30
+    ' pl2 = panel2 height
+    Dim pl2 As Integer = 30
+    ' pl3 = panel3 height
+    Dim pl3 As Integer = 30
+    ' pl4 = panel4 height
+    Dim pl4 As Integer = 30
+    ' pl5 = panel5 height
+    Dim pl5 As Integer = 30
+    ' pl6 = panel6 height
+    Dim pl6 As Integer = 30
+
+
+
 
     Private Sub textboxX_leave(ByVal sender As System.Object, ByVal e As System.EventArgs) Handles AirlinetextBox4.Leave, CallsignTextBox6.Leave, FlightTextBox5.Leave, arrTextBox2.Leave, depTextBox1.Leave, TakeoffTextBox7.Leave, LandTextBox8.Leave, taxioutTextBox9.Leave, taxiinTextBox10.Leave, opeTextBox3.Leave, dteTextBox11.Leave, ettTextBox12.Leave, AIRTPORTextBox3.Leave, regiTextBox1.Leave, aicrtTextBox1.Leave, RouteTextBox2.Leave
 
@@ -96,13 +111,6 @@ Public Class Form3mll
         FlightTextBox5.Text = str2
         CallsignTextBox6.Text = str3
         RouteTextBox1.Text = str4
-
-
-
-
-
-
-
     End Sub
 
     Private Sub project_Click(sender As Object, e As EventArgs) Handles project.Click
@@ -308,6 +316,199 @@ maxTextBox24.Text & "','" &
         MessageBox.Show("Please Wait.  Please go to the Briefing Center to get the flight plan")
 
         conn.Close()
+
+    End Sub
+
+
+
+
+
+
+    Private Sub Timer1_Tick(sender As Object, e As EventArgs) Handles Timer1.Tick
+
+        ' 250 = panel height
+        If pl1 > 90 Then
+
+            Timer1.Stop()
+
+        Else
+            Me.fligPanel1.Size = New Size(Me.fligPanel1.Size.Width, pl1)
+            pl1 += 17
+        End If
+
+    End Sub
+
+    Private Sub Timer2_Tick(sender As Object, e As EventArgs) Handles Timer2.Tick
+
+        ' 250 = panel height
+        If pl2 > 90 Then
+
+            Timer2.Stop()
+
+        Else
+            Me.aircrPanel2.Size = New Size(Me.aircrPanel2.Size.Width, pl2)
+            pl2 += 17
+        End If
+
+    End Sub
+
+    Private Sub Timer3_Tick(sender As Object, e As EventArgs) Handles Timer3.Tick
+
+        ' 250 = panel height
+        If pl3 > 90 Then
+
+            Timer3.Stop()
+
+        Else
+            Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
+            pl3 += 17
+        End If
+
+    End Sub
+    Private Sub Timer4_tick(sender As Object, e As EventArgs) Handles Timer4.Tick
+
+        ' 250 = panel height
+        If pl4 > 90 Then
+
+            Timer4.Stop()
+
+        Else
+            Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
+            pl4 += 17
+        End If
+    End Sub
+    Private Sub Timer5_tick(sender As Object, e As EventArgs) Handles Timer5.Tick
+
+        ' 250 = panel height
+        If pl5 > 120 Then
+
+            Timer5.Stop()
+
+        Else
+            Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
+            pl5 += 17
+        End If
+
+    End Sub
+
+    Private Sub Timer6_tick(sender As Object, e As EventArgs) Handles Timer6.Tick
+
+        ' 250 = panel height
+        If pl5 > 120 Then
+
+            Timer6.Stop()
+
+        Else
+            Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+            pl5 += 17
+        End If
+
+    End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs)
+
+    End Sub
+
+
+    Private Sub Form2_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+
+    End Sub
+
+    Private Sub flightinfo_MouseMove(sender As Object, e As MouseEventArgs) Handles flightinfo.MouseMove
+        'Me.fligPanel1.Size = New Size(Me.fligPanel1.Size.Width, pl1)
+        Me.aircrPanel2.Size = New Size(Me.aircrPanel2.Size.Width, pl2)
+        Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
+        Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
+        Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
+        Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+        Timer1.Start()
+    End Sub
+
+    Private Sub flightinfo_MouseLeave(sender As Object, e As EventArgs) Handles flightinfo.MouseLeave
+        Timer1.Stop()
+        pl1 = 30
+    End Sub
+
+    Private Sub aircrafttype_MouseMove(sender As Object, e As MouseEventArgs) Handles AircraftType.MouseMove
+
+        Me.fligPanel1.Size = New Size(Me.fligPanel1.Size.Width, pl1)
+        ' Me.aircrPanel2.Size = New Size(Me.aircrPanel2.Size.Width, pl2)
+        Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
+        Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
+        Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
+        Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+        Timer2.Start()
+    End Sub
+
+    Private Sub aircrafttype_MouseLeave(sender As Object, e As EventArgs) Handles AircraftType.MouseLeave
+        Timer2.Stop()
+        pl2 = 30
+    End Sub
+    Private Sub payload_MouseMove(sender As Object, e As MouseEventArgs) Handles PAYLOAD.MouseMove
+        Me.fligPanel1.Size = New Size(Me.fligPanel1.Size.Width, pl1)
+        Me.aircrPanel2.Size = New Size(Me.aircrPanel2.Size.Width, pl2)
+        ' Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
+        Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
+        Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
+        Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+        Timer3.Start()
+    End Sub
+
+    Private Sub payload_MouseLeave(sender As Object, e As EventArgs) Handles PAYLOAD.MouseLeave
+        Timer3.Stop()
+        pl3 = 30
+    End Sub
+
+    Private Sub route_MouseMove(sender As Object, e As MouseEventArgs) Handles Route.MouseMove
+        Me.fligPanel1.Size = New Size(Me.fligPanel1.Size.Width, pl1)
+        Me.aircrPanel2.Size = New Size(Me.aircrPanel2.Size.Width, pl2)
+        Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
+        ' Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
+        Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
+        Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+        Timer4.Start()
+    End Sub
+
+    Private Sub route_MouseLeave(sender As Object, e As EventArgs) Handles Route.MouseLeave
+        Timer4.Stop()
+        pl4 = 30
+    End Sub
+
+    Private Sub alternates_MouseMove(sender As Object, e As MouseEventArgs) Handles alternates.MouseMove
+        Me.fligPanel1.Size = New Size(Me.fligPanel1.Size.Width, pl1)
+        Me.aircrPanel2.Size = New Size(Me.aircrPanel2.Size.Width, pl2)
+        Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
+        Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
+        ' Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
+        Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+        Timer5.Start()
+    End Sub
+
+    Private Sub alternates_MouseLeave(sender As Object, e As EventArgs) Handles alternates.MouseLeave
+        Timer5.Stop()
+        pl5 = 30
+    End Sub
+
+    Private Sub export_MouseMove(sender As Object, e As MouseEventArgs) Handles export.MouseMove
+        Me.fligPanel1.Size = New Size(Me.fligPanel1.Size.Width, pl1)
+        Me.aircrPanel2.Size = New Size(Me.aircrPanel2.Size.Width, pl2)
+        Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
+        Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
+        Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
+        ' Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+        Timer6.Start()
+    End Sub
+
+    Private Sub export_MouseLeave(sender As Object, e As EventArgs) Handles export.MouseLeave
+        Timer6.Stop()
+        pl6 = 30
+    End Sub
+
+    Private Sub alternates_Click(sender As Object, e As EventArgs) Handles alternates.Click
+
+    End Sub
+
+    Private Sub AircraftType_Click(sender As Object, e As EventArgs) Handles AircraftType.Click
 
     End Sub
 End Class
