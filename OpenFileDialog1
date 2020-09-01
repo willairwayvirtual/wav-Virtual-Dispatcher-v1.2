@@ -1,4 +1,4 @@
-
+   OpenFileDialog1.Filter = "text file|*.txt"
   OpenFileDialog1.InitialDirectory = "Documents"
         OpenFileDialog1.Title = "open text files"
         OpenFileDialog1.ShowDialog()
