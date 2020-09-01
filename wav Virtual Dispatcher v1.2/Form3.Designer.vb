@@ -1152,7 +1152,7 @@ Partial Class Form3mll
         Me.expPanel6.Location = New System.Drawing.Point(15, 735)
         Me.expPanel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.expPanel6.Name = "expPanel6"
-        Me.expPanel6.Size = New System.Drawing.Size(1680, 121)
+        Me.expPanel6.Size = New System.Drawing.Size(1680, 36)
         Me.expPanel6.TabIndex = 53
         '
         'SaveFileDialog7
