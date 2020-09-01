@@ -240,7 +240,7 @@ Partial Class Form3mll
         Me.AircraftType.Location = New System.Drawing.Point(-4, -9)
         Me.AircraftType.Margin = New System.Windows.Forms.Padding(4)
         Me.AircraftType.Name = "AircraftType"
-        Me.AircraftType.Size = New System.Drawing.Size(1669, 42)
+        Me.AircraftType.Size = New System.Drawing.Size(1632, 42)
         Me.AircraftType.TabIndex = 37
         Me.AircraftType.Text = "AircraftType"
         Me.AircraftType.UseVisualStyleBackColor = False
@@ -1100,10 +1100,10 @@ Partial Class Form3mll
         '
         'Button8airbus
         '
-        Me.Button8airbus.Location = New System.Drawing.Point(1103, 32)
+        Me.Button8airbus.Location = New System.Drawing.Point(1103, 37)
         Me.Button8airbus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8airbus.Name = "Button8airbus"
-        Me.Button8airbus.Size = New System.Drawing.Size(418, 52)
+        Me.Button8airbus.Size = New System.Drawing.Size(418, 47)
         Me.Button8airbus.TabIndex = 9
         Me.Button8airbus.Text = "expot  to aerosoft Airbus family p3d"
         Me.Button8airbus.UseVisualStyleBackColor = True
@@ -1152,7 +1152,7 @@ Partial Class Form3mll
         Me.expPanel6.Location = New System.Drawing.Point(15, 735)
         Me.expPanel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.expPanel6.Name = "expPanel6"
-        Me.expPanel6.Size = New System.Drawing.Size(1680, 34)
+        Me.expPanel6.Size = New System.Drawing.Size(1680, 121)
         Me.expPanel6.TabIndex = 53
         '
         'SaveFileDialog7
