@@ -511,4 +511,12 @@ maxTextBox24.Text & "','" &
     Private Sub AircraftType_Click(sender As Object, e As EventArgs) Handles AircraftType.Click
 
     End Sub
+
+    Private Sub flight_Click(sender As Object, e As EventArgs) Handles flight.Click
+
+    End Sub
+
+    Private Sub Takeoff_Click(sender As Object, e As EventArgs) Handles Takeoff.Click
+
+    End Sub
 End Class
