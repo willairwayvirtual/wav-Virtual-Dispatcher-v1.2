@@ -17,8 +17,7 @@ Public Class Form3mll
     Dim pl4 As Integer = 30
     ' pl5 = panel5 height
     Dim pl5 As Integer = 30
-    ' pl6 = panel6 height
-    Dim pl6 As Integer = 30
+
 
 
 
@@ -391,19 +390,8 @@ maxTextBox24.Text & "','" &
 
     End Sub
 
-    Private Sub Timer6_tick(sender As Object, e As EventArgs) Handles Timer6.Tick
 
-        ' 250 = panel height
-        If pl5 > 120 Then
 
-            Timer6.Stop()
-
-        Else
-            Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
-            pl5 += 17
-        End If
-
-    End Sub
 
     Private Sub Button3_Click(sender As Object, e As EventArgs)
 
@@ -420,7 +408,7 @@ maxTextBox24.Text & "','" &
         Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
         Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
         Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
-        Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+
         Timer1.Start()
     End Sub
 
@@ -436,7 +424,7 @@ maxTextBox24.Text & "','" &
         Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
         Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
         Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
-        Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+
         Timer2.Start()
     End Sub
 
@@ -450,7 +438,7 @@ maxTextBox24.Text & "','" &
         ' Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
         Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
         Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
-        Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+
         Timer3.Start()
     End Sub
 
@@ -465,7 +453,7 @@ maxTextBox24.Text & "','" &
         Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
         ' Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
         Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
-        Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+
         Timer4.Start()
     End Sub
 
@@ -480,7 +468,7 @@ maxTextBox24.Text & "','" &
         Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
         Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
         ' Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
-        Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
+
         Timer5.Start()
     End Sub
 
@@ -489,19 +477,17 @@ maxTextBox24.Text & "','" &
         pl5 = 30
     End Sub
 
-    Private Sub export_MouseMove(sender As Object, e As MouseEventArgs) Handles export.MouseMove
+    Private Sub export_MouseMove(sender As Object, e As MouseEventArgs)
         Me.fligPanel1.Size = New Size(Me.fligPanel1.Size.Width, pl1)
         Me.aircrPanel2.Size = New Size(Me.aircrPanel2.Size.Width, pl2)
         Me.PAYPanel3.Size = New Size(Me.PAYPanel3.Size.Width, pl3)
         Me.RoPanel4.Size = New Size(Me.RoPanel4.Size.Width, pl4)
         Me.altePanel5.Size = New Size(Me.altePanel5.Size.Width, pl5)
-        ' Me.expPanel6.Size = New Size(Me.expPanel6.Size.Width, pl6)
-        Timer6.Start()
+
     End Sub
 
-    Private Sub export_MouseLeave(sender As Object, e As EventArgs) Handles export.MouseLeave
-        Timer6.Stop()
-        pl6 = 30
+    Private Sub export_MouseLeave(sender As Object, e As EventArgs)
+
     End Sub
 
     Private Sub alternates_Click(sender As Object, e As EventArgs) Handles alternates.Click
@@ -518,5 +504,19 @@ maxTextBox24.Text & "','" &
 
     Private Sub Takeoff_Click(sender As Object, e As EventArgs) Handles Takeoff.Click
 
+    End Sub
+
+    Private Sub ExpotToProjectFLYToolStripMenuItem_Click(sender As Object, e As EventArgs)
+        SaveFileDialog2.ShowDialog()
+        SaveFileDialog2.Title = "save text"
+        SaveFileDialog2.InitialDirectory = "Documents"
+
+
+
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".pln", "" & RouteTextBox1.Text, True)
     End Sub
 End Class

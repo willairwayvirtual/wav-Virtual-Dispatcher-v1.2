@@ -39,7 +39,6 @@ Partial Class Form3mll
         Me.Route = New System.Windows.Forms.Button()
         Me.alternates = New System.Windows.Forms.Button()
         Me.Button12 = New System.Windows.Forms.Button()
-        Me.export = New System.Windows.Forms.Button()
         Me.fligPanel1 = New System.Windows.Forms.Panel()
         Me.regiTextBox1 = New System.Windows.Forms.TextBox()
         Me.registration = New System.Windows.Forms.Label()
@@ -112,7 +111,6 @@ Partial Class Form3mll
         Me.Timer3 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
-        Me.Timer6 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
         Me.pmdg = New System.Windows.Forms.Button()
@@ -136,6 +134,7 @@ Partial Class Form3mll
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.SaveFileDialog2020 = New System.Windows.Forms.SaveFileDialog()
+        Me.Label1 = New System.Windows.Forms.Label()
         Me.wavMenu.SuspendLayout()
         Me.fligPanel1.SuspendLayout()
         Me.aircrPanel2.SuspendLayout()
@@ -291,23 +290,13 @@ Partial Class Form3mll
         '
         Me.Button12.Font = New System.Drawing.Font("Microsoft Sans Serif", 26.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.Button12.Image = CType(resources.GetObject("Button12.Image"), System.Drawing.Image)
-        Me.Button12.Location = New System.Drawing.Point(1, 663)
+        Me.Button12.Location = New System.Drawing.Point(1, 637)
         Me.Button12.Margin = New System.Windows.Forms.Padding(4)
         Me.Button12.Name = "Button12"
         Me.Button12.Size = New System.Drawing.Size(1736, 53)
         Me.Button12.TabIndex = 45
         Me.Button12.Text = "complete flight"
         Me.Button12.UseVisualStyleBackColor = True
-        '
-        'export
-        '
-        Me.export.Location = New System.Drawing.Point(-17, -11)
-        Me.export.Margin = New System.Windows.Forms.Padding(4)
-        Me.export.Name = "export"
-        Me.export.Size = New System.Drawing.Size(1736, 48)
-        Me.export.TabIndex = 47
-        Me.export.Text = "export  flight paln"
-        Me.export.UseVisualStyleBackColor = True
         '
         'fligPanel1
         '
@@ -1041,9 +1030,6 @@ Partial Class Form3mll
         'Timer5
         '
         '
-        'Timer6
-        '
-        '
         'SaveFileDialog2
         '
         Me.SaveFileDialog2.Filter = " Flight plan(*.pln)||*.pln|"
@@ -1060,10 +1046,10 @@ Partial Class Form3mll
         '
         'Button787
         '
-        Me.Button787.Location = New System.Drawing.Point(440, 32)
+        Me.Button787.Location = New System.Drawing.Point(434, 34)
         Me.Button787.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button787.Name = "Button787"
-        Me.Button787.Size = New System.Drawing.Size(215, 52)
+        Me.Button787.Size = New System.Drawing.Size(221, 50)
         Me.Button787.TabIndex = 1
         Me.Button787.Text = "expot to qualitywingssim 787"
         Me.Button787.UseVisualStyleBackColor = True
@@ -1080,7 +1066,7 @@ Partial Class Form3mll
         '
         'mfs20020
         '
-        Me.mfs20020.Location = New System.Drawing.Point(434, 92)
+        Me.mfs20020.Location = New System.Drawing.Point(424, 87)
         Me.mfs20020.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.mfs20020.Name = "mfs20020"
         Me.mfs20020.Size = New System.Drawing.Size(176, 59)
@@ -1100,20 +1086,20 @@ Partial Class Form3mll
         '
         'Button8airbus
         '
-        Me.Button8airbus.Location = New System.Drawing.Point(1103, 37)
+        Me.Button8airbus.Location = New System.Drawing.Point(1104, 32)
         Me.Button8airbus.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button8airbus.Name = "Button8airbus"
-        Me.Button8airbus.Size = New System.Drawing.Size(418, 47)
+        Me.Button8airbus.Size = New System.Drawing.Size(417, 52)
         Me.Button8airbus.TabIndex = 9
         Me.Button8airbus.Text = "expot  to aerosoft Airbus family p3d"
         Me.Button8airbus.UseVisualStyleBackColor = True
         '
         'Button9787
         '
-        Me.Button9787.Location = New System.Drawing.Point(651, 37)
+        Me.Button9787.Location = New System.Drawing.Point(645, 32)
         Me.Button9787.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.Button9787.Name = "Button9787"
-        Me.Button9787.Size = New System.Drawing.Size(208, 48)
+        Me.Button9787.Size = New System.Drawing.Size(231, 53)
         Me.Button9787.TabIndex = 10
         Me.Button9787.Text = "expot  to qualitywingssim 787 p3d"
         Me.Button9787.UseVisualStyleBackColor = True
@@ -1145,14 +1131,13 @@ Partial Class Form3mll
         Me.expPanel6.Controls.Add(Me.Button8airbus)
         Me.expPanel6.Controls.Add(Me.Button11vatsim)
         Me.expPanel6.Controls.Add(Me.mfs20020)
-        Me.expPanel6.Controls.Add(Me.export)
         Me.expPanel6.Controls.Add(Me.Buttonairbus)
         Me.expPanel6.Controls.Add(Me.Button787)
         Me.expPanel6.Controls.Add(Me.pmdg)
-        Me.expPanel6.Location = New System.Drawing.Point(15, 735)
+        Me.expPanel6.Location = New System.Drawing.Point(8, 709)
         Me.expPanel6.Margin = New System.Windows.Forms.Padding(3, 2, 3, 2)
         Me.expPanel6.Name = "expPanel6"
-        Me.expPanel6.Size = New System.Drawing.Size(1680, 36)
+        Me.expPanel6.Size = New System.Drawing.Size(1687, 171)
         Me.expPanel6.TabIndex = 53
         '
         'SaveFileDialog7
@@ -1195,12 +1180,23 @@ Partial Class Form3mll
         '
         Me.SaveFileDialog2020.Filter = " Flight plan(*.flt.*.pln )|"
         '
+        'Label1
+        '
+        Me.Label1.AutoSize = True
+        Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 22.2!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label1.Location = New System.Drawing.Point(605, 689)
+        Me.Label1.Name = "Label1"
+        Me.Label1.Size = New System.Drawing.Size(310, 44)
+        Me.Label1.TabIndex = 54
+        Me.Label1.Text = "export  flight paln"
+        '
         'Form3mll
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
         Me.ClientSize = New System.Drawing.Size(1659, 891)
+        Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.expPanel6)
         Me.Controls.Add(Me.altePanel5)
         Me.Controls.Add(Me.RoPanel4)
@@ -1244,7 +1240,6 @@ Partial Class Form3mll
     Friend WithEvents Route As Button
     Friend WithEvents alternates As Button
     Friend WithEvents Button12 As Button
-    Friend WithEvents export As Button
     Friend WithEvents fligPanel1 As Panel
     Friend WithEvents aircrPanel2 As Panel
     Friend WithEvents PAYPanel3 As Panel
@@ -1320,7 +1315,6 @@ Partial Class Form3mll
     Friend WithEvents Timer3 As Timer
     Friend WithEvents Timer4 As Timer
     Friend WithEvents Timer5 As Timer
-    Friend WithEvents Timer6 As Timer
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents SaveFileDialog2 As SaveFileDialog
     Friend WithEvents pmdg As Button
@@ -1356,4 +1350,6 @@ Partial Class Form3mll
         ' Add any initialization after the InitializeComponent() call.
 
     End Sub
+
+    Friend WithEvents Label1 As Label
 End Class
