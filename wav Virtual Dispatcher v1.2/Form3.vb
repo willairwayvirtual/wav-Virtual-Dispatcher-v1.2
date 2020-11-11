@@ -1,5 +1,7 @@
 ﻿Imports System.ComponentModel
 Imports System.Data.OleDb
+Imports System.Drawing.Printing
+
 Public Class Form3mll
     Public Property stringtext1 As String
     Dim provider As String
@@ -70,12 +72,12 @@ Public Class Form3mll
     End Sub
 
     Private Sub Save4_Click(sender As Object, e As EventArgs) Handles Save4.Click
-        SaveFileDialog1.ShowDialog()
-        SaveFileDialog1.Title = "save text"
-        SaveFileDialog1.InitialDirectory = "Documents"
-
-
+        SaveFileDialog2020.ShowDialog()
+        SaveFileDialog2020.Title = "save text"
+        SaveFileDialog2020.InitialDirectory = "\Documents"
         Dim location As String
+
+
 
         location = SaveFileDialog1.FileName
 
@@ -90,8 +92,9 @@ Public Class Form3mll
     End Sub
 
     Private Sub Open3_Click(sender As Object, e As EventArgs) Handles Open3.Click
-        OpenFileDialog1.Filter = "text file|*.txt"
-        OpenFileDialog1.InitialDirectory = "Documents"
+
+        OpenFileDialog1.Filter = "Flight plan(*.flt.*.pln )|"
+        OpenFileDialog1.InitialDirectory = "\Documents"
         OpenFileDialog1.Title = "open text files"
         OpenFileDialog1.ShowDialog()
 
@@ -115,7 +118,7 @@ Public Class Form3mll
     Private Sub project_Click(sender As Object, e As EventArgs) Handles project.Click
         SaveFileDialog2.ShowDialog()
         SaveFileDialog2.Title = "save text"
-        SaveFileDialog2.InitialDirectory = "Documents"
+        SaveFileDialog2.InitialDirectory = "\Documents"
 
 
 
@@ -127,9 +130,9 @@ Public Class Form3mll
     End Sub
 
     Private Sub pmdg_Click(sender As Object, e As EventArgs) Handles pmdg.Click
-        SaveFileDialog3.ShowDialog()
-        SaveFileDialog3.Title = "save text"
-        SaveFileDialog3.InitialDirectory = "Documents"
+        SaveFileDialog9.ShowDialog()
+        SaveFileDialog9.Title = "save text"
+        SaveFileDialog9.InitialDirectory = "\Documents"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -138,11 +141,10 @@ Public Class Form3mll
     End Sub
 
     Private Sub Buttonp3d_Click(sender As Object, e As EventArgs) Handles Buttonp3d.Click
-        SaveFileDialog8.ShowDialog()
-        SaveFileDialog8.Title = "save text"
-        SaveFileDialog8.InitialDirectory = "Documents"
+        SaveFileDialog9.ShowDialog()
+        SaveFileDialog9.Title = "save text"
+        SaveFileDialog9.InitialDirectory = "\Documents"
         Dim location As String
-
         location = SaveFileDialog1.FileName
 
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
@@ -150,8 +152,8 @@ Public Class Form3mll
 
     Private Sub Button787_Click(sender As Object, e As EventArgs) Handles Button787.Click
         SaveFileDialog9.ShowDialog()
-        SaveFileDialog4.Title = "save text"
-        SaveFileDialog4.InitialDirectory = "Documents"
+        SaveFileDialog9.Title = "save text"
+        SaveFileDialog9.InitialDirectory = "\Documents"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -162,7 +164,7 @@ Public Class Form3mll
     Private Sub Button9787_Click(sender As Object, e As EventArgs) Handles Button9787.Click
         SaveFileDialog9.ShowDialog()
         SaveFileDialog9.Title = "save text"
-        SaveFileDialog9.InitialDirectory = "Documents"
+        SaveFileDialog9.InitialDirectory = "\Documents"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -172,10 +174,15 @@ Public Class Form3mll
     End Sub
 
     Private Sub Buttonairbus_Click(sender As Object, e As EventArgs) Handles Buttonairbus.Click
-        SaveFileDialog7.ShowDialog()
-        SaveFileDialog7.Title = "save text"
-        SaveFileDialog7.InitialDirectory = "Documents"
+        SaveFileDialog11.ShowDialog()
+        SaveFileDialog11.Title = "save text"
+        SaveFileDialog11.InitialDirectory = "\Documents"
         Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
 
         location = SaveFileDialog1.FileName
 
@@ -184,9 +191,9 @@ Public Class Form3mll
     End Sub
 
     Private Sub Button8airbus_Click(sender As Object, e As EventArgs) Handles Button8airbus.Click
-        SaveFileDialog10.ShowDialog()
-        SaveFileDialog10.Title = "save text"
-        SaveFileDialog10.InitialDirectory = "Documents"
+        SaveFileDialog11.ShowDialog()
+        SaveFileDialog11.Title = "save text"
+        SaveFileDialog11.InitialDirectory = "\Documents"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -256,7 +263,7 @@ Public Class Form3mll
     Private Sub mfs20020_Click(sender As Object, e As EventArgs) Handles mfs20020.Click
         SaveFileDialog2020.ShowDialog()
         SaveFileDialog2020.Title = "save text"
-        SaveFileDialog2020.InitialDirectory = "Documents"
+        SaveFileDialog2020.InitialDirectory = "\Documents"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -509,7 +516,7 @@ maxTextBox24.Text & "','" &
     Private Sub ExpotToProjectFLYToolStripMenuItem_Click(sender As Object, e As EventArgs)
         SaveFileDialog2.ShowDialog()
         SaveFileDialog2.Title = "save text"
-        SaveFileDialog2.InitialDirectory = "Documents"
+        SaveFileDialog2.InitialDirectory = "\Documents"
 
 
 
@@ -518,5 +525,10 @@ maxTextBox24.Text & "','" &
         location = SaveFileDialog1.FileName
 
         My.Computer.FileSystem.WriteAllText(location & ".pln", "" & RouteTextBox1.Text, True)
+    End Sub
+
+    Private Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
+
+        e.Graphics.DrawString(RouteTextBox1.Text, RouteTextBox1.Font, Brushes.Blue, 100, 100)
     End Sub
 End Class
