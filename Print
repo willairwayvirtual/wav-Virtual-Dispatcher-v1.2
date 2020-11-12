@@ -9,5 +9,5 @@ PrintDialog1.Document = PrintDocument1
 
   Private Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
 
-        e.Graphics.DrawString(RouteTextBox1.Text, RouteTextBox1.Font, Brushes.Blue, 100, 100) or         e.Graphics.DrawString(TextBox1.Text, TextBox1.Font, Brushes.Blue, 100, 100)
+        e.Graphics.DrawString(RouteTextBox1.Text, RouteTextBox1.Font, Brushes.Blue, 100, 100) or e.Graphics.DrawString(TextBox1.Text, TextBox1.Font, Brushes.Blue, 100, 100)
 
