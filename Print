@@ -5,3 +5,8 @@ PrintDialog1.Document = PrintDocument1
         If PrintDialog1.ShowDialog = DialogResult.OK Then
             PrintDocument1.PrinterSettings = PrintDialog1.PrinterSettings
             PrintDocument1.Print()
+
+
+  Private Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
+
+        e.Graphics.DrawString(RouteTextBox1.Text, RouteTextBox1.Font, Brushes.Blue, 100, 100)
