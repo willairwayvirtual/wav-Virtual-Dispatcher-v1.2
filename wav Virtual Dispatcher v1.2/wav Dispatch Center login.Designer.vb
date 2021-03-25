@@ -37,20 +37,18 @@ Partial Class Form2
         '
         Me.CheckBox1.AutoSize = True
         Me.CheckBox1.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.CheckBox1.Location = New System.Drawing.Point(22, 240)
-        Me.CheckBox1.Margin = New System.Windows.Forms.Padding(4)
+        Me.CheckBox1.Location = New System.Drawing.Point(16, 195)
         Me.CheckBox1.Name = "CheckBox1"
-        Me.CheckBox1.Size = New System.Drawing.Size(129, 22)
+        Me.CheckBox1.Size = New System.Drawing.Size(110, 19)
         Me.CheckBox1.TabIndex = 31
         Me.CheckBox1.Text = "Remember me"
         Me.CheckBox1.UseVisualStyleBackColor = True
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(-6, 267)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(4)
+        Me.Button1.Location = New System.Drawing.Point(-4, 217)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(890, 48)
+        Me.Button1.Size = New System.Drawing.Size(668, 39)
         Me.Button1.TabIndex = 30
         Me.Button1.Text = "login"
         Me.Button1.UseVisualStyleBackColor = True
@@ -60,10 +58,9 @@ Partial Class Form2
         Me.Label4.AutoSize = True
         Me.Label4.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 12.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(1, 51)
-        Me.Label4.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label4.Location = New System.Drawing.Point(1, 41)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(602, 25)
+        Me.Label4.Size = New System.Drawing.Size(486, 20)
         Me.Label4.TabIndex = 29
         Me.Label4.Text = "if you have wav Account please enter your username and password "
         '
@@ -72,11 +69,10 @@ Partial Class Form2
         Me.txtPassword.BackColor = System.Drawing.Color.Silver
         Me.txtPassword.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtPassword.ForeColor = System.Drawing.Color.White
-        Me.txtPassword.Location = New System.Drawing.Point(227, 193)
-        Me.txtPassword.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtPassword.Location = New System.Drawing.Point(170, 157)
         Me.txtPassword.Name = "txtPassword"
         Me.txtPassword.PasswordChar = Global.Microsoft.VisualBasic.ChrW(42)
-        Me.txtPassword.Size = New System.Drawing.Size(637, 41)
+        Me.txtPassword.Size = New System.Drawing.Size(479, 35)
         Me.txtPassword.TabIndex = 28
         '
         'txtUsername
@@ -84,10 +80,9 @@ Partial Class Form2
         Me.txtUsername.BackColor = System.Drawing.Color.Silver
         Me.txtUsername.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.txtUsername.ForeColor = System.Drawing.Color.White
-        Me.txtUsername.Location = New System.Drawing.Point(227, 122)
-        Me.txtUsername.Margin = New System.Windows.Forms.Padding(4)
+        Me.txtUsername.Location = New System.Drawing.Point(170, 99)
         Me.txtUsername.Name = "txtUsername"
-        Me.txtUsername.Size = New System.Drawing.Size(636, 41)
+        Me.txtUsername.Size = New System.Drawing.Size(478, 35)
         Me.txtUsername.TabIndex = 27
         '
         'Label3
@@ -95,10 +90,9 @@ Partial Class Form2
         Me.Label3.AutoSize = True
         Me.Label3.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(12, 193)
-        Me.Label3.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label3.Location = New System.Drawing.Point(9, 157)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(190, 36)
+        Me.Label3.Size = New System.Drawing.Size(151, 29)
         Me.Label3.TabIndex = 26
         Me.Label3.Text = "PASSWORD"
         '
@@ -107,10 +101,9 @@ Partial Class Form2
         Me.Label2.AutoSize = True
         Me.Label2.BackColor = System.Drawing.SystemColors.ButtonHighlight
         Me.Label2.Font = New System.Drawing.Font("Microsoft Sans Serif", 18.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label2.Location = New System.Drawing.Point(15, 126)
-        Me.Label2.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label2.Location = New System.Drawing.Point(11, 102)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(187, 36)
+        Me.Label2.Size = New System.Drawing.Size(148, 29)
         Me.Label2.TabIndex = 25
         Me.Label2.Text = "USERNAME"
         '
@@ -119,19 +112,18 @@ Partial Class Form2
         Me.Label1.AutoSize = True
         Me.Label1.BackColor = System.Drawing.Color.White
         Me.Label1.Font = New System.Drawing.Font("Microsoft Sans Serif", 27.75!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label1.Location = New System.Drawing.Point(-3, -3)
-        Me.Label1.Margin = New System.Windows.Forms.Padding(4, 0, 4, 0)
+        Me.Label1.Location = New System.Drawing.Point(-2, -2)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(790, 54)
+        Me.Label1.Size = New System.Drawing.Size(631, 42)
         Me.Label1.TabIndex = 24
         Me.Label1.Text = "Welcome to the wav Dispatch Center"
         '
         'Form2
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(8.0!, 16.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.SystemColors.ButtonShadow
-        Me.ClientSize = New System.Drawing.Size(869, 313)
+        Me.ClientSize = New System.Drawing.Size(652, 254)
         Me.Controls.Add(Me.CheckBox1)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label4)
@@ -142,6 +134,7 @@ Partial Class Form2
         Me.Controls.Add(Me.Label1)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.SizableToolWindow
         Me.Icon = CType(resources.GetObject("$this.Icon"), System.Drawing.Icon)
+        Me.Margin = New System.Windows.Forms.Padding(2, 2, 2, 2)
         Me.Name = "Form2"
         Me.Text = "wav Dispatch Center login."
         Me.ResumeLayout(False)

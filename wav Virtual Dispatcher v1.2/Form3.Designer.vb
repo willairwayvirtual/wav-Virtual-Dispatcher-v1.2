@@ -1098,6 +1098,9 @@ Partial Class Form3mll
         '
         Me.PrintDialog1.UseEXDialog = True
         '
+        'PrintDocument1
+        '
+        '
         'SaveFileDialog2020
         '
         Me.SaveFileDialog2020.Filter = " Flight plan(*.flt.*.pln )|"
