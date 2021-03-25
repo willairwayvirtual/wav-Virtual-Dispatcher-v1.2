@@ -423,6 +423,12 @@
         }
         "Entry"
         {
+        "MsmKey" = "8:_A7E906BF80754E4F8EB75EE31B454562"
+        "OwnerKey" = "8:_UNDEFINED"
+        "MsmSig" = "8:_UNDEFINED"
+        }
+        "Entry"
+        {
         "MsmKey" = "8:_D85A40926E6E631C0CC556A1F6FAB85A"
         "OwnerKey" = "8:_62CC16785693C8CB8AACE66665AD7BC9"
         "MsmSig" = "8:_UNDEFINED"
@@ -489,8 +495,8 @@
         }
         "Entry"
         {
-        "MsmKey" = "8:_UNDEFINED"
-        "OwnerKey" = "8:_7B18FA67E1F729678C5AA3C0CC6778F3"
+        "MsmKey" = "8:_F5D0F4B8C0C645D0ADC03C8BE4541465"
+        "OwnerKey" = "8:_UNDEFINED"
         "MsmSig" = "8:_UNDEFINED"
         }
         "Entry"
@@ -619,6 +625,12 @@
         "OwnerKey" = "8:_9FA8A3493D5DC298B8F70FDC37B6D1E4"
         "MsmSig" = "8:_UNDEFINED"
         }
+        "Entry"
+        {
+        "MsmKey" = "8:_UNDEFINED"
+        "OwnerKey" = "8:_7B18FA67E1F729678C5AA3C0CC6778F3"
+        "MsmSig" = "8:_UNDEFINED"
+        }
     }
     "Configurations"
     {
@@ -637,6 +649,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
         "Release"
         {
@@ -653,6 +673,14 @@
         "PrivateKeyFile" = "8:"
         "TimeStampServer" = "8:"
         "InstallerBootstrapper" = "3:2"
+            "BootstrapperCfg:{63ACBE69-63AA-4F98-B2B6-99F9E24495F2}"
+            {
+            "Enabled" = "11:TRUE"
+            "PromptEnabled" = "11:TRUE"
+            "PrerequisitesLocation" = "2:1"
+            "Url" = "8:"
+            "ComponentsUrl" = "8:"
+            }
         }
     }
     "Deployable"
@@ -1249,6 +1277,26 @@
             "IsDependency" = "11:TRUE"
             "IsolateTo" = "8:"
             }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_A7E906BF80754E4F8EB75EE31B454562"
+            {
+            "SourcePath" = "8:..\\wav Virtual Dispatcher v1.2\\CrystalReport1.vb"
+            "TargetName" = "8:CrystalReport1.vb"
+            "Tag" = "8:"
+            "Folder" = "8:_F9EA8009449D40F899562D4B18403FE2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
+            "IsolateTo" = "8:"
+            }
             "{9F6F8455-1EF1-4B85-886A-4223BCC8E7F7}:_D85A40926E6E631C0CC556A1F6FAB85A"
             {
             "AssemblyRegister" = "3:1"
@@ -1391,6 +1439,26 @@
             "Register" = "3:1"
             "Exclude" = "11:FALSE"
             "IsDependency" = "11:TRUE"
+            "IsolateTo" = "8:"
+            }
+            "{1FB2D0AE-D3B9-43D4-B9DD-F88EC61E35DE}:_F5D0F4B8C0C645D0ADC03C8BE4541465"
+            {
+            "SourcePath" = "8:..\\wav Virtual Dispatcher v1.2\\CrystalReport1.rpt"
+            "TargetName" = "8:CrystalReport1.rpt"
+            "Tag" = "8:"
+            "Folder" = "8:_F9EA8009449D40F899562D4B18403FE2"
+            "Condition" = "8:"
+            "Transitive" = "11:FALSE"
+            "Vital" = "11:TRUE"
+            "ReadOnly" = "11:FALSE"
+            "Hidden" = "11:FALSE"
+            "System" = "11:FALSE"
+            "Permanent" = "11:FALSE"
+            "SharedLegacy" = "11:FALSE"
+            "PackageAs" = "3:1"
+            "Register" = "3:1"
+            "Exclude" = "11:FALSE"
+            "IsDependency" = "11:FALSE"
             "IsolateTo" = "8:"
             }
         }
@@ -1681,7 +1749,7 @@
                             "ContextData" = "8:"
                             "Attributes" = "3:2"
                             "Setting" = "3:2"
-                            "Value" = "8:<###%-%%#%-#%%%>\t"
+                            "Value" = "8:<###%-%%#%-#%%%>"
                             "DefaultValue" = "8:<###-%%%%%%%>"
                             "UsePlugInResources" = "11:TRUE"
                             }
