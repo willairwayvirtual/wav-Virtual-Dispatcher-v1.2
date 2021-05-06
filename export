@@ -17,3 +17,8 @@ SaveFileDialog1.ShowDialog()
         
         
         rtie Files(*.txt)|*.txt |flp(*.txt)|  *.txt|all files|*.         fs Flight plan(*.pln)  mfs 20020  Flight plan(*.flt.*.pln )|
+
+
+C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPLANS
+
+C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\QualityWings\QW787\FlightPlans
