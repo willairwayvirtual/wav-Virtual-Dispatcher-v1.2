@@ -123,6 +123,7 @@ Partial Class Form3mll
         Me.Buttonp3d = New System.Windows.Forms.Button()
         Me.project = New System.Windows.Forms.Button()
         Me.expPanel6 = New System.Windows.Forms.Panel()
+        Me.Button23 = New System.Windows.Forms.Button()
         Me.SaveFileDialog7 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog6 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog8 = New System.Windows.Forms.SaveFileDialog()
@@ -132,6 +133,10 @@ Partial Class Form3mll
         Me.SaveFileDialog2020 = New System.Windows.Forms.SaveFileDialog()
         Me.Label1 = New System.Windows.Forms.Label()
         Me.SaveFileDialog11 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog10 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog787 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog4 = New System.Windows.Forms.SaveFileDialog()
         Me.wavMenu.SuspendLayout()
         Me.fligPanel1.SuspendLayout()
         Me.aircrPanel2.SuspendLayout()
@@ -1063,6 +1068,7 @@ Partial Class Form3mll
         '
         'expPanel6
         '
+        Me.expPanel6.Controls.Add(Me.Button23)
         Me.expPanel6.Controls.Add(Me.project)
         Me.expPanel6.Controls.Add(Me.Buttonp3d)
         Me.expPanel6.Controls.Add(Me.Button9787)
@@ -1077,6 +1083,15 @@ Partial Class Form3mll
         Me.expPanel6.Name = "expPanel6"
         Me.expPanel6.Size = New System.Drawing.Size(1265, 139)
         Me.expPanel6.TabIndex = 53
+        '
+        'Button23
+        '
+        Me.Button23.Location = New System.Drawing.Point(456, 73)
+        Me.Button23.Name = "Button23"
+        Me.Button23.Size = New System.Drawing.Size(113, 46)
+        Me.Button23.TabIndex = 13
+        Me.Button23.Text = "expot  to AivlaSoft"
+        Me.Button23.UseVisualStyleBackColor = True
         '
         'SaveFileDialog7
         '
@@ -1093,6 +1108,8 @@ Partial Class Form3mll
         'SaveFileDialog9
         '
         Me.SaveFileDialog9.Filter = "rtie Files(*.txt)|Text Files(*.txt)|*.txt|*.*"
+        Me.SaveFileDialog9.InitialDirectory = "C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPL" &
+    "ANS"
         '
         'PrintDialog1
         '
@@ -1104,6 +1121,8 @@ Partial Class Form3mll
         'SaveFileDialog2020
         '
         Me.SaveFileDialog2020.Filter = " Flight plan(*.flt.*.pln )|"
+        Me.SaveFileDialog2020.InitialDirectory = "C:\Users\Lorcan\app_data\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\L" &
+    "ocalState"
         '
         'Label1
         '
@@ -1119,6 +1138,22 @@ Partial Class Form3mll
         'SaveFileDialog11
         '
         Me.SaveFileDialog11.Filter = "flp(*files)| "
+        Me.SaveFileDialog11.InitialDirectory = "C:\Users\Lorcan\Documents\Aerosoft\AerosoftAirbusExtended"
+        '
+        'SaveFileDialog10
+        '
+        Me.SaveFileDialog10.InitialDirectory = "C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPL" &
+    "ANS"
+        '
+        'SaveFileDialog787
+        '
+        Me.SaveFileDialog787.InitialDirectory = "C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\QualityWings\" &
+    "QW787\FlightPlans"
+        '
+        'SaveFileDialog4
+        '
+        Me.SaveFileDialog4.Filter = "efbFiles(*.efbr)|Text Files(*.txt)|*.txt|*.*"
+        Me.SaveFileDialog4.InitialDirectory = "C:\Users\Lorcan\Documents\AivlaSoft\EFB\UserData\Routes"
         '
         'Form3mll
         '
@@ -1279,4 +1314,9 @@ Partial Class Form3mll
 
     Friend WithEvents Label1 As Label
     Friend WithEvents SaveFileDialog11 As SaveFileDialog
+    Friend WithEvents SaveFileDialog3 As SaveFileDialog
+    Friend WithEvents SaveFileDialog10 As SaveFileDialog
+    Friend WithEvents SaveFileDialog787 As SaveFileDialog
+    Friend WithEvents Button23 As Button
+    Friend WithEvents SaveFileDialog4 As SaveFileDialog
 End Class

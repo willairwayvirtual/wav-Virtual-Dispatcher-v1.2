@@ -130,9 +130,9 @@ Public Class Form3mll
     End Sub
 
     Private Sub pmdg_Click(sender As Object, e As EventArgs) Handles pmdg.Click
-        SaveFileDialog9.ShowDialog()
-        SaveFileDialog9.Title = "save text"
-        SaveFileDialog9.InitialDirectory = "\Documents"
+        SaveFileDialog10.ShowDialog()
+        SaveFileDialog10.Title = "save text"
+        SaveFileDialog10.InitialDirectory = "\C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPLANS"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -151,9 +151,9 @@ Public Class Form3mll
     End Sub
 
     Private Sub Button787_Click(sender As Object, e As EventArgs) Handles Button787.Click
-        SaveFileDialog9.ShowDialog()
-        SaveFileDialog9.Title = "save text"
-        SaveFileDialog9.InitialDirectory = "\Documents"
+        SaveFileDialog787.ShowDialog()
+        SaveFileDialog787.Title = "save text"
+        SaveFileDialog787.InitialDirectory = "\C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\QualityWings\QW787\FlightPlans"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -176,7 +176,7 @@ Public Class Form3mll
     Private Sub Buttonairbus_Click(sender As Object, e As EventArgs) Handles Buttonairbus.Click
         SaveFileDialog11.ShowDialog()
         SaveFileDialog11.Title = "save text"
-        SaveFileDialog11.InitialDirectory = "\Documents"
+        SaveFileDialog11.InitialDirectory = "\C:\Users\Lorcan\Documents\Aerosoft\AerosoftAirbusExtended"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -263,7 +263,7 @@ Public Class Form3mll
     Private Sub mfs20020_Click(sender As Object, e As EventArgs) Handles mfs20020.Click
         SaveFileDialog2020.ShowDialog()
         SaveFileDialog2020.Title = "save text"
-        SaveFileDialog2020.InitialDirectory = "\Documents"
+        SaveFileDialog2020.InitialDirectory = "\C:\Users\Lorcan\app_data\Local\Packages\Microsoft.FlightSimulator_8wekyb3d8bbwe\LocalState"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -530,5 +530,19 @@ maxTextBox24.Text & "','" &
     Private Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
 
         e.Graphics.DrawString(RouteTextBox1.Text, RouteTextBox1.Font, Brushes.Blue, 100, 100)
+    End Sub
+
+    Private Sub Button23_Click(sender As Object, e As EventArgs) Handles Button23.Click
+        SaveFileDialog4.ShowDialog()
+        SaveFileDialog4.Title = "save text"
+        SaveFileDialog4.InitialDirectory = "C:\Users\Lorcan\Documents\AivlaSoft\EFB\UserData\Routes"
+
+
+
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+        My.Computer.FileSystem.WriteAllText(location & ".efb routes", "" & RouteTextBox1.Text, True)
+
     End Sub
 End Class
