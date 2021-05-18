@@ -7,15 +7,69 @@ SaveFileDialog1.ShowDialog()
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
         MessageBox.Show("aill routes have been exported")
         
+          SaveFileDialog10.ShowDialog()
+        SaveFileDialog10.Title = "save text"
+        SaveFileDialog10.InitialDirectory = "\C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPLANS"
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
         
+        SaveFileDialog9.ShowDialog()
+        SaveFileDialog9.Title = "save text"
+        SaveFileDialog9.InitialDirectory = "\C:\Program Files\lockheedmartin\prepar3d v3\pmdg\FLIGHTPLANS\777"
+        Dim location As String
+        location = SaveFileDialog1.FileName
         
+          SaveFileDialog9.ShowDialog()
+        SaveFileDialog9.Title = "save text"
+        SaveFileDialog9.InitialDirectory = "\C:\Program Files\lockheedmartin\prepar3d v3\pmdg\FLIGHTPLANS\777"
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
+         SaveFileDialog4.ShowDialog()
+        SaveFileDialog4.Title = "save text"
+        SaveFileDialog4.InitialDirectory = "C:\Users\Lorcan\Documents\AivlaSoft\EFB\UserData\Routes"
+
+
+
+        Dim location As String
+
+        location = SaveFileDialog1.FileName
+        My.Computer.FileSystem.WriteAllText(location & ".efb routes", "" & RouteTextBox1.Text, True)
+
         
+        flp(*files)| 
+        Text Files(*.txt)|*.txt|rtie Files(*.txt)|*.*
         
-        
-        
-        
-        
-        
+          SaveFileDialog2020.ShowDialog()
+        SaveFileDialog2020.Title = "save text"
+        SaveFileDialog2020.InitialDirectory = "\Documents"
+        Dim location As String
+
+
+
+        location = SaveFileDialog1.FileName
+
+        'My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
+        Dim writer As New System.IO.StreamWriter(location & ".txt")
+        writer.WriteLine(AirlinetextBox4.Text)
+        writer.WriteLine(FlightTextBox5.Text)
+        writer.WriteLine(CallsignTextBox6.Text)
+        writer.WriteLine(RouteTextBox1.Text)
+        writer.Close()
+           SaveFileDialog9.ShowDialog()
+        SaveFileDialog9.Title = "save text"
+        SaveFileDialog9.InitialDirectory = "\C:\Program Files\lockheedmartin\prepar3d v3\pmdg\FLIGHTPLANS\777"
+        Dim location As String
+        location = SaveFileDialog1.FileName
+
+        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
         rtie Files(*.txt)|*.txt |flp(*.txt)|  *.txt|all files|*.         fs Flight plan(*.pln)  mfs 20020  Flight plan(*.flt.*.pln )|
 
 
