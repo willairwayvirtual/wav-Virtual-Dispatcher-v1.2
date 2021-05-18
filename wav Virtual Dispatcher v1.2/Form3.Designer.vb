@@ -112,7 +112,6 @@ Partial Class Form3mll
         Me.Timer4 = New System.Windows.Forms.Timer(Me.components)
         Me.Timer5 = New System.Windows.Forms.Timer(Me.components)
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
-        Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
         Me.pmdg = New System.Windows.Forms.Button()
         Me.Button787 = New System.Windows.Forms.Button()
         Me.Buttonairbus = New System.Windows.Forms.Button()
@@ -121,22 +120,19 @@ Partial Class Form3mll
         Me.Button8airbus = New System.Windows.Forms.Button()
         Me.Button9787 = New System.Windows.Forms.Button()
         Me.Buttonp3d = New System.Windows.Forms.Button()
-        Me.project = New System.Windows.Forms.Button()
         Me.expPanel6 = New System.Windows.Forms.Panel()
         Me.Button23 = New System.Windows.Forms.Button()
-        Me.SaveFileDialog7 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog6 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog8 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog9 = New System.Windows.Forms.SaveFileDialog()
         Me.PrintDialog1 = New System.Windows.Forms.PrintDialog()
         Me.PrintDocument1 = New System.Drawing.Printing.PrintDocument()
         Me.SaveFileDialog2020 = New System.Windows.Forms.SaveFileDialog()
         Me.Label1 = New System.Windows.Forms.Label()
-        Me.SaveFileDialog11 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog10 = New System.Windows.Forms.SaveFileDialog()
-        Me.SaveFileDialog787 = New System.Windows.Forms.SaveFileDialog()
         Me.SaveFileDialog4 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog2 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog31 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog32 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog3 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog54 = New System.Windows.Forms.SaveFileDialog()
+        Me.SaveFileDialog55 = New System.Windows.Forms.SaveFileDialog()
         Me.wavMenu.SuspendLayout()
         Me.fligPanel1.SuspendLayout()
         Me.aircrPanel2.SuspendLayout()
@@ -972,10 +968,6 @@ Partial Class Form3mll
         'Timer5
         '
         '
-        'SaveFileDialog2
-        '
-        Me.SaveFileDialog2.Filter = " fs Flight plan(*.pln)||*.pln|"
-        '
         'pmdg
         '
         Me.pmdg.Location = New System.Drawing.Point(-3, 28)
@@ -1008,7 +1000,7 @@ Partial Class Form3mll
         '
         'mfs20020
         '
-        Me.mfs20020.Location = New System.Drawing.Point(318, 71)
+        Me.mfs20020.Location = New System.Drawing.Point(141, 70)
         Me.mfs20020.Margin = New System.Windows.Forms.Padding(2)
         Me.mfs20020.Name = "mfs20020"
         Me.mfs20020.Size = New System.Drawing.Size(132, 48)
@@ -1056,20 +1048,9 @@ Partial Class Form3mll
         Me.Buttonp3d.Text = "expot  to pmdg p3d"
         Me.Buttonp3d.UseVisualStyleBackColor = True
         '
-        'project
-        '
-        Me.project.Location = New System.Drawing.Point(148, 73)
-        Me.project.Margin = New System.Windows.Forms.Padding(2)
-        Me.project.Name = "project"
-        Me.project.Size = New System.Drawing.Size(172, 45)
-        Me.project.TabIndex = 12
-        Me.project.Text = "expot to projectFLY"
-        Me.project.UseVisualStyleBackColor = True
-        '
         'expPanel6
         '
         Me.expPanel6.Controls.Add(Me.Button23)
-        Me.expPanel6.Controls.Add(Me.project)
         Me.expPanel6.Controls.Add(Me.Buttonp3d)
         Me.expPanel6.Controls.Add(Me.Button9787)
         Me.expPanel6.Controls.Add(Me.Button8airbus)
@@ -1086,30 +1067,12 @@ Partial Class Form3mll
         '
         'Button23
         '
-        Me.Button23.Location = New System.Drawing.Point(456, 73)
+        Me.Button23.Location = New System.Drawing.Point(278, 77)
         Me.Button23.Name = "Button23"
         Me.Button23.Size = New System.Drawing.Size(113, 46)
         Me.Button23.TabIndex = 13
         Me.Button23.Text = "expot  to AivlaSoft"
         Me.Button23.UseVisualStyleBackColor = True
-        '
-        'SaveFileDialog7
-        '
-        Me.SaveFileDialog7.Filter = "flp(*.txt)|*"
-        '
-        'SaveFileDialog6
-        '
-        Me.SaveFileDialog6.Filter = "Text Files(*.txt)|*.txt|rtie Files(*.txt)|*.*"
-        '
-        'SaveFileDialog8
-        '
-        Me.SaveFileDialog8.Filter = "Text Files(*.txt)|*.*"
-        '
-        'SaveFileDialog9
-        '
-        Me.SaveFileDialog9.Filter = "rtie Files(*.txt)|Text Files(*.txt)|*.txt|*.*"
-        Me.SaveFileDialog9.InitialDirectory = "C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPL" &
-    "ANS"
         '
         'PrintDialog1
         '
@@ -1135,25 +1098,42 @@ Partial Class Form3mll
         Me.Label1.TabIndex = 54
         Me.Label1.Text = "export  flight paln"
         '
-        'SaveFileDialog11
-        '
-        Me.SaveFileDialog11.Filter = "flp(*files)| "
-        Me.SaveFileDialog11.InitialDirectory = "C:\Users\Lorcan\Documents\Aerosoft\AerosoftAirbusExtended"
-        '
-        'SaveFileDialog10
-        '
-        Me.SaveFileDialog10.InitialDirectory = "C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPL" &
-    "ANS"
-        '
-        'SaveFileDialog787
-        '
-        Me.SaveFileDialog787.InitialDirectory = "C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\QualityWings\" &
-    "QW787\FlightPlans"
-        '
         'SaveFileDialog4
         '
         Me.SaveFileDialog4.Filter = "efbFiles(*.efbr)|Text Files(*.txt)|*.txt|*.*"
         Me.SaveFileDialog4.InitialDirectory = "C:\Users\Lorcan\Documents\AivlaSoft\EFB\UserData\Routes"
+        '
+        'SaveFileDialog2
+        '
+        Me.SaveFileDialog2.Filter = " Flight plan(*.flt.*.pln )|"
+        Me.SaveFileDialog2.InitialDirectory = "Documents"
+        '
+        'SaveFileDialog31
+        '
+        Me.SaveFileDialog31.Filter = " rtie Files(*.txt)|*.txt "
+        Me.SaveFileDialog31.InitialDirectory = "C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPL" &
+    "ANS"""
+        '
+        'SaveFileDialog32
+        '
+        Me.SaveFileDialog32.Filter = " rtie Files(*.txt)|*.txt "
+        Me.SaveFileDialog32.InitialDirectory = "\C:\Program Files\lockheedmartin\prepar3d v3\pmdg\FLIGHTPLANS\777"""
+        '
+        'SaveFileDialog3
+        '
+        Me.SaveFileDialog3.Filter = " rtie Files(*.txt)|*.txt "
+        Me.SaveFileDialog3.InitialDirectory = "C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\QualityWings\" &
+    "QW787\FlightPlans"
+        '
+        'SaveFileDialog54
+        '
+        Me.SaveFileDialog54.Filter = " rtie Files(*.txt)|*.txt "
+        Me.SaveFileDialog54.InitialDirectory = "C:\Program Files (x86)\lockheedmartin\prepar3d v3\QualityWings\QW787\FlightPlans"
+        '
+        'SaveFileDialog55
+        '
+        Me.SaveFileDialog55.Filter = "|flp(*.txt"
+        Me.SaveFileDialog55.InitialDirectory = "C:\Users\Lorcan\Documents\Aerosoft\AerosoftAirbusExtended\FlightPlans"
         '
         'Form3mll
         '
@@ -1281,7 +1261,6 @@ Partial Class Form3mll
     Friend WithEvents Timer4 As Timer
     Friend WithEvents Timer5 As Timer
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
-    Friend WithEvents SaveFileDialog2 As SaveFileDialog
     Friend WithEvents pmdg As Button
     Friend WithEvents Button787 As Button
     Friend WithEvents Buttonairbus As Button
@@ -1290,12 +1269,7 @@ Partial Class Form3mll
     Friend WithEvents Button8airbus As Button
     Friend WithEvents Button9787 As Button
     Friend WithEvents Buttonp3d As Button
-    Friend WithEvents project As Button
     Friend WithEvents expPanel6 As Panel
-    Friend WithEvents SaveFileDialog7 As SaveFileDialog
-    Friend WithEvents SaveFileDialog6 As SaveFileDialog
-    Friend WithEvents SaveFileDialog8 As SaveFileDialog
-    Friend WithEvents SaveFileDialog9 As SaveFileDialog
     Friend WithEvents AboutToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents PrintDialog1 As PrintDialog
     Friend WithEvents PrintDocument1 As Printing.PrintDocument
@@ -1313,10 +1287,12 @@ Partial Class Form3mll
     End Sub
 
     Friend WithEvents Label1 As Label
-    Friend WithEvents SaveFileDialog11 As SaveFileDialog
-    Friend WithEvents SaveFileDialog3 As SaveFileDialog
-    Friend WithEvents SaveFileDialog10 As SaveFileDialog
-    Friend WithEvents SaveFileDialog787 As SaveFileDialog
     Friend WithEvents Button23 As Button
     Friend WithEvents SaveFileDialog4 As SaveFileDialog
+    Friend WithEvents SaveFileDialog2 As SaveFileDialog
+    Friend WithEvents SaveFileDialog31 As SaveFileDialog
+    Friend WithEvents SaveFileDialog32 As SaveFileDialog
+    Friend WithEvents SaveFileDialog3 As SaveFileDialog
+    Friend WithEvents SaveFileDialog54 As SaveFileDialog
+    Friend WithEvents SaveFileDialog55 As SaveFileDialog
 End Class

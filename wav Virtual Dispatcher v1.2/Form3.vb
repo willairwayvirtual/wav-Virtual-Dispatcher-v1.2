@@ -72,9 +72,9 @@ Public Class Form3mll
     End Sub
 
     Private Sub Save4_Click(sender As Object, e As EventArgs) Handles Save4.Click
-        SaveFileDialog2020.ShowDialog()
-        SaveFileDialog2020.Title = "save text"
-        SaveFileDialog2020.InitialDirectory = "\Documents"
+        SaveFileDialog2.ShowDialog()
+        SaveFileDialog2.Title = "save text"
+        SaveFileDialog2.InitialDirectory = "\Documents"
         Dim location As String
 
 
@@ -115,10 +115,7 @@ Public Class Form3mll
         RouteTextBox1.Text = str4
     End Sub
 
-    Private Sub project_Click(sender As Object, e As EventArgs) Handles project.Click
-        SaveFileDialog2.ShowDialog()
-        SaveFileDialog2.Title = "save text"
-        SaveFileDialog2.InitialDirectory = "\Documents"
+    Private Sub project_Click(sender As Object, e As EventArgs)
 
 
 
@@ -130,60 +127,62 @@ Public Class Form3mll
     End Sub
 
     Private Sub pmdg_Click(sender As Object, e As EventArgs) Handles pmdg.Click
-        SaveFileDialog10.ShowDialog()
-        SaveFileDialog10.Title = "save text"
-        SaveFileDialog10.InitialDirectory = "\C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPLANS"
+        SaveFileDialog31.ShowDialog()
+        SaveFileDialog31.Title = "save text"
+        SaveFileDialog31.InitialDirectory = "\C:Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPLANS"
         Dim location As String
 
         location = SaveFileDialog1.FileName
 
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
+
+
     End Sub
 
     Private Sub Buttonp3d_Click(sender As Object, e As EventArgs) Handles Buttonp3d.Click
-        SaveFileDialog9.ShowDialog()
-        SaveFileDialog9.Title = "save text"
-        SaveFileDialog9.InitialDirectory = "\Documents"
+        SaveFileDialog32.ShowDialog()
+        SaveFileDialog32.Title = "save text"
+        SaveFileDialog32.InitialDirectory = "\C:\Program Files\lockheedmartin\prepar3d v3\pmdg\FLIGHTPLANS\777"
         Dim location As String
+
         location = SaveFileDialog1.FileName
 
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
     End Sub
 
     Private Sub Button787_Click(sender As Object, e As EventArgs) Handles Button787.Click
-        SaveFileDialog787.ShowDialog()
-        SaveFileDialog787.Title = "save text"
-        SaveFileDialog787.InitialDirectory = "\C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\QualityWings\QW787\FlightPlans"
-        Dim location As String
 
+        SaveFileDialog3.ShowDialog()
+        SaveFileDialog3.Title = "save text"
+        SaveFileDialog3.InitialDirectory = "\C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\QualityWings\QW787\FlightPlans"
+        Dim location As String
         location = SaveFileDialog1.FileName
 
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
+
     End Sub
 
     Private Sub Button9787_Click(sender As Object, e As EventArgs) Handles Button9787.Click
-        SaveFileDialog9.ShowDialog()
-        SaveFileDialog9.Title = "save text"
-        SaveFileDialog9.InitialDirectory = "\Documents"
+        SaveFileDialog54.ShowDialog()
+        SaveFileDialog54.Title = "save text"
+        SaveFileDialog54.InitialDirectory = "\C:\Program Files (x86)\lockheedmartin\prepar3d v3\QualityWings\QW787\FlightPlans"
         Dim location As String
-
         location = SaveFileDialog1.FileName
 
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
+
 
     End Sub
 
     Private Sub Buttonairbus_Click(sender As Object, e As EventArgs) Handles Buttonairbus.Click
-        SaveFileDialog11.ShowDialog()
-        SaveFileDialog11.Title = "save text"
-        SaveFileDialog11.InitialDirectory = "\C:\Users\Lorcan\Documents\Aerosoft\AerosoftAirbusExtended"
+        SaveFileDialog55.ShowDialog()
+        SaveFileDialog55.Title = "save text"
+        SaveFileDialog55.InitialDirectory = "C:\Users\Lorcan\Documents\Aerosoft\AerosoftAirbusExtended\FlightPlans"
         Dim location As String
-
-        location = SaveFileDialog1.FileName
-
-        My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
-
-
         location = SaveFileDialog1.FileName
 
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
@@ -191,14 +190,14 @@ Public Class Form3mll
     End Sub
 
     Private Sub Button8airbus_Click(sender As Object, e As EventArgs) Handles Button8airbus.Click
-        SaveFileDialog11.ShowDialog()
-        SaveFileDialog11.Title = "save text"
-        SaveFileDialog11.InitialDirectory = "\Documents"
+        SaveFileDialog55.ShowDialog()
+        SaveFileDialog55.Title = "save text"
+        SaveFileDialog55.InitialDirectory = "C:\Users\Lorcan\Documents\Aerosoft\AerosoftAirbusExtended\FlightPlans"
         Dim location As String
-
         location = SaveFileDialog1.FileName
 
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
+
     End Sub
 
     Private Sub AboutToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AboutToolStripMenuItem.Click
@@ -514,17 +513,7 @@ maxTextBox24.Text & "','" &
     End Sub
 
     Private Sub ExpotToProjectFLYToolStripMenuItem_Click(sender As Object, e As EventArgs)
-        SaveFileDialog2.ShowDialog()
-        SaveFileDialog2.Title = "save text"
-        SaveFileDialog2.InitialDirectory = "\Documents"
 
-
-
-        Dim location As String
-
-        location = SaveFileDialog1.FileName
-
-        My.Computer.FileSystem.WriteAllText(location & ".pln", "" & RouteTextBox1.Text, True)
     End Sub
 
     Private Sub PrintDocument1_PrintPage(sender As Object, e As PrintPageEventArgs) Handles PrintDocument1.PrintPage
