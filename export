@@ -70,8 +70,7 @@ SaveFileDialog1.ShowDialog()
         location = SaveFileDialog1.FileName
 
         My.Computer.FileSystem.WriteAllText(location & ".txt", "" & RouteTextBox1.Text, True)
-        rtie Files(*.txt)|*.txt |flp(*.txt)|  *.txt|all files|*.         fs Flight plan(*.pln)  mfs 20020  Flight plan(*.flt.*.pln )|
-
+        rtie Files(*.txt)|*.txt |flp(*.txt)|  *.txt|all files|*.         fs Flight plan(*.pln)  mfs 20020  Flight plan(C:\Users\Lorcan\Documents\Aerosoft\AerosoftAirbusExtended\FlightPlans
 
 C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPLANS
 
