@@ -1112,12 +1112,12 @@ Partial Class Form3mll
         '
         Me.SaveFileDialog31.Filter = " rtie Files(*.txt)|*.txt "
         Me.SaveFileDialog31.InitialDirectory = "C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPL" &
-    "ANS"""
+    "ANS"
         '
         'SaveFileDialog32
         '
         Me.SaveFileDialog32.Filter = " rtie Files(*.txt)|*.txt "
-        Me.SaveFileDialog32.InitialDirectory = "\C:\Program Files\lockheedmartin\prepar3d v3\pmdg\FLIGHTPLANS\777"""
+        Me.SaveFileDialog32.InitialDirectory = "C:\Program Files\lockheedmartin\prepar3d v3\pmdg\FLIGHTPLANS\777"
         '
         'SaveFileDialog3
         '

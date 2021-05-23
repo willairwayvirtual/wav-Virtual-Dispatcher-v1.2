@@ -129,7 +129,7 @@ Public Class Form3mll
     Private Sub pmdg_Click(sender As Object, e As EventArgs) Handles pmdg.Click
         SaveFileDialog31.ShowDialog()
         SaveFileDialog31.Title = "save text"
-        SaveFileDialog31.InitialDirectory = "\C:Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\PMDG\FLIGHTPLANS"
+        SaveFileDialog31.InitialDirectory = "C:\"
         Dim location As String
 
         location = SaveFileDialog1.FileName
@@ -156,7 +156,7 @@ Public Class Form3mll
 
         SaveFileDialog3.ShowDialog()
         SaveFileDialog3.Title = "save text"
-        SaveFileDialog3.InitialDirectory = "\C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\QualityWings\QW787\FlightPlans"
+        SaveFileDialog3.InitialDirectory = "\6C:\Program Files (x86)\Microsoft Games\Microsoft Flight Simulator X\QualityWings\QW787\FlightPlans"
         Dim location As String
         location = SaveFileDialog1.FileName
 
